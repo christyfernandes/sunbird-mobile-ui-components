@@ -1,0 +1,7 @@
+{
+  "name": "UIComponents",
+  "integrations": {
+    "cordova": {}
+  },
+  "type": "ionic-angular"
+}
