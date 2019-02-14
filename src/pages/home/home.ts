@@ -5,6 +5,8 @@ import {LibraryFilterPage} from '../../components/library-filter/library-filter'
 import {GradeFilterComponent} from '../../components/grade-filter/grade-filter';
 import { AppHeaderComponent } from '../../components/app-header/app-header';
 import { RecentlyViewedComponent} from '../../components/recently-viewed/recently-viewed';
+import { AppFooterComponent } from '../../components/app-footer/app-footer';
+import { SubjectCardsComponent } from '../../components/subject-cards/subject-cards';
 
 @Component({
   selector: 'page-home',
@@ -28,6 +30,14 @@ export class HomePage {
     {
       "name":"Recently Viewed",
       "pageName": RecentlyViewedComponent
+    },
+    {
+      "name":"Application Footer",
+      "pageName": AppFooterComponent
+    },
+    {
+      "name":"Subject Cards",
+      "pageName": SubjectCardsComponent
     }
   ];
   constructor(public navCtrl: NavController) {

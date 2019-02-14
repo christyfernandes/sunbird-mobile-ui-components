@@ -1,11 +1,15 @@
-<!-- <app-header [pageName]="'Medium Filter'"></app-header> -->
-<ion-header>
-    <app-header [pageName]="'Medium Filter'"></app-header>
-</ion-header>
-
+<ion-header class="sb-header">
+    <!-- Generated template for the AppHeaderComponent component -->
+    <!-- <ion-header> -->
+    <ion-navbar class="sb-header-toolbar">
+      <ion-title>Medium Filter</ion-title>
+    </ion-navbar>
+  </ion-header>
+  
 
 <ion-content no-padding>
-  <div class="sb-slider-pills-container sb-medium-pills-container">
+<div class="sb-slider-pills-container">
+  <div class="sb-pills-container sb-medium-pills-container">
       <div class="pill active">English medium</div>
       <div class="pill">English medium</div>
       <div class="pill">English medium</div>
@@ -15,9 +19,11 @@
       <div class="pill">English medium</div>
       <div class="pill">English medium</div>
   </div>
+</div>
 
-  <div>
-    <pre>
+  <div class="code-block">
+  <br><br>
+    <pre >
       {{this.code}}
     </pre>
   </div>

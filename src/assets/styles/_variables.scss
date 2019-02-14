@@ -1,9 +1,4 @@
 // Variables
-// Variables should follow the `$component-state-property-size` formula for
-// consistent naming. Ex: $nav-link-disabled-color and $modal-content-box-shadow-xs.
-// Color system
-// stylelint-disable
-// Fonts
 $font-stack-en:
   'Noto Sans',
   'Noto Sans Devanagari',
@@ -79,13 +74,14 @@ $blue:    #024f9d;
 $green:   #008840;
 $orange:  #e55a28;
 $red:     #ff4558;
-$white:    #fff;
+$white:   #ffffff;
 $indigo:  #6610f2;
 $purple:  #6f42c1;
 $pink:    #e83e8c;
 $yellow:  #ffc107;
 $teal:    #20c997;
 $cyan:    #17a2b8;
+$black:   #000000;
 // brand Colors
 $primary-color:   $blue;
 $secondary-color: $green;
@@ -97,6 +93,7 @@ $warning-color:   $orange;
 $danger-color:    $red;
 // Nuetral Colors
 $white-color:     $white;
+$black-color:     $black;
 $theme-colors: () !default;
 $theme-colors: map-merge((
   "primary":    $primary-color,
@@ -111,14 +108,14 @@ $theme-colors: map-merge((
 ), $theme-colors);
 // primary colors shades 
 $primary-0:   lighten($primary-color,65%); // bg
-$primary-100: lighten($primary-color,62%); // default button bg
-$primary-200: lighten($primary-color,45%); // divider
-$primary-300: lighten($primary-color,40%);  // outline, focus fields
+$primary-100: lighten($primary-color,15%); // default button bg
+$primary-200: lighten($primary-color,10%); // divider
+$primary-300: lighten($primary-color,5%);  // outline, focus fields
 $primary-400: $primary-color; // button bg, heading, table titles, links, toggles 
-$primary-600: darken($primary-color,10%);  // on press
-$primary-800: darken($primary-color,20%);  // hover
+$primary-600: darken($primary-color,15%);  // on press
+$primary-800: darken($primary-color,30%);  // hover
 // secondary colors shades
-$secondary-0:   lighten($secondary-color,70%);  // toast bg
+$secondary-0:   lighten($secondary-color,50%);  // toast bg
 $secondary-100: lighten($secondary-color,15%);   // buttong bg, toast
 $secondary-200: lighten($secondary-color,10%);   // button hover
 $secondary-400: $secondary-color;               // icon
@@ -132,6 +129,8 @@ $red-100: lighten($red,15%); // buttong bg, toast
 $red-400: $red; // icon color, lable, notification bg
 // Settings for the `<body>` element.
 $bg-body:       $primary-0;
+$bg-white:      $white-color;
+$bg-gray-0:       $gray-0;
 $body-color:    $gray-800;
 // Style anchor elements.
 $link-color:                theme-color("primary");
@@ -152,24 +151,26 @@ $h3-font-size:                $font-size-base * 1.714; // 24px
 $h4-font-size:                $font-size-base * 1.429; // 20px
 $h5-font-size:                $font-size-base * 1.143;  // 16px
 $h6-font-size:                $font-size-base * 1; // 14px
-$font-size-lg:                ($h3-font-size); //24px
-$font-size-normal:            ($h5-font-size); // 16px
-$font-size-md:                ($font-size-base * 1); // 14px
+$font-size-lg:                ($h4-font-size); //20px
+$font-size-md:                ($h5-font-size); // 16px
+$font-size-normal:            ($font-size-base * 1); // 14px
 $font-size-sm:                ($font-size-base * 0.8571); // 12px
 $font-size-xs:                ($font-size-base * 0.7143); // 10px
-$p-font-size:                 $font-size-md;            
+$p-font-size:                 $font-size-normal;            
 // spaces
 $base-block-space: 8px;
-$block-padding-y-x: ($base-block-space * 1) ($base-block-space * 3); // any block default spacing
-$block-padding-xy: ($base-block-space * 3);  // top right bottom left spacing
-$block-padding-x: ($base-block-space * 3);  // left right spacing
+$block-padding-y-x: ($base-block-space * 1) ($base-block-space * 2); // any block default spacing 16px
+$block-padding-xy: ($base-block-space * 2);  // top right bottom left spacing
+$block-padding-x: ($base-block-space * 2);  // left right spacing
 $block-padding-y: ($base-block-space * 1);  // top bottom spacing
-$block-margin-xl-minus: -($base-block-space * 3); // minus margin 24px left
-$block-margin-xr-minus: -($base-block-space * 3); // minus margin 24px right
+$block-margin-xl-minus: -($base-block-space * 2); // minus margin 16px left
+$block-margin-xr-minus: -($base-block-space * 2); // minus margin 16px right
 // width heights
-$base-btn-small-height: ($base-block-space * 3);
+$base-btn-xs-height: ($base-block-space * 3);
 $base-btn-normal-height: ($base-block-space * 4);
-$base-btn-big-height: ($base-block-space * 5);
+$base-btn-sm-height:  ($base-block-space * 5);
+$base-btn-md-height: ($base-block-space * 6);
+$base-btn-lg-height:  ($base-block-space * 7);
 $base-btn-fluid: 100%;
 // To clean
 $text-lightDark: #666;

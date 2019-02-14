@@ -2,3 +2,15 @@ page-library-filter {
 
 }
 
+.code-block {
+    background-color: #f0f0f0;
+    padding: 10px;
+    margin: 8px;
+    box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.2);
+    border-radius: 4px;
+    pre {
+        user-select: all;
+        font-size: 14px;
+        letter-spacing: -0.4px;
+    }
+}

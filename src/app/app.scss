@@ -29,7 +29,7 @@
 // @import "./components/cards";
 // @import "./components/header";
 // @import "./components/footer";
-//@import "../assets/styles/global";
+// @import "../assets/styles/global";
 
 // base structure
 @import "../assets/styles/mixins/mixins";
@@ -41,6 +41,16 @@
 @import "../assets/styles/vendors/vendors";
 
 
-.content-ios {
-    background-color: #F0F0F0;
+ion-app.md, ion-app.ios {
+  font-family: $font-stack-en;
+}
+.separator-dot{
+  width: 4px;
+  height: 4px;
+  background-color: #d8d8d8;
+  border-radius:50%;
+  display: inline-block;
+  vertical-align: middle;
+  margin: 0px 8px;
+  font-size: 12px;
 }

@@ -14,12 +14,16 @@ import { IonicPage, NavController, NavParams } from 'ionic-angular';
   templateUrl: 'library-filter.html',
 })
 export class LibraryFilterPage {
-  code = `<div class="horizontal-scroll PTB20 PLR16px bg-white">
-            <button ion-button class="medium-pill active">English medium</button>
-            <button ion-button class="medium-pill">Kannada Medium</button>
-            <button ion-button class="medium-pill">Kannada Medium</button>
-            <button ion-button class="medium-pill">Kannada Medium</button>
-          </div>`;
+  code = `<div class="sb-slider-pills-container sb-medium-pills-container">
+        <div class="pill active">English medium</div>
+        <div class="pill">English medium</div>
+        <div class="pill">English medium</div>
+        <div class="pill">English medium</div>
+        <div class="pill">English medium</div>
+        <div class="pill">English medium</div>
+        <div class="pill">English medium</div>
+        <div class="pill">English medium</div>
+      </div>`;
 
   constructor(public navCtrl: NavController, public navParams: NavParams) {
   }

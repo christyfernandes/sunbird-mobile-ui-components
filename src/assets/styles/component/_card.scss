@@ -1,0 +1,134 @@
+/* card styles starts here */
+
+.sb-card-container {
+    display: inline-flex;
+    
+    .sb-card {
+        min-width: ($base-block-space * 36);
+        border-radius: 2px;
+        box-shadow: 0 3px 5px 0 rgba(0, 0, 0, 0.12);
+        grid-gap: ($base-block-space * 1);
+        background-color: $bg-gray-0;
+        @include margin(0, ($base-block-space * 1), 0, 0);
+        @include padding(($base-block-space * 1));
+        display: grid;
+        grid-template-columns: minmax(($base-block-space * 9),($base-block-space * 9)) auto;
+        background: $bg-white;
+        
+        .img-container {
+            background-color: $bg-gray-0;
+            width:($base-block-space * 9);
+            height: ($base-block-space * 9);
+        }
+        .sb-card-details {
+          overflow:hidden;
+          display: flex;
+          justify-content: center;
+          flex-direction: column;
+    
+          .title {
+            width:100%;
+            overflow:hidden;
+            text-overflow: ellipsis;
+            display: -webkit-box;
+            -webkit-line-clamp: 2;
+            -webkit-box-orient: vertical;
+            margin:0;
+            margin-bottom: 0px;
+            padding:0;
+            font-weight: 500;
+            font-style: normal;
+            font-stretch: normal;
+            line-height: normal;
+            color: $gray-800;
+            font-size: 14px;
+          }
+          .info{
+            font-size: 12px;
+            font-weight: 500;
+            font-style: normal;
+            font-stretch: normal;
+            line-height: normal;
+            letter-spacing: -0.4px;
+            color: $gray-200;
+          }
+        }
+        &.about{
+            display: block;
+            ion-label{
+              margin-bottom: 1px;
+              font-size: 12px;
+              color: $gray-200;
+            }
+            p{
+              margin-top: 0;
+              font-size: 14px;
+              font-weight: normal;
+              font-style: normal;
+              font-stretch: normal;
+              line-height: normal;
+              letter-spacing: -0.4px;
+              color: $black-color;
+            }
+          }
+          &:first-child {
+            @include margin(null, null, null, ($base-block-space * 1));
+          }
+          &:last-child {
+            @include margin(null, ($base-block-space * 1), null, null);
+          }
+    
+        
+        &.full{
+            grid-template-columns: minmax(($base-block-space * 11),($base-block-space * 11)) auto;
+            @include padding(0);
+
+            .img-container {
+                background-color: $gray-100;
+                width:($base-block-space * 11);
+                height: ($base-block-space * 11);
+            }
+
+            .sb-card-details {
+                @include padding(($base-block-space * 1));
+            }
+        }
+
+        &.offline{
+            .img-container {
+                // margin: -16px 0 -16px -16px;
+                opacity: 0.75;
+              display: flex;
+              align-items: center;
+            
+                background-color: $tertiary-color;	
+                box-shadow: 0 3px 5px 0 rgba(0,0,0,0.12);
+            }
+
+              .icon{
+                margin: auto;
+                font-size: 24px;
+                color: $white-color;
+              }
+              .sb-card-details{
+            opacity: 0.75;
+           
+          }
+            }
+
+
+    }
+
+}
+
+.sb-card-recently-container{
+    flex-direction: row;
+}
+
+.sb-card-subject-container{
+    flex-direction: column;
+    .sb-card{
+        @include margin(0, ($base-block-space * 1));   
+    }
+}
+

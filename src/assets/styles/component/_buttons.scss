@@ -1,4 +1,22 @@
-// buttons
+/* buttons sytle guide */
+
+.btn.rounded {
+    height: 24px;	
+    border-radius: 15px;	
+    background-color: #FFFFFF;	
+    box-shadow: 0 3px 4px 0 rgba(0,0,0,0.12);
+    color: #024F9D;
+    font-family: "Noto Sans";
+    font-size: 12px;
+    font-weight: normal;    	
+    letter-spacing: -0.4px;	
+    line-height: 15px;	
+    text-align: center;
+    padding: 4px 8px;
+    text-transform: capitalize
+
+};
+
 // Specificity overrides
 input[type="submit"],
 input[type="reset"],
@@ -17,10 +35,13 @@ input[type="button"] {
     display: inline-block;
     margin-left: 0.25rem;
     border: 1px solid;
-    color:#fff;
+    color: $primary-400;
     cursor:pointer;
     margin:0px 0px 0px 8px;
+    background:$white-color;
     min-width:($base-block-space * 8);
+    line-height: normal;
+    @include border-radius(3px);
     text: {
         transform: capitalize;
         decoration: none;
@@ -37,24 +58,35 @@ input[type="button"] {
     
 }
 // button sizes
-.sb-btn-small {
-    height:$base-btn-small-height;
-    padding: ($base-block-space * .5) ($base-block-space * 2);
-    font-size:$font-size-xs;
-    @include border-radius(2px);
+.sb-btn-xs, .sb-btn-normal, .sb-btn-md {
+    padding: ($base-block-space * 2);
 }
-.sb-btn-normal {
-    height:$base-btn-normal-height;
-    padding: $block-padding-y-x;
+.sb-btn-xs {
+    height:($base-block-space * 3);
+    padding: ($base-block-space * 1);
     font-size:$font-size-sm;
-    @include border-radius(4px);
 }
-.sb-btn-big {
-  height:$base-btn-big-height;
-  padding: $block-padding-y-x;
-  font-size:$font-size-normal;
-  @include border-radius(6px);
+//primary button style
+.sb-btn-normal {
+    height:($base-block-space * 4);
+    font-size:$font-size-sm;
 }
+.sb-btn-sm {
+    height: ($base-block-space * 3);
+    font-size:$font-size-sm;
+    padding: ($base-block-space * 0.5) ($base-block-space * 1);
+}
+.sb-btn-md {
+    height:($base-block-space * 6);
+    font-size:$font-size-md;
+}
+.sb-btn-lg {
+  height:($base-block-space * 7);
+  padding: ($base-block-space * 3);
+  font-size:$font-size-lg;
+}
+
+
 // disabled button
 .sb-btn-disabled {
     background-color: $gray-100;
