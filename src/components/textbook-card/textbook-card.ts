@@ -7,10 +7,10 @@ import { Component } from '@angular/core';
  * Components.
  */
 @Component({
-  selector: 'subject-cards',
-  templateUrl: 'subject-cards.html'
+  selector: 'textbook-card',
+  templateUrl: 'textbook-card.html'
 })
-export class SubjectCardsComponent {
+export class TextbookCardComponent {
 
   text: string;
 

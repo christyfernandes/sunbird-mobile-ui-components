@@ -7,7 +7,8 @@ import { AppHeaderComponent } from './app-header/app-header';
 import { RecentlyViewedComponent } from './recently-viewed/recently-viewed';
 import { AppFooterComponent } from './app-footer/app-footer';
 import { LibraryComponent } from './library/library';
-import { SubjectCardsComponent } from './subject-cards/subject-cards';
+import { TextbookCardComponent } from '../components/textbook-card/textbook-card'
+import { RecentlyViewedViewAllComponent } from './recently-viewed-view-all/recently-viewed-view-all';
 
 @NgModule({
 	declarations: [GradeFilterComponent,
@@ -16,7 +17,8 @@ import { SubjectCardsComponent } from './subject-cards/subject-cards';
 		RecentlyViewedComponent,
 		AppFooterComponent,
 		LibraryComponent,
-    SubjectCardsComponent
+    	TextbookCardComponent,
+    RecentlyViewedViewAllComponent
 	],
 	imports: [
 		IonicPageModule,
@@ -28,7 +30,8 @@ import { SubjectCardsComponent } from './subject-cards/subject-cards';
 		RecentlyViewedComponent,
 		AppFooterComponent,
 		LibraryComponent,
-    SubjectCardsComponent
+    	TextbookCardComponent,
+    RecentlyViewedViewAllComponent
 	],
 	entryComponents: [
 		GradeFilterComponent,
@@ -37,7 +40,8 @@ import { SubjectCardsComponent } from './subject-cards/subject-cards';
 		RecentlyViewedComponent,
 		AppFooterComponent,
 		LibraryComponent,
-		SubjectCardsComponent
+		TextbookCardComponent,
+		RecentlyViewedViewAllComponent
 	]
 })
 export class ComponentsModule { }
