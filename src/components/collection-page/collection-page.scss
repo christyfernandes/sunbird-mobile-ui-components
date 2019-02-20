@@ -6,137 +6,20 @@ collection-page {
       height: 1px;
       opacity: 0.36;
       background-color: #979797;
-      margin: 8px -16px 8px -16px;
+      @include margin( ($base-block-space * 1),  -($base-block-space * 2), ($base-block-space * 1),  -($base-block-space * 2));
      }
      
- .sb-dt-card {
-    border-radius: 2px;
-    box-shadow: 0 3px 5px 4px rgba(0, 0, 0, 0.05);
-    background-color: map-get($colors, white );
-    padding:16px 16px;
-    margin: 0px 0px 16px 0px;
 
-    .sb-dt-content{
-      display: grid;
-      grid-gap: 8px;
-      grid-template-columns:  auto 72px;
-      .right {
-        .img-container {
-          background-color: grey;
-          max-width:72px;
-          height: 72px;
-          overflow:hidden;
-        }
-      }
-      .left {
-        display: flex;
-        flex-direction: column;
-        .sb-rating-view {
-          .sb-rating-value {
-            font-weight: bold;
-            font-size: 14px;
-            margin:0px 5px 0px 0px;
-          }
-          .sb-rating-star {
-            color: #f8e71c;
-          }
-        }
-        .sb-dt-title {
-          width:100%;
-          overflow:hidden;
-          text-overflow: ellipsis;
-          display: -webkit-box;
-          -webkit-line-clamp: 1;
-          -webkit-box-orient: vertical;
-          margin:5px 0px;
-          padding:0;
-          font-weight: bold;
-          font-size:16px;
-          letter-spacing: -0.4px;
-          color: #333333;
-        }
-        .sb-dt-source {
-          .sb-by {
-            font-size: 10px;
-          }
-          .sb-user {
-            font-size: 12px;
-            color: #979797;
-          }
-        }
-        .sb-dt-class-info {
-          margin:8px 0px;
-          .sb-dt-label{
-            font-size: 12px;
-            color: #979797;
-          }
-          &.sb-dt-class {
-
-          }
-          &.sb-dt-subject{
-
-          }
-          .sb-separator-dot {
-            width: 4px;
-            height: 4px;
-            background-color: #d8d8d8;
-            border-radius:50%;
-            display: inline-block;
-            vertical-align: middle;
-          }
-        }
-      }
-      
-    }
-    .sb-dt-card-actions {
-      .sb-btn-tile-group {
-        display: inline-grid;
-        grid-template-columns: auto auto auto;
-        grid-column-gap: 8px;
-        &:last-child{
-          @include margin(null, 0, null, null);
-        }
-        .button-md{
-          height: 4.6rem;
-        }
-        .sb-btn-tile {
-          .button-inner {
-            flex-direction: column;
-          }
-          .sb-dt-card-danger-icon{
-            font-size : 30px;
-            color: #e55a28;
-          }
-          .sb-dt-card-blue-icon{
-            font-size : 30px;
-            color: #024f9d;
-          }   
-          .sb-btn-footer-text {
-            color : #979797;
-            font-weight: 500;
-            font-size: 12px;
-            letter-spacing: -0.3px;
-            text-align: center;
-            text-transform: initial;
-          }
-          ion-icon {
-            line-height: 30px;
-          }
-         
-        }
-      }
-    }
-  }
 
   .sb-accordian-card{
     display: flex;
     flex-direction: column;
     width: 100% !important;
     box-shadow: 0 3px 5px 4px rgba(0, 0, 0, 0.05);
-    margin:0px 0px 10px 0px;
+    @include margin(0,0,($base-block-space * 1),0);
     .sb-accordian-header{
-      padding: 8px 16px;
-      min-height: 56px;
+     @include padding(($base-block-space * 1),($base-block-space * 2));
+      min-height: ($base-block-space * 7);
     }
   }
   .sb-topics-container .row{
@@ -145,54 +28,54 @@ collection-page {
 
  .sb-topics-container .sb-topic-container.sb-topics-1child
     {
-      padding: 0px 8px 0px 16px;
+      @include padding(0,($base-block-space * 1),0,($base-block-space * 2));
       .sb-topic-title{
-        padding: 8px;
+        @include padding($base-block-space * 1);
       }
       .sb-topic-item
       {
-        padding: 8px;
+        @include padding($base-block-space * 1);
       }
       .sb-separator-line{
-        margin: 8px 8px 8px 8px;
+        @include margin($base-block-space * 1);
       }
     }
     .sb-topics-container  .sb-topic-container.sb-topics-2child
     {
-      padding: 0px 8px 0px 24px;
+      @include padding(0,($base-block-space * 1),0,($base-block-space * 3));
       .sb-topic-1title{
-        padding: 8px;
+        @include padding($base-block-space * 1);
       }
       .sb-topic-item
       {
-        padding: 8px 8px 8px 32px;
+        @include padding(($base-block-space * 1),($base-block-space * 1),($base-block-space * 1),($base-block-space * 4));
       }
       .sb-separator-line{
-        margin: 8px 8px 8px 8px;
+        @include margin($base-block-space * 1);
       }
     }
     .sb-topics-container  .sb-topic-container.sb-topics-3child
     {
       padding: 0px 8px 0px 32px;
+      @include padding(0,($base-block-space * 1),0,($base-block-space * 4));
       .sb-topic-1title{
-        padding: 8px 32px;
+        @include padding(($base-block-space * 1),($base-block-space * 4));
       }
       .sb-topic-2title{
-        padding: 8px 56px;
+        @include padding(($base-block-space * 1),($base-block-space * 7));
       }
       .sb-topic-item
       {
-        padding: 8px 8px 8px 56px;
+        @include padding(($base-block-space * 1),($base-block-space * 7));
       }
       .sb-separator-line{
-        margin: 8px 8px 8px 16px;
+        @include margin(($base-block-space * 1),($base-block-space * 1),($base-block-space * 1),($base-block-space * 2));
       }
     }
     .sb-accordian-grey-icon
     {
       color : #979797;
       font-size : 30px;
-      margin-top : 4px;
     }
     .sb-play-icon
     {
@@ -202,7 +85,7 @@ collection-page {
     .sb-topic-text{
       color:#024f9d;
       font-size:14px;
-      padding:8px;
+      @include padding($base-block-space * 1);
      }
       .sb-accordian-arrow
       {
@@ -211,14 +94,14 @@ collection-page {
       }
       .sb-play-selected
       {
-        padding: 4px 4px 4px 8px;
+        @include padding(($base-block-space * 0.5),($base-block-space * 0.5),($base-block-space * 0.5),($base-block-space * 1));
         color : #024f9d;
         font-weight: bolder;
        font-size:14px;
       }
       .sb-play-unselected
       {
-        padding: 4px 4px 4px 8px;
+        @include padding(($base-block-space * 0.5),($base-block-space * 0.5),($base-block-space * 0.5),($base-block-space * 1));
         color : #0a5cad;
         font-size:14px;
       }
@@ -227,10 +110,11 @@ collection-page {
         color : #00ba75;
         font-size: 18px;
         margin-left: 4px;
+        @include margin(null,null,null,($base-block-space * .5));
       }
       .sb-accordian-grey-text
       {
-          padding: 8px;
+          @include padding(($base-block-space * 0.5),($base-block-space * 0.5),($base-block-space * 0.5),($base-block-space * 1));
           color : #979797;
       }
 
