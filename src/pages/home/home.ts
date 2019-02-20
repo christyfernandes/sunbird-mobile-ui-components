@@ -7,6 +7,7 @@ import { RecentlyViewedComponent} from '../../components/recently-viewed/recentl
 import { AppFooterComponent } from '../../components/app-footer/app-footer';
 import { SubjectCardsComponent } from '../../components/subject-cards/subject-cards';
 import { CollectionPageComponent } from '../../components/collection-page/collection-page';
+import { StyleGuideComponent } from '../../components/style-guide/style-guide';
 import { OfflineToastComponent } from '../../components/offline-toast/offline-toast';
 import { ContentInfoComponent } from '../../components/content-info/content-info';
 import { DetailCardComponent } from '../../components/detail-card/detail-card';

@@ -7,11 +7,12 @@ import { AppHeaderComponent } from './app-header/app-header';
 import { RecentlyViewedComponent } from './recently-viewed/recently-viewed';
 import { AppFooterComponent } from './app-footer/app-footer';
 import { LibraryComponent } from './library/library';
-import { SubjectCardsComponent } from './subject-cards/subject-cards';
 import { CollectionPageComponent } from './collection-page/collection-page';
 import { OfflineToastComponent } from './offline-toast/offline-toast';
 import { ContentInfoComponent } from './content-info/content-info';
 import { DetailCardComponent } from './detail-card/detail-card';
+import { TextbookCardComponent } from '../components/textbook-card/textbook-card'
+import { RecentlyViewedViewAllComponent } from './recently-viewed-view-all/recently-viewed-view-all';
 
 @NgModule({
 	declarations: [GradeFilterComponent,
@@ -20,12 +21,13 @@ import { DetailCardComponent } from './detail-card/detail-card';
 		RecentlyViewedComponent,
 		AppFooterComponent,
 		LibraryComponent,
-    SubjectCardsComponent,
-    RecentlyViewedComponent,
-    CollectionPageComponent,
-    OfflineToastComponent,
-    ContentInfoComponent,
-    DetailCardComponent
+		RecentlyViewedComponent,
+		CollectionPageComponent,
+		OfflineToastComponent,
+		ContentInfoComponent,
+		DetailCardComponent,
+		TextbookCardComponent,
+		RecentlyViewedViewAllComponent
 	],
 	imports: [
 		IonicPageModule,
@@ -37,12 +39,13 @@ import { DetailCardComponent } from './detail-card/detail-card';
 		RecentlyViewedComponent,
 		AppFooterComponent,
 		LibraryComponent,
-    SubjectCardsComponent,
-    RecentlyViewedComponent,
-    CollectionPageComponent,
-    OfflineToastComponent,
-    ContentInfoComponent,
-    DetailCardComponent
+		RecentlyViewedComponent,
+		CollectionPageComponent,
+		OfflineToastComponent,
+		ContentInfoComponent,
+		DetailCardComponent,
+		TextbookCardComponent,
+		RecentlyViewedViewAllComponent
 	],
 	entryComponents: [
 		GradeFilterComponent,
@@ -51,11 +54,12 @@ import { DetailCardComponent } from './detail-card/detail-card';
 		RecentlyViewedComponent,
 		AppFooterComponent,
 		LibraryComponent,
-		SubjectCardsComponent,
 		CollectionPageComponent,
 		OfflineToastComponent,
 		ContentInfoComponent,
-		DetailCardComponent
+		DetailCardComponent,
+		TextbookCardComponent,
+		RecentlyViewedViewAllComponent
 	]
 })
 export class ComponentsModule { }
