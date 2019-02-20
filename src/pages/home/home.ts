@@ -5,12 +5,12 @@ import {GradeFilterComponent} from '../../components/grade-filter/grade-filter';
 import { AppHeaderComponent } from '../../components/app-header/app-header';
 import { RecentlyViewedComponent} from '../../components/recently-viewed/recently-viewed';
 import { AppFooterComponent } from '../../components/app-footer/app-footer';
-import { SubjectCardsComponent } from '../../components/subject-cards/subject-cards';
 import { CollectionPageComponent } from '../../components/collection-page/collection-page';
-import { StyleGuideComponent } from '../../components/style-guide/style-guide';
 import { OfflineToastComponent } from '../../components/offline-toast/offline-toast';
 import { ContentInfoComponent } from '../../components/content-info/content-info';
 import { DetailCardComponent } from '../../components/detail-card/detail-card';
+import { TextbookCardComponent } from '../../components/textbook-card/textbook-card';
+import { RecentlyViewedViewAllComponent } from '../../components/recently-viewed-view-all/recently-viewed-view-all';
 
 @Component({
   selector: 'page-home',
@@ -41,7 +41,11 @@ export class HomePage {
     },
     {
       "name":"Subject Cards",
-      "pageName": SubjectCardsComponent
+      "pageName": TextbookCardComponent
+    },
+    {
+      "name":"Recently VIewed - View all",
+      "pageName": RecentlyViewedViewAllComponent
     },
     {
       "name":"Collection Component",
