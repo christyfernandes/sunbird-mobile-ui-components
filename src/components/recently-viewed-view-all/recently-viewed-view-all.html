@@ -9,53 +9,76 @@
 
 <ion-content no-padding>
 
-  <div class="sb-recently-viewed-container">
+  <div class="sb-view-all-container">
 
-    <div class="sb-recently-viewed-items">
-      <div class="sb-recenlty-viewed-title">
-        Recently Viewed
-        <p>Showing 10 items</p>
+    <div class="sb-view-all-items">
+      <div class="sb-view-all-title">
+        <span class="page-heading">Recently Viewed</span>
+        <span class="page-info">Showing 10 items</span>
       </div>
-
-
     </div>
 
   </div>
   <div class="sb-view-all-container">
-      <div class="sb-card-container sb-card-view-all-container">
-        <div class="sb-card ">
+    <div class="sb-card-container sb-card-view-all-container">
+      <div class="sb-card ">
+        <div class="img-container"></div>
+        <div class="sb-card-details">
+          <div class="title">Great thinkers and their new religions</div>
+          <div class="info"><span class=" class">Class6</span><span class="separator-dot"></span><span
+              class=" subject">Social
+              Science</span>
+          </div>
+          <div class="sb-card-actions">
+            <button ion-button class="action-btn float-end delete">
+              <ion-icon ios="ios-trash" md="md-trash" class="MR5"></ion-icon>
+              Delete
+            </button>
+            <button ion-button class="action-btn float-end ">
+              <ion-icon ios="ios-refresh-circle" md="md-refresh-circle" class="MR5"></ion-icon>
+              update
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <div class="sb-card ">
           <div class="img-container"></div>
           <div class="sb-card-details">
             <div class="title">Great thinkers and their new religions</div>
-            <div><span class="info class">Class6</span><span class="separator-dot"></span><span class="info subject">Social
-                Science</span></div>
-            <div>
-                <button ion-button class="sb-btn sb-btn-sm sb-btn-default" float-end> View all</button>
-                <button ion-button class="sb-btn sb-btn-sm sb-btn-default" float-end> View all</button>
+            <div class="info"><span class=" class">Class6</span><span class="separator-dot"></span><span
+                class=" subject">Social
+                Science</span>
+            </div>
+            <div class="sb-card-actions">
+              <button ion-button class="action-btn float-end download">
+                <ion-icon ios="ios-refresh-circle" md="md-refresh-circle" class="MR5"></ion-icon>
+                Download
+              </button>
             </div>
           </div>
         </div>
 
-        <div class="sb-card">
+        <div class="sb-card offline">
           <div class="img-container"></div>
           <div class="sb-card-details">
             <div class="title">Great thinkers and their new religions</div>
-            <div><span class="info class">Class6</span><span class="separator-dot"></span><span class="info subject">Social
-                Science</span></div>
-
+            <div class="info"><span class=" class">Class6</span><span class="separator-dot"></span><span
+                class=" subject">Social
+                Science</span>
+            </div>
+            <div class="sb-card-actions">
+              <button ion-button class="action-btn float-end delete">
+                <ion-icon ios="ios-trash" md="md-trash" class="MR5"></ion-icon>
+                Delete
+              </button>
+              <button ion-button class="action-btn float-end ">
+                <ion-icon ios="ios-refresh-circle" md="md-refresh-circle" class="MR5"></ion-icon>
+                Update
+              </button>
+            </div>
           </div>
         </div>
-
-        <div class="sb-card offline">
-          <div class="img-container">
-            <ion-icon ios="ios-notifications-off" md="md-notifications-off" class="white"></ion-icon>
-          </div>
-          <div class="sb-card-details">
-            <div class="title">Great thinkers and their new religions</div>
-            <div><span class="info class">Class6</span><span class="separator-dot"></span><span class="info subject">Social
-                Science</span></div>
-          </div>
-        </div>
-      </div>
     </div>
+  </div>
 </ion-content>

@@ -41,7 +41,7 @@ export class HomePage {
       "pageName": TextbookCardComponent
     },
     {
-      "name":"Recently VIewed - View all",
+      "name":"Recently Viewed - View all",
       "pageName": RecentlyViewedViewAllComponent
     }
     

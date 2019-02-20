@@ -3,20 +3,19 @@
 
   .sb-recently-viewed-items{
     background-color: #024f9d;
-    height: 88px;
+    height: ($base-block-space * 11);
     width: 100%;
     position: relative;
-    padding: 16px 0px 16px 0px;
+    @include padding(($base-block-space * 1), 0);
     .sb-recenlty-viewed-title {
       font-size: 16px;
       color: #ffffff;
       font-family: "Noto Sans";	
       line-height: 22px;
       overflow: auto;
-      margin-bottom: 8px;
-    padding: 0px 8px 0px 8px;
-      button{
-      }
+      margin-bottom: ($base-block-space * 1);
+    @include padding(0, ($base-block-space * 1));
+
     }
       .sb-card-scroll-container{
       overflow-x: auto;

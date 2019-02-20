@@ -151,13 +151,70 @@
         border-radius: 2px 2px 0 0;
         border-bottom: 0.5px solid rgba(151, 151, 151, 0.36);
         box-shadow: none;  
+        display: grid;
+        grid-template-columns: ($base-block-space * 10) auto;
+
+        .img-container {
+            background-color: $bg-gray-0;
+            width:($base-block-space * 10);
+            height: ($base-block-space * 10);
+        }
         
         &:first-child{
             @include margin(0); 
         }
         &:last-child{
             border-bottom: none; 
+            @include margin(0); 
         }
+
+        .sb-card-details{
+          margin-bottom: -8px;
+
+          .info{
+            @include margin(null, null, 4px, null);
+          }
+        }
+
+        .sb-card-actions {
+          display: flex;
+          flex-direction: row-reverse;
+          align-items: flex-end;
+          .action-btn {
+            background: #024F9D;
+            border-radius: 0px !important;
+            box-shadow: none;
+            height: 24px;
+            border-top-left-radius: 4px !important;
+            border-top-right-radius: 4px !important;
+            text-transform: capitalize;
+            @include margin(0, 0, 0, 8px);
+            @include padding(null, 8);
+
+            .button-inner {
+              font-size: 12px;
+              line-height: 17px;
+              font-weight: 100;
+              font-style: normal;
+              font-stretch: normal;
+              line-height: normal;
+              text-align: center;
+              color:$white-color;
+              
+              ion-icon{
+                margin-right: 4px;
+              }
+            }
+
+            &.download{
+              background-color: $success-color;
+            }
+            &.delete{
+              background-color: $danger-color;
+            }
+          }
+        }
+
     }
 }
 
