@@ -8,6 +8,10 @@ import { RecentlyViewedComponent } from './recently-viewed/recently-viewed';
 import { AppFooterComponent } from './app-footer/app-footer';
 import { LibraryComponent } from './library/library';
 import { SubjectCardsComponent } from './subject-cards/subject-cards';
+import { CollectionPageComponent } from './collection-page/collection-page';
+import { OfflineToastComponent } from './offline-toast/offline-toast';
+import { ContentInfoComponent } from './content-info/content-info';
+import { DetailCardComponent } from './detail-card/detail-card';
 
 @NgModule({
 	declarations: [GradeFilterComponent,
@@ -16,7 +20,12 @@ import { SubjectCardsComponent } from './subject-cards/subject-cards';
 		RecentlyViewedComponent,
 		AppFooterComponent,
 		LibraryComponent,
-    SubjectCardsComponent
+    SubjectCardsComponent,
+    RecentlyViewedComponent,
+    CollectionPageComponent,
+    OfflineToastComponent,
+    ContentInfoComponent,
+    DetailCardComponent
 	],
 	imports: [
 		IonicPageModule,
@@ -28,7 +37,12 @@ import { SubjectCardsComponent } from './subject-cards/subject-cards';
 		RecentlyViewedComponent,
 		AppFooterComponent,
 		LibraryComponent,
-    SubjectCardsComponent
+    SubjectCardsComponent,
+    RecentlyViewedComponent,
+    CollectionPageComponent,
+    OfflineToastComponent,
+    ContentInfoComponent,
+    DetailCardComponent
 	],
 	entryComponents: [
 		GradeFilterComponent,
@@ -37,7 +51,11 @@ import { SubjectCardsComponent } from './subject-cards/subject-cards';
 		RecentlyViewedComponent,
 		AppFooterComponent,
 		LibraryComponent,
-		SubjectCardsComponent
+		SubjectCardsComponent,
+		CollectionPageComponent,
+		OfflineToastComponent,
+		ContentInfoComponent,
+		DetailCardComponent
 	]
 })
 export class ComponentsModule { }
