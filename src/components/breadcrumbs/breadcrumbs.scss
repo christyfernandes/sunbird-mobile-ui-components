@@ -1,0 +1,120 @@
+breadcrumbs {
+
+}
+  
+  /* breadcrumb */
+
+ 
+  $stepColor: #f9f9f9;
+  $stepColorHover: #f2f2f2;
+  $stepColorCompleted: #f2f2f2;
+  $textColor:  #024F9D;;
+  $textColorCompleted: #000000;
+  
+  
+  .step-indicator {
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    overflow-x:auto;
+    width:100%;
+    display: inline-flex;
+    align-items: center;
+    height:64px;
+    padding:16px 8px 16px 8px;
+  }
+  
+  .step {
+    display: block;
+    float: left;
+    background: $stepColor;
+    padding-right: 10px;
+    height: 24px;
+    padding-top: 4px;
+    font-size: 12px;
+    line-height: 17px;
+    margin-right: 33px;
+    position: relative;
+    text-decoration: none;
+    color: $textColor;
+    cursor: default;
+    white-space: nowrap;
+      
+    &:before {
+      content: "";
+      display: block;
+      width: 0;
+      height: 0;
+      position: absolute;
+      top: 0;
+      left: -24px;
+      border: 12px solid transparent;
+      border-color: #EDF4F9;
+      border-left-color: transparent;
+    }
+      
+    &:after {
+      content: "";
+      display: block;
+      width: 0;
+      height: 0;
+      position: absolute;
+      top: 0;
+      right: -24px;
+      border: 12px solid transparent;
+      border-left-color: $stepColor;
+    }
+      
+    &:first-of-type {
+      border-radius: 2px 0 0 2px;
+      padding-left: 15px;
+      
+      &:before {
+        display: none;
+      }
+    }
+      
+    &:last-of-type {
+      border-radius: 0 2px 2px 0;
+      margin-right: 25px;
+      padding-right: 15px;
+      background-color: #EDF4F9;  
+      &:after {
+        display: none;
+        background-color: #EDF4F9;
+      }
+    }
+  
+    &.completed {
+      background: $stepColorCompleted;
+      color: $textColorCompleted;
+      cursor: pointer;
+      
+  
+      &:before {
+        border-color: $stepColorCompleted;
+        border-left-color: transparent;
+        
+      }
+  
+      &:after {
+        border-left-color: $stepColorCompleted;
+      }
+  
+      &:hover {
+        background: $stepColorHover;
+        border-color: $stepColorHover;
+        color: $textColorCompleted;
+        text-decoration: none;
+          
+        &:before {
+          border-color: $stepColorHover;
+          border-left-color: transparent;
+        }
+            
+        &:after {
+          border-left-color: $stepColorHover;
+        }
+      }
+    }
+  }

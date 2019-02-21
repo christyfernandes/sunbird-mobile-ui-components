@@ -1,0 +1,60 @@
+content-player {
+
+}
+.sb-player-container {
+    background-color: black;
+    max-width:100%;
+    height: ($base-block-space * 25);
+    overflow:hidden;
+    position: relative;
+    .sb-arrow-back
+    {
+      @include padding($base-block-space * 0.5);
+      color: $blue;
+    }
+    .sb-circle
+    {
+      position: absolute;
+      top: 16px;
+      left: 16px;
+      height:24px;
+      width:24px;
+      background-color: #fff;
+      border-radius: 50%
+    }
+    .sb-common-player-group{
+      position: absolute;
+      left: 0;
+      right: 0;
+      top: 30%;
+      text-align: center;
+      .sb-play-title-group{
+        top: 50%;
+      }
+      .sb-common-title{
+        .sb-common-white-icon{
+          font-size : 40px;
+          color: #ffffff;
+        } 
+      }
+      .sb-offline-title {
+       @include padding ($base-block-space);
+        .sb-offline-white-icon{
+          font-size : 24px;
+          color: #ffffff;
+        } 
+      }  
+      .sb-common-footer-text {
+        color : #ffffff;
+        font-weight: 500;
+        font-size: 12px;
+        text-align: center;
+        text-transform: initial;
+      }  
+      .sb-common-footer-text.sb-sub-footer
+          {
+            font-size:10px;
+          }
+    }
+  
+  }

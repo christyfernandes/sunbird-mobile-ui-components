@@ -11,6 +11,7 @@ import { ContentInfoComponent } from '../../components/content-info/content-info
 import { DetailCardComponent } from '../../components/detail-card/detail-card';
 import { TextbookCardComponent } from '../../components/textbook-card/textbook-card';
 import { RecentlyViewedViewAllComponent } from '../../components/recently-viewed-view-all/recently-viewed-view-all';
+import { BreadcrumbsComponent } from '../../components/breadcrumbs/breadcrumbs';
 
 @Component({
   selector: 'page-home',
@@ -62,6 +63,10 @@ export class HomePage {
     {
       "name":"Details Card",
       "pageName": DetailCardComponent
+    },
+    {
+      "name":"BreadCrumb Card",
+      "pageName": BreadcrumbsComponent
     }
 
   ];
