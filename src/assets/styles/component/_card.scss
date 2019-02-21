@@ -41,7 +41,7 @@
             font-stretch: normal;
             line-height: normal;
             color: $gray-800;
-            font-size: 14px;
+            font-size: $font-size-base;
           }
           .info{
             font-size: 12px;
@@ -56,12 +56,12 @@
             display: block;
             ion-label{
               margin-bottom: 1px;
-              font-size: 12px;
+              font-size: ($font-size-base - 2);
               color: $gray-200;
             }
             p{
               margin-top: 0;
-              font-size: 14px;
+              font-size: $font-size-base;
               font-weight: normal;
               font-style: normal;
               font-stretch: normal;
@@ -94,8 +94,7 @@
 
         &.offline{
             .img-container {
-                // margin: -16px 0 -16px -16px;
-                opacity: 0.5;
+              opacity: 0.5;
               display: flex;
               align-items: center;
             
@@ -105,7 +104,7 @@
 
               .icon{
                 margin: auto;
-                font-size: 24px;
+                font-size: ($font-size-base + 10);
                 color: $white-color;
               }
               .sb-card-details{
@@ -113,8 +112,6 @@
            
           }
             }
-
-
     }
 
 }
@@ -131,13 +128,14 @@
     .sb-card{
         @include margin(0); 
         border-radius: 2px 2px 0 0;
-        border-bottom: 0.5px solid rgba(151, 151, 151, 0.36);
+        border-bottom: 0.5px solid rgba(151, 151, 151, 0.75);
         box-shadow: none;  
         &:first-child{
             @include margin(0); 
         }
         &:last-child{
             border-bottom: none; 
+            @include margin(0); 
         }
     }
 }
@@ -169,7 +167,7 @@
         }
 
         .sb-card-details{
-          margin-bottom: -8px;
+          margin-bottom: -($base-block-space * 1);
 
           .info{
             @include margin(null, null, 4px, null);
@@ -181,18 +179,18 @@
           flex-direction: row-reverse;
           align-items: flex-end;
           .action-btn {
-            background: #024F9D;
+            background: $primary-color;
             border-radius: 0px !important;
             box-shadow: none;
-            height: 24px;
+            height: ($base-block-space * 3);
             border-top-left-radius: 4px !important;
             border-top-right-radius: 4px !important;
             text-transform: capitalize;
-            @include margin(0, 0, 0, 8px);
-            @include padding(null, 8);
+            @include margin(0, 0, 0, ($base-block-space * 1));
+            @include padding(null, ($base-block-space * 1));
 
             .button-inner {
-              font-size: 12px;
+              font-size: ($font-size-base - 2);
               line-height: 17px;
               font-weight: 100;
               font-style: normal;
@@ -202,7 +200,7 @@
               color:$white-color;
               
               ion-icon{
-                margin-right: 4px;
+                @include margin(0, 0, 0, ($base-block-space * 0.5));
               }
             }
 
