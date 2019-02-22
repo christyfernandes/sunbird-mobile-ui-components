@@ -33,7 +33,6 @@ import { ContentPlayerComponent } from './content-player/content-player';
 		RecentlyViewedViewAllComponent,
     BreadcrumbsComponent,
     InfoComponent,
-    InfoComponent,
     ContentPlayerComponent
 	],
 	imports: [
@@ -53,10 +52,9 @@ import { ContentPlayerComponent } from './content-player/content-player';
 		DetailCardComponent,
 		TextbookCardComponent,
 		RecentlyViewedViewAllComponent,
-    BreadcrumbsComponent,
-    InfoComponent,
-    InfoComponent,
-    ContentPlayerComponent
+        BreadcrumbsComponent,
+        InfoComponent,
+        ContentPlayerComponent
 	],
 	entryComponents: [
 		GradeFilterComponent,
