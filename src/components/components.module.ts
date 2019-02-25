@@ -13,6 +13,11 @@ import { ContentInfoComponent } from './content-info/content-info';
 import { DetailCardComponent } from './detail-card/detail-card';
 import { TextbookCardComponent } from '../components/textbook-card/textbook-card'
 import { RecentlyViewedViewAllComponent } from './recently-viewed-view-all/recently-viewed-view-all';
+import { BreadcrumbsComponent } from './breadcrumbs/breadcrumbs';
+import { InfoComponent } from './info/info';
+import { ContentPlayerComponent } from './content-player/content-player';
+import { SearchComponent } from './search/search';
+import { OfflineComponent } from './offline/offline';
 
 @NgModule({
 	declarations: [GradeFilterComponent,
@@ -27,7 +32,12 @@ import { RecentlyViewedViewAllComponent } from './recently-viewed-view-all/recen
 		ContentInfoComponent,
 		DetailCardComponent,
 		TextbookCardComponent,
-		RecentlyViewedViewAllComponent
+		RecentlyViewedViewAllComponent,
+    BreadcrumbsComponent,
+    InfoComponent,
+    ContentPlayerComponent,
+    SearchComponent,
+    OfflineComponent
 	],
 	imports: [
 		IonicPageModule,
@@ -45,7 +55,12 @@ import { RecentlyViewedViewAllComponent } from './recently-viewed-view-all/recen
 		ContentInfoComponent,
 		DetailCardComponent,
 		TextbookCardComponent,
-		RecentlyViewedViewAllComponent
+		RecentlyViewedViewAllComponent,
+        BreadcrumbsComponent,
+        InfoComponent,
+        ContentPlayerComponent,
+        SearchComponent,
+        OfflineComponent
 	],
 	entryComponents: [
 		GradeFilterComponent,
@@ -59,7 +74,11 @@ import { RecentlyViewedViewAllComponent } from './recently-viewed-view-all/recen
 		ContentInfoComponent,
 		DetailCardComponent,
 		TextbookCardComponent,
-		RecentlyViewedViewAllComponent
+		RecentlyViewedViewAllComponent,
+		BreadcrumbsComponent,
+		SearchComponent,
+		OfflineComponent
+
 	]
 })
 export class ComponentsModule { }
