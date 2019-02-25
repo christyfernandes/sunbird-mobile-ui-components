@@ -116,6 +116,7 @@
         }
 
         &.reverse{
+          padding: 8px 16px;
           grid-auto-flow: dense;
           grid-template-columns:auto ($base-block-space * 9)  ;
           &.full{
