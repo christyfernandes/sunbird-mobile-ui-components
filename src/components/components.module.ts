@@ -13,6 +13,9 @@ import { ContentInfoComponent } from './content-info/content-info';
 import { DetailCardComponent } from './detail-card/detail-card';
 import { TextbookCardComponent } from '../components/textbook-card/textbook-card'
 import { RecentlyViewedViewAllComponent } from './recently-viewed-view-all/recently-viewed-view-all';
+import { PopupsComponent } from './popups/popups';
+import { SbPopupComponent } from './sb-popup/sb-popup';
+import { ButtonsComponent } from './buttons/buttons';
 
 @NgModule({
 	declarations: [GradeFilterComponent,
@@ -27,7 +30,10 @@ import { RecentlyViewedViewAllComponent } from './recently-viewed-view-all/recen
 		ContentInfoComponent,
 		DetailCardComponent,
 		TextbookCardComponent,
-		RecentlyViewedViewAllComponent
+		RecentlyViewedViewAllComponent,
+    PopupsComponent,
+    SbPopupComponent,
+    ButtonsComponent
 	],
 	imports: [
 		IonicPageModule,
@@ -45,7 +51,10 @@ import { RecentlyViewedViewAllComponent } from './recently-viewed-view-all/recen
 		ContentInfoComponent,
 		DetailCardComponent,
 		TextbookCardComponent,
-		RecentlyViewedViewAllComponent
+		RecentlyViewedViewAllComponent,
+    PopupsComponent,
+    SbPopupComponent,
+    ButtonsComponent
 	],
 	entryComponents: [
 		GradeFilterComponent,
@@ -59,7 +68,10 @@ import { RecentlyViewedViewAllComponent } from './recently-viewed-view-all/recen
 		ContentInfoComponent,
 		DetailCardComponent,
 		TextbookCardComponent,
-		RecentlyViewedViewAllComponent
+		RecentlyViewedViewAllComponent,
+		PopupsComponent,
+		SbPopupComponent,
+		ButtonsComponent
 	]
 })
 export class ComponentsModule { }

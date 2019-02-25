@@ -25,8 +25,9 @@
                 line-height: 15px;
             }
         }
-          .sb-card-scroll-container{
+        .sb-card-scroll-container{
           overflow-x: auto;
+          padding: 0 0 8px 0;
         }
     }
 }

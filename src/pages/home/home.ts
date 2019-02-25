@@ -11,7 +11,8 @@ import { ContentInfoComponent } from '../../components/content-info/content-info
 import { DetailCardComponent } from '../../components/detail-card/detail-card';
 import { TextbookCardComponent } from '../../components/textbook-card/textbook-card';
 import { RecentlyViewedViewAllComponent } from '../../components/recently-viewed-view-all/recently-viewed-view-all';
-
+import { PopupsComponent } from '../../components/popups/popups';
+import { ButtonsComponent} from '../../components/buttons/buttons';
 @Component({
   selector: 'page-home',
   templateUrl: 'home.html'
@@ -62,6 +63,14 @@ export class HomePage {
     {
       "name":"Details Card",
       "pageName": DetailCardComponent
+    },
+    {
+      "name":"Popups",
+      "pageName": PopupsComponent
+    },
+    {
+      "name":"Buttons",
+      "pageName": ButtonsComponent
     }
 
   ];

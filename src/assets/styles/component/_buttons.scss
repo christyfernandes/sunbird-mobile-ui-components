@@ -1,31 +1,5 @@
 /* buttons sytle guide */
 
-.btn.rounded {
-    height: 24px;	
-    border-radius: 15px;	
-    background-color: #FFFFFF;	
-    box-shadow: 0 3px 4px 0 rgba(0,0,0,0.12);
-    color: #024F9D;
-    font-family: "Noto Sans";
-    font-size: 12px;
-    font-weight: normal;    	
-    letter-spacing: -0.4px;	
-    line-height: 15px;	
-    text-align: center;
-    padding: 4px 8px;
-    text-transform: capitalize
-
-};
-
-// Specificity overrides
-input[type="submit"],
-input[type="reset"],
-input[type="button"] {
-  &.btn-block {
-    width: 100%;
-  }
-}
-
 // base button styles
 .sb-btn {
     -webkit-tap-highlight-color: transparent;
@@ -33,20 +7,39 @@ input[type="button"] {
     user-select: none;
     outline: 0;
     display: inline-block;
-    margin-left: 0.25rem;
     border: 1px solid;
-    color: $primary-400;
+    font-weight: normal;    
+    color: $white-color;
     cursor:pointer;
-    margin:0px 0px 0px 8px;
+    @include margin(0,0,0, ($base-block-space * 1));
     background:$white-color;
     min-width:($base-block-space * 8);
-    line-height: normal;
-    @include border-radius(3px);
+    line-height: 17px;
+    @include border-radius(2px);
     text: {
         transform: capitalize;
         decoration: none;
     }
+    &.block{
+        display: block;
+        margin:8px ,8px;
+    }
 }
+
+.rounded {
+    height: 24px;	
+    border-radius: 15px;	
+    background-color: $white-color;	
+    box-shadow: 0 3px 4px 0 rgba(0,0,0,0.12);
+    color: $white-color;
+    font-family: "Noto Sans";
+    font-size: 12px;
+    font-weight: normal;    	
+    line-height: 15px;	
+    text-align: center;
+    padding: 4px 8px;
+    text-transform: capitalize
+};
 // button lin
 .sb-btn-link {
     background:none;
@@ -55,7 +48,6 @@ input[type="button"] {
     &:hover {
         font-weight:$font-weight-bold;
     }
-    
 }
 // button sizes
 .sb-btn-xs, .sb-btn-normal, .sb-btn-md {
@@ -100,32 +92,7 @@ input[type="button"] {
     border:1px solid $gray-100;
     cursor: not-allowed;
 }
-// default outline colored btns
-.sb-btn-outline-primary{
-    @include btn-theme-bgwhite($primary-color);
-} 
-.sb-btn-outline-secondary{
-    @include btn-theme-bgwhite($secondary-color);
-} 
-.sb-btn-outline-tertiary{
-    @include btn-theme-bgwhite($tertiary-color);
-}
-// status outline buttons
-.sb-btn-outline-info{
-    @include btn-theme-bgwhite($primary-color);
-} 
-.sb-btn-outline-success{
-    @include btn-theme-bgwhite($secondary-color);
-} 
-.sb-btn-outline-warning{
-    @include btn-theme-bgwhite($tertiary-color);
-}
-.sb-btn-outline-error{
-    @include btn-theme-bgwhite($red);
-} 
-.sb-btn-outline-gray{
-    @include btn-theme-bgwhite($gray-800);
-} 
+
 // default colored btns
 .sb-btn-primary{
     @include btn-theme($primary-color);
@@ -148,3 +115,20 @@ input[type="button"] {
 .sb-btn-error{
     @include btn-theme($danger-color);
 }
+
+//outline colored btns
+.sb-btn-outline-info{
+    @include btn-theme-bgwhite($primary-color);
+ }
+ .sb-btn-outline-success{
+    @include btn-theme-bgwhite($secondary-color);
+ }
+ .sb-btn-outline-warning{
+    @include btn-theme-bgwhite($tertiary-color);
+ }
+ .sb-btn-outline-error{
+    @include btn-theme-bgwhite($red);
+ }
+ .sb-btn-outline-gray{
+    @include btn-theme-bgwhite($gray-800);
+ }
