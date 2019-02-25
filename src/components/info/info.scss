@@ -32,29 +32,25 @@ info {
     @include margin(0,($base-block-space * 1),($base-block-space * 1), ($base-block-space * 1));
     @include padding($base-block-space * 1);
     .sb-content-info-heading{
-      min-height: 56px;
+      min-height: ($base-block-space * 7);
       color: #000000;
-      font-size: 14px;
-      letter-spacing: -0.4px;
-      line-height: ($base-block-space * 2);
+      font-size: ($font-size-base);
+      line-height: 17px;
       @include padding($base-block-space * 2);
     }
     .sb-info{
-      // padding:  8px 16px 8px 16px;
       @include padding(($base-block-space * 1),($base-block-space *2));
     }
     .sb-content-title{
         color: #A4A4A4;
-        font-size: 12px;
+        font-size: ($font-size-base  - 2);
         font-weight: bold;
-        letter-spacing: -0.4px;
-        line-height: ($base-block-space * 2);
+        line-height: 17px;
     }
     .sb-content-title-data{
         color: #000000;
-        font-size: 14px;
-        letter-spacing: -0.4px;
-        line-height: ($base-block-space * 2);
+        font-size: ($font-size-base);
+        line-height: 17px;
      }
   }
 

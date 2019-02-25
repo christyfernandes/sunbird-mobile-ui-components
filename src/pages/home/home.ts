@@ -12,6 +12,8 @@ import { DetailCardComponent } from '../../components/detail-card/detail-card';
 import { TextbookCardComponent } from '../../components/textbook-card/textbook-card';
 import { RecentlyViewedViewAllComponent } from '../../components/recently-viewed-view-all/recently-viewed-view-all';
 import { BreadcrumbsComponent } from '../../components/breadcrumbs/breadcrumbs';
+import { SearchComponent } from '../../components/search/search';
+import { OfflineComponent } from '../../components/offline/offline';
 
 @Component({
   selector: 'page-home',
@@ -67,6 +69,14 @@ export class HomePage {
     {
       "name":"BreadCrumb Card",
       "pageName": BreadcrumbsComponent
+    },
+    {
+      "name":"Search Card",
+      "pageName": SearchComponent
+    },
+    {
+      "name":"Offline Component",
+      "pageName": OfflineComponent
     }
 
   ];

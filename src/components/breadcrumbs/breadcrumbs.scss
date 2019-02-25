@@ -4,12 +4,6 @@ breadcrumbs {
   
   /* breadcrumb */
 
- 
-  $stepColor: #f9f9f9;
-  $stepColorHover: #f2f2f2;
-  $stepColorCompleted: #f2f2f2;
-  $textColor:  #024F9D;;
-  $textColorCompleted: #000000;
   
   
   .step-indicator {
@@ -20,23 +14,22 @@ breadcrumbs {
     width:100%;
     display: inline-flex;
     align-items: center;
-    height:64px;
-    padding:16px 8px 16px 8px;
+    height:($base-block-space * 8);
+    @include padding(($base-block-space * 2),($base-block-space));
   }
   
   .step {
     display: block;
     float: left;
-    background: $stepColor;
-    padding-right: 10px;
-    height: 24px;
-    padding-top: 4px;
-    font-size: 12px;
+    background: $light-grey;
+    @include padding(($base-block-space * 0.5),($base-block-space),0,0);
+    height: ($base-block-space * 3);
+    font-size: ($font-size-base - 2);
     line-height: 17px;
-    margin-right: 33px;
+    @include margin(0,($base-block-space * 4),0,0);
     position: relative;
     text-decoration: none;
-    color: $textColor;
+    color: $primary-color;
     cursor: default;
     white-space: nowrap;
       
@@ -47,9 +40,9 @@ breadcrumbs {
       height: 0;
       position: absolute;
       top: 0;
-      left: -24px;
+      left: -($base-block-space * 3);
       border: 12px solid transparent;
-      border-color: #EDF4F9;
+      border-color: $light-blue;
       border-left-color: transparent;
     }
       
@@ -62,7 +55,7 @@ breadcrumbs {
       top: 0;
       right: -24px;
       border: 12px solid transparent;
-      border-left-color: $stepColor;
+      border-left-color: $light-grey;
     }
       
     &:first-of-type {
@@ -76,44 +69,43 @@ breadcrumbs {
       
     &:last-of-type {
       border-radius: 0 2px 2px 0;
-      margin-right: 25px;
-      padding-right: 15px;
-      background-color: #EDF4F9;  
+      @include margin(0,($base-block-space * 3),0,0);
+      background-color: $light-blue;  
       &:after {
         display: none;
-        background-color: #EDF4F9;
+        background-color: $light-blue;
       }
     }
   
     &.completed {
-      background: $stepColorCompleted;
-      color: $textColorCompleted;
+      background: $light-grey;
+      color: $black-color;
       cursor: pointer;
       
   
       &:before {
-        border-color: $stepColorCompleted;
+        border-color: $light-grey;
         border-left-color: transparent;
         
       }
   
       &:after {
-        border-left-color: $stepColorCompleted;
+        border-left-color: $light-grey;
       }
   
       &:hover {
-        background: $stepColorHover;
-        border-color: $stepColorHover;
-        color: $textColorCompleted;
+        background: $light-blue;
+        border-color: $light-blue;
+        color: $primary-color;
         text-decoration: none;
           
         &:before {
-          border-color: $stepColorHover;
+          border-color: $light-blue;
           border-left-color: transparent;
         }
             
         &:after {
-          border-left-color: $stepColorHover;
+          border-left-color: $light-blue;
         }
       }
     }

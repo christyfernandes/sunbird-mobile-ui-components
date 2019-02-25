@@ -16,6 +16,8 @@ import { RecentlyViewedViewAllComponent } from './recently-viewed-view-all/recen
 import { BreadcrumbsComponent } from './breadcrumbs/breadcrumbs';
 import { InfoComponent } from './info/info';
 import { ContentPlayerComponent } from './content-player/content-player';
+import { SearchComponent } from './search/search';
+import { OfflineComponent } from './offline/offline';
 
 @NgModule({
 	declarations: [GradeFilterComponent,
@@ -33,7 +35,9 @@ import { ContentPlayerComponent } from './content-player/content-player';
 		RecentlyViewedViewAllComponent,
     BreadcrumbsComponent,
     InfoComponent,
-    ContentPlayerComponent
+    ContentPlayerComponent,
+    SearchComponent,
+    OfflineComponent
 	],
 	imports: [
 		IonicPageModule,
@@ -54,7 +58,9 @@ import { ContentPlayerComponent } from './content-player/content-player';
 		RecentlyViewedViewAllComponent,
         BreadcrumbsComponent,
         InfoComponent,
-        ContentPlayerComponent
+        ContentPlayerComponent,
+        SearchComponent,
+        OfflineComponent
 	],
 	entryComponents: [
 		GradeFilterComponent,
@@ -69,7 +75,10 @@ import { ContentPlayerComponent } from './content-player/content-player';
 		DetailCardComponent,
 		TextbookCardComponent,
 		RecentlyViewedViewAllComponent,
-		BreadcrumbsComponent
+		BreadcrumbsComponent,
+		SearchComponent,
+		OfflineComponent
+
 	]
 })
 export class ComponentsModule { }

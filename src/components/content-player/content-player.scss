@@ -17,7 +17,7 @@ content-player {
       position: absolute;
       top: 16px;
       left: 16px;
-      height:24px;
+      height:($base-block-space * 3);
       width:24px;
       background-color: #fff;
       border-radius: 50%
@@ -33,28 +33,36 @@ content-player {
       }
       .sb-common-title{
         .sb-common-white-icon{
-          font-size : 40px;
+          font-size: (($font-size-base * 3) - 2) ;
           color: #ffffff;
         } 
       }
       .sb-offline-title {
        @include padding ($base-block-space);
         .sb-offline-white-icon{
-          font-size : 24px;
+          font-size :  (($font-size-base * 2) - 4);
           color: #ffffff;
         } 
       }  
       .sb-common-footer-text {
         color : #ffffff;
         font-weight: 500;
-        font-size: 12px;
+        font-size: ($font-size-base  - 2);
         text-align: center;
         text-transform: initial;
       }  
-      .sb-common-footer-text.sb-sub-footer
-          {
-            font-size:10px;
-          }
+      .sb-common-footer-text.sb-sub-footer{
+         font-size:($font-size-base  - 4);
+      }  
     }
-  
+    .sb-online-message
+    {
+      top: 90%;
+      position: relative;
+      background-color: #00BA75;
+      height: ($base-block-space * 3);
+      color: white;
+      text-align: center;
+      font-size: ($font-size-base  - 2);   
+    }
   }
