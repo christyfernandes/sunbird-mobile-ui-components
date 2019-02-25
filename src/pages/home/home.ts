@@ -69,6 +69,14 @@ export class HomePage {
       "pageName": DetailCardComponent
     },
     {
+      "name":"Popups",
+      "pageName": PopupsComponent
+    },
+    {
+      "name":"Buttons",
+      "pageName": ButtonsComponent
+    },
+    {
       "name":"BreadCrumb Card",
       "pageName": BreadcrumbsComponent
     },
