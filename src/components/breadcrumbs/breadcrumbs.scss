@@ -1,0 +1,112 @@
+breadcrumbs {
+
+}
+  
+  /* breadcrumb */
+
+  
+  
+  .step-indicator {
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    overflow-x:auto;
+    width:100%;
+    display: inline-flex;
+    align-items: center;
+    height:($base-block-space * 8);
+    @include padding(($base-block-space * 2),($base-block-space));
+  }
+  
+  .step {
+    display: block;
+    float: left;
+    background: $light-grey;
+    @include padding(($base-block-space * 0.5),($base-block-space),0,0);
+    height: ($base-block-space * 3);
+    font-size: ($font-size-base - 2);
+    line-height: 17px;
+    @include margin(0,($base-block-space * 4),0,0);
+    position: relative;
+    text-decoration: none;
+    color: $primary-color;
+    cursor: default;
+    white-space: nowrap;
+      
+    &:before {
+      content: "";
+      display: block;
+      width: 0;
+      height: 0;
+      position: absolute;
+      top: 0;
+      left: -($base-block-space * 3);
+      border: 12px solid transparent;
+      border-color: $light-blue;
+      border-left-color: transparent;
+    }
+      
+    &:after {
+      content: "";
+      display: block;
+      width: 0;
+      height: 0;
+      position: absolute;
+      top: 0;
+      right: -24px;
+      border: 12px solid transparent;
+      border-left-color: $light-grey;
+    }
+      
+    &:first-of-type {
+      border-radius: 2px 0 0 2px;
+      padding-left: 15px;
+      
+      &:before {
+        display: none;
+      }
+    }
+      
+    &:last-of-type {
+      border-radius: 0 2px 2px 0;
+      @include margin(0,($base-block-space * 3),0,0);
+      background-color: $light-blue;  
+      &:after {
+        display: none;
+        background-color: $light-blue;
+      }
+    }
+  
+    &.completed {
+      background: $light-grey;
+      color: $black-color;
+      cursor: pointer;
+      
+  
+      &:before {
+        border-color: $light-grey;
+        border-left-color: transparent;
+        
+      }
+  
+      &:after {
+        border-left-color: $light-grey;
+      }
+  
+      &:hover {
+        background: $light-blue;
+        border-color: $light-blue;
+        color: $primary-color;
+        text-decoration: none;
+          
+        &:before {
+          border-color: $light-blue;
+          border-left-color: transparent;
+        }
+            
+        &:after {
+          border-left-color: $light-blue;
+        }
+      }
+    }
+  }

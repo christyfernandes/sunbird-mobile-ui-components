@@ -16,6 +16,11 @@ import { RecentlyViewedViewAllComponent } from './recently-viewed-view-all/recen
 import { PopupsComponent } from './popups/popups';
 import { SbPopupComponent } from './sb-popup/sb-popup';
 import { ButtonsComponent } from './buttons/buttons';
+import { BreadcrumbsComponent } from './breadcrumbs/breadcrumbs';
+import { InfoComponent } from './info/info';
+import { ContentPlayerComponent } from './content-player/content-player';
+import { SearchComponent } from './search/search';
+import { OfflineComponent } from './offline/offline';
 
 @NgModule({
 	declarations: [GradeFilterComponent,
@@ -31,9 +36,14 @@ import { ButtonsComponent } from './buttons/buttons';
 		DetailCardComponent,
 		TextbookCardComponent,
 		RecentlyViewedViewAllComponent,
-    PopupsComponent,
-    SbPopupComponent,
-    ButtonsComponent
+		PopupsComponent,
+		SbPopupComponent,
+		ButtonsComponent,
+		BreadcrumbsComponent,
+		InfoComponent,
+		ContentPlayerComponent,
+		SearchComponent,
+		OfflineComponent
 	],
 	imports: [
 		IonicPageModule,
@@ -52,9 +62,14 @@ import { ButtonsComponent } from './buttons/buttons';
 		DetailCardComponent,
 		TextbookCardComponent,
 		RecentlyViewedViewAllComponent,
-    PopupsComponent,
-    SbPopupComponent,
-    ButtonsComponent
+		PopupsComponent,
+		SbPopupComponent,
+		ButtonsComponent,
+		BreadcrumbsComponent,
+		InfoComponent,
+		ContentPlayerComponent,
+		SearchComponent,
+		OfflineComponent
 	],
 	entryComponents: [
 		GradeFilterComponent,
@@ -71,7 +86,11 @@ import { ButtonsComponent } from './buttons/buttons';
 		RecentlyViewedViewAllComponent,
 		PopupsComponent,
 		SbPopupComponent,
-		ButtonsComponent
+		ButtonsComponent,
+		BreadcrumbsComponent,
+		SearchComponent,
+		OfflineComponent
+
 	]
 })
 export class ComponentsModule { }

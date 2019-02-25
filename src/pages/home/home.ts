@@ -13,6 +13,10 @@ import { TextbookCardComponent } from '../../components/textbook-card/textbook-c
 import { RecentlyViewedViewAllComponent } from '../../components/recently-viewed-view-all/recently-viewed-view-all';
 import { PopupsComponent } from '../../components/popups/popups';
 import { ButtonsComponent} from '../../components/buttons/buttons';
+import { BreadcrumbsComponent } from '../../components/breadcrumbs/breadcrumbs';
+import { SearchComponent } from '../../components/search/search';
+import { OfflineComponent } from '../../components/offline/offline';
+
 @Component({
   selector: 'page-home',
   templateUrl: 'home.html'
@@ -65,12 +69,16 @@ export class HomePage {
       "pageName": DetailCardComponent
     },
     {
-      "name":"Popups",
-      "pageName": PopupsComponent
+      "name":"BreadCrumb Card",
+      "pageName": BreadcrumbsComponent
     },
     {
-      "name":"Buttons",
-      "pageName": ButtonsComponent
+      "name":"Search Card",
+      "pageName": SearchComponent
+    },
+    {
+      "name":"Offline Component",
+      "pageName": OfflineComponent
     }
 
   ];

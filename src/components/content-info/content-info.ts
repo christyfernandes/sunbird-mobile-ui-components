@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { BreadcrumbsComponent } from '../breadcrumbs/breadcrumbs'
 
 /**
  * Generated class for the ContentInfoComponent component.
