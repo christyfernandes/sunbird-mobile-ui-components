@@ -16,6 +16,9 @@
                 transform: scaleX(-1);
                 @include margin(0, ($base-block-space * 1), 0, 0);
                 color: $tertiary-color;
+                ion-icon{
+                    font-size: 19px;
+                }
             }
             .textbook-title {
                 height: ($base-block-space * 3);	

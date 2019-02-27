@@ -61,7 +61,7 @@
 //primary button style
 .sb-btn-normal {
     height:($base-block-space * 4);
-    font-size:$font-size-sm;
+    font-size:$font-size-base;
 }
 .sb-btn-sm {
     height: ($base-block-space * 3);
@@ -96,24 +96,46 @@
 // default colored btns
 .sb-btn-primary{
     @include btn-theme($primary-color);
+
+    &:hover, &:active{
+        background-color: ($primary-800);
+    }
 } 
 .sb-btn-secondary{
     @include btn-theme($secondary-color);
+    &:hover, &:active{
+        background-color: ($secondary-400);
+    }
 }
 .sb-btn-tertiary{
     @include btn-theme($tertiary-color);
+    &:hover, &:active{
+        background-color: ($tertiary-400);
+    }
 }
 .sb-btn-success{
     @include btn-theme($success-color);
+    &:hover, &:active{
+        background-color: ($secondary-400);
+    }
 } 
 .sb-btn-info{
     @include btn-theme($info-color);
+    &:hover, &:active{
+        background-color: ($primary-800);
+    }
 }
 .sb-btn-warning{
     @include btn-theme($warning-color);
+    &:hover, &:active{
+        background-color: ($tertiary-400);
+    }
 } 
 .sb-btn-error{
     @include btn-theme($danger-color);
+    &:hover, &:active{
+        background-color: ($red-100);
+    }
 }
 
 //outline colored btns
@@ -127,7 +149,7 @@
     @include btn-theme-bgwhite($tertiary-color);
  }
  .sb-btn-outline-error{
-    @include btn-theme-bgwhite($red);
+    @include btn-theme-bgwhite($red-400);
  }
  .sb-btn-outline-gray{
     @include btn-theme-bgwhite($gray-800);

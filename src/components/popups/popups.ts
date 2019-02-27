@@ -39,7 +39,20 @@ export class PopupsComponent {
 
   
 openPopupDanger(event){
-  const popover = this.popoverCtrl.create(SbPopupComponent, {}, {
+  const popover = this.popoverCtrl.create(SbPopupComponent, {
+    actionsButtons:[
+      {
+        btntext: "add",
+        btnClass: 'btn btn-danger'
+      },
+      {
+        btntext: "download",
+        btnClass: 'btn btn-info'
+      }
+    ],
+    metaInfo:"",
+    sbPopoverContent:""
+  }, {
       cssClass: 'sb-popover danger',
       
     });
@@ -51,7 +64,24 @@ openPopupDanger(event){
     });
 }
 openPopupWarning(event){
-  const popover = this.popoverCtrl.create(SbPopupComponent, {}, {
+  const popover = this.popoverCtrl.create(SbPopupComponent, {
+    actionsButtons:[
+      {
+        btntext: "add",
+        btnClass: 'btn btn-danger'
+      },
+      {
+        btntext: "download",
+        btnClass: 'btn btn-info'
+      }
+    ],
+    icon:{
+      name:"",
+      className:""
+    },
+    metaInfo:"",
+    sbPopoverContent:""
+  }, {
       cssClass: 'sb-popover warning',
       
     });
