@@ -18,11 +18,9 @@ detail-card {
           height: ($base-block-space * 9);
           overflow:hidden;
         }
-      }
-      .left {
-        display: flex;
-        flex-direction: column;
         .sb-rating-view {
+          @include margin(0,0,0,$base-block-space);
+          @include padding($base-block-space);
           .sb-rating-value {
             font-weight: bold;
             font-size: $font-size-base;
@@ -32,12 +30,17 @@ detail-card {
             color: #f8e71c;
           }
         }
+      }
+      .left {
+        display: flex;
+        flex-direction: column;
+        
         .sb-dt-title {
           width:100%;
           overflow:hidden;
           text-overflow: ellipsis;
           display: -webkit-box;
-          -webkit-line-clamp: 1;
+          -webkit-line-clamp: 2;
           -webkit-box-orient: vertical;
           @include margin(($base-block-space * 0.5),0);
           font-weight: bold;
