@@ -20,9 +20,7 @@
     ion-label {
         display: flex;
         align-items: center;
-    }
-    ion-icon{
-        vertical-align: -webkit-baseline-middle;
+        margin: 24px 0 0 0;
     }
     .img-container{
         height:32px;
@@ -52,8 +50,8 @@
 
         .sb-menu-icon
         {
-            width : ($base-block-space * 4);
-            height: ($base-block-space * 4);
+            width : ($base-block-space * 3);
+            height: ($base-block-space * 3);
             align-items: center;
         }
       
@@ -72,6 +70,7 @@
           font-size:(($font-size-base * 2) - 4);
         }
         .sb-menu-item{
+            @include margin(0,0,0,$base-block-space); 
         }
       }
     }
@@ -84,7 +83,10 @@
       font-style: normal;
       font-stretch: normal;
       line-height: normal;
-      color: #ADADAD;;
+      color: #ADADAD;
+      height: 56px;
+      align-items: center;
+      display: flex;
     }
     
   }
