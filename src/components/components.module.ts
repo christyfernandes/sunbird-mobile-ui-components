@@ -21,6 +21,7 @@ import { InfoComponent } from './info/info';
 import { ContentPlayerComponent } from './content-player/content-player';
 import { SearchComponent } from './search/search';
 import { OfflineComponent } from './offline/offline';
+import { SideMenuComponent } from './side-menu/side-menu';
 
 @NgModule({
 	declarations: [GradeFilterComponent,
@@ -43,7 +44,8 @@ import { OfflineComponent } from './offline/offline';
 		InfoComponent,
 		ContentPlayerComponent,
 		SearchComponent,
-		OfflineComponent
+		OfflineComponent,
+    SideMenuComponent
 	],
 	imports: [
 		IonicPageModule,
@@ -69,7 +71,8 @@ import { OfflineComponent } from './offline/offline';
 		InfoComponent,
 		ContentPlayerComponent,
 		SearchComponent,
-		OfflineComponent
+		OfflineComponent,
+    SideMenuComponent
 	],
 	entryComponents: [
 		GradeFilterComponent,
@@ -89,7 +92,8 @@ import { OfflineComponent } from './offline/offline';
 		ButtonsComponent,
 		BreadcrumbsComponent,
 		SearchComponent,
-		OfflineComponent
+		OfflineComponent,
+		SideMenuComponent
 
 	]
 })

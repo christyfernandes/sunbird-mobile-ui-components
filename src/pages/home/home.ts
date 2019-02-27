@@ -16,6 +16,7 @@ import { ButtonsComponent} from '../../components/buttons/buttons';
 import { BreadcrumbsComponent } from '../../components/breadcrumbs/breadcrumbs';
 import { SearchComponent } from '../../components/search/search';
 import { OfflineComponent } from '../../components/offline/offline';
+import { SideMenuComponent } from '../../components/side-menu/side-menu';
 
 @Component({
   selector: 'page-home',
@@ -87,6 +88,10 @@ export class HomePage {
     {
       "name":"Offline Component",
       "pageName": OfflineComponent
+    },
+    {
+      "name":"Side Menu Componet",
+      "pageName": SideMenuComponent
     }
 
   ];
