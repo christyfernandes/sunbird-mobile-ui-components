@@ -2,7 +2,8 @@ import { Component } from '@angular/core';
 import {
   PopoverController
 } from 'ionic-angular';
-import {SbPopupComponent} from '../sb-popup/sb-popup'
+import {SbPopupComponent} from '../sb-popup/sb-popup';
+import { SbDownloadPopupComponent } from '../sb-download-popup/sb-download-popup';
 
 /**
  * Generated class for the PopupsComponent component.
@@ -159,6 +160,19 @@ openNoBnadWidthPopup(){
     });
     popover.onDidDismiss((canDownload: boolean = false) => {
      console.log('dismissed');
+    });
+}
+
+openDownloadPopup() {
+    const popover = this.popoverCtrl.create(SbDownloadPopupComponent, {}, {
+      cssClass: 'sb-popover sb-popover-download  info',
+      
+    });
+    popover.present({
+      ev: event
+    });
+    popover.onDidDismiss((canDownload: boolean = false) => {
+    console.log('dismissed');
     });
 }
 

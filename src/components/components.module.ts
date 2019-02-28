@@ -22,6 +22,7 @@ import { ContentPlayerComponent } from './content-player/content-player';
 import { SearchComponent } from './search/search';
 import { OfflineComponent } from './offline/offline';
 import { SideMenuComponent } from './side-menu/side-menu';
+import { SbDownloadPopupComponent } from './sb-download-popup/sb-download-popup';
 
 @NgModule({
 	declarations: [GradeFilterComponent,
@@ -45,7 +46,8 @@ import { SideMenuComponent } from './side-menu/side-menu';
 		ContentPlayerComponent,
 		SearchComponent,
 		OfflineComponent,
-    SideMenuComponent
+    SideMenuComponent,
+    SbDownloadPopupComponent
 	],
 	imports: [
 		IonicPageModule,
@@ -73,7 +75,8 @@ import { SideMenuComponent } from './side-menu/side-menu';
 		ContentPlayerComponent,
 		SearchComponent,
 		OfflineComponent,
-    SideMenuComponent
+    SideMenuComponent,
+    SbDownloadPopupComponent
 	],
 	entryComponents: [
 		GradeFilterComponent,
@@ -94,7 +97,8 @@ import { SideMenuComponent } from './side-menu/side-menu';
 		BreadcrumbsComponent,
 		SearchComponent,
 		OfflineComponent,
-		SideMenuComponent
+		SideMenuComponent,
+		SbDownloadPopupComponent
 
 	]
 })
