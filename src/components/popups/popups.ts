@@ -25,7 +25,19 @@ export class PopupsComponent {
 
 
   openPopupInfo(event) {
-    const popover = this.popoverCtrl.create(SbPopupComponent, {}, {
+    const popover = this.popoverCtrl.create(SbPopupComponent, {
+      sbPopoverHeading:"Download",
+      sbPopoverMainTitle:"Great Thinkers and their new religions",
+      actionsButtons:[
+        {
+          btntext: "Download",
+          btnClass: 'popover-color'
+        },
+      ],
+      icon: null,
+      metaInfo:"1 item (20 MB)",
+      sbPopoverContent:"Some content might not be playable offline."
+    }, {
       cssClass: 'sb-popover info',
       
     });
@@ -40,18 +52,17 @@ export class PopupsComponent {
   
 openPopupDanger(event){
   const popover = this.popoverCtrl.create(SbPopupComponent, {
+    sbPopoverHeading:"Delete",
+    sbPopoverMainTitle:"Social Science Term 1",
     actionsButtons:[
       {
-        btntext: "add",
-        btnClass: 'btn btn-danger'
+        btntext: "Delete",
+        btnClass: 'popover-color'
       },
-      {
-        btntext: "download",
-        btnClass: 'btn btn-info'
-      }
     ],
-    metaInfo:"",
-    sbPopoverContent:""
+    icon: null,
+    metaInfo:"30 items (200 MB)",
+    sbPopoverContent:"Are you sure you want to delete ?"
   }, {
       cssClass: 'sb-popover danger',
       
@@ -65,22 +76,80 @@ openPopupDanger(event){
 }
 openPopupWarning(event){
   const popover = this.popoverCtrl.create(SbPopupComponent, {
+    sbPopoverHeading:"Coming Soon",
+    sbPopoverMainTitle:"Content coming soon",
     actionsButtons:[
       {
-        btntext: "add",
-        btnClass: 'btn btn-danger'
-      },
-      {
-        btntext: "download",
-        btnClass: 'btn btn-info'
+        btntext: "Interested",
+        btnClass: 'popover-color'
       }
     ],
     icon:{
-      name:"",
+      md:"md-alert",
+      ios:"ios-alert",
       className:""
     },
     metaInfo:"",
-    sbPopoverContent:""
+    sbPopoverContent:"Let us know if you are interested in this content"
+  }, {
+      cssClass: 'sb-popover warning',
+      
+    });
+    popover.present({
+      ev: event
+    });
+    popover.onDidDismiss((canDownload: boolean = false) => {
+     console.log('dismissed');
+    });
+}
+
+openNoInternetPopup() {
+  const popover = this.popoverCtrl.create(SbPopupComponent, {
+    sbPopoverHeading:"No connection",
+    sbPopoverMainTitle:"No internet connection",
+    actionsButtons:[
+      
+    ],
+    icon:{
+      md:"md-notifications-off",
+      ios:"ios-notifications-off",
+      className:""
+    },
+    metaInfo:"",
+    sbPopoverContent:"Add this content to your download queue, once connection resumes ?"
+  }, {
+      cssClass: 'sb-popover warning',
+      
+    });
+    popover.present({
+      ev: event
+    });
+    popover.onDidDismiss((canDownload: boolean = false) => {
+     console.log('dismissed');
+    });
+}
+
+openNoBnadWidthPopup(){
+  const popover = this.popoverCtrl.create(SbPopupComponent, {
+    sbPopoverHeading:"Low bandwidth",
+    sbPopoverMainTitle:"Low bandwidth network detected",
+    actionsButtons:[
+      {
+        btntext: "Play Onlilne",
+        btnClass: 'popover-color'
+      },
+      {
+        btntext: "Download",
+        btnClass: 'sb-btn sb-btn-normal sb-btn-info'
+      }
+    ],
+    icon:{
+      md:"md-sad",
+      ios:"ios-sad",
+      className:""
+    },
+    metaInfo:"",
+    sbPopoverContent:"Consider downloading the content"
   }, {
       cssClass: 'sb-popover warning',
       

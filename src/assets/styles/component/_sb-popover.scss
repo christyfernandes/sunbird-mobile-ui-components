@@ -25,6 +25,7 @@
         transform-origin: bottom -100% !important;
         transform: translateY(0) !important;
         overflow-y: hidden;
+        border-radius: 4px 4px 0 0;
         //background-color: $info-color;  
     }
 
@@ -32,9 +33,14 @@
     .sb-popover-header {
         border-radius: 4px 4px 0 0;
         background-color: $info-color;  
+        &::after{
+            background-image: none;
+        }
         .sb-popover-toolbar {
             min-height: 40px;
             max-height: 40px;
+            background-color: $info-color; 
+            border-radius: 4px 4px 0 0;
             @include padding(($base-block-space * 0.5), ($base-block-space * 1));
             .toolbar-background {
                 border-radius: 4px 4px 0 0;
@@ -85,6 +91,7 @@
                     color: $gray-800;	
                     font-size: 14px;	
                     @include margin(0,0,($base-block-space * 1) ,0);
+                    font-weight: 500;
 
                     .meta-info {
                         color: $gray-200;	
@@ -162,9 +169,9 @@
 
 .sb-popover.warning{
     .sb-popover-header {
-        background-color: $warning-color; 
+        background-color: $tertiary-color; 
         .sb-popover-toolbar .toolbar-background {
-            background-color: $warning-color;   
+            background-color: $tertiary-color;   
         } 
     }
     .popover-content {
@@ -174,12 +181,12 @@
             .icon-container{
                 ion-icon {
                     font-size: ($font-size-base * 2)+2;
-                    color: $warning-color
+                    color: $tertiary-color
                 }
             }
         }
     }
     .sb-popover-footer .sb-popover-action-btn.popover-color{
-        background-color: $warning-color;
+        background-color: $tertiary-color;
     }
 }

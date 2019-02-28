@@ -49,7 +49,8 @@ import { SideMenuComponent } from './side-menu/side-menu';
 	],
 	imports: [
 		IonicPageModule,
-		IonicModule
+		IonicModule,
+		BrowserModule
 	],
 	exports: [GradeFilterComponent,
 		LibraryFilterPage,

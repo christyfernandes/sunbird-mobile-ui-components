@@ -20,7 +20,7 @@
     ion-label {
         display: flex;
         align-items: center;
-        margin: 24px 0 0 0;
+        margin: 0px 0px 0px 0;
     }
     .img-container{
         height:32px;
@@ -58,10 +58,8 @@
       .item {
         color: $primary-color;
         font-size: $font-size-base;
-        font-weight: normal;
-        font-style: normal;
-        font-stretch: normal;
         line-height: normal;
+        min-height: ($base-block-space * 6);
         @include margin (0,$base-block-space,0,0);
         .item-inner {
           border-bottom: 0;

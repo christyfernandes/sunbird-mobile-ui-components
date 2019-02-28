@@ -32,3 +32,8 @@
 .flex-w-wrap {
   flex-wrap: wrap !important;
 }
+
+.d-flex-col{
+  display: flex !important;
+  flex-direction: column;
+}

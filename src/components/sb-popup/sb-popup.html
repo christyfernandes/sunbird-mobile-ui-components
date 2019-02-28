@@ -1,50 +1,25 @@
 <ion-header class="sb-popover-header">
   <ion-toolbar class="sb-popover-toolbar">
-    <ion-title class="sb-popover-title">Delete
+    <ion-title class="sb-popover-title">{{sbPopoverHeading}}
         <ion-icon name="close" class="sb-modal-close" (click)="closePopover()"></ion-icon> </ion-title>
-    <!-- <ion-buttons end>
-      <button ion-button clear class="sb-popover-close-btn" (click)="closePopover()">
-        <ion-icon name="close"></ion-icon>
-      </button>
-    </ion-buttons> -->
   </ion-toolbar>
 </ion-header>
-
-<!-- <ion-content no-padding class="sb-popover-content">
-  <div class="sb-popover-items">
-      <div class="icon-container">
-          <ion-icon ios="ios-alert" md="md-alert"></ion-icon>
-      </div>
-      <div class="content-details">
-        <div class="main-title">
-          Content Coming Soon
-        </div>
-        <div class="description">
-            Let us know if you are interested in this content
-        </div>
-      </div>
-
-      <div class="sb-popover-footer">
-          <button ion-button  class="sb-popover-action-btn popover-color"> Interested </button>
-      </div>
-  </div>
-</ion-content> -->
 
 <ion-content no-padding class="sb-popover-container">
     <div class="sb-popover-items">
         <div class="icon-container">
-          <ion-icon ios="ios-alert" md="md-alert"></ion-icon>
+          <ion-icon ios="{{icon?.ios}}" md="{{icon?.md}}"></ion-icon>
         </div>
 
         <div class="sb-popover-content-details">
           <div class="main-title">
-            Content Coming Soon
+            {{sbPopoverMainTitle}}
             <div class="meta-info">
-              30 items (200 MB)
+              {{metaInfo}}
             </div>
           </div>
           <div class="sb-popover-content">
-            Let us know if you are interested in this content
+            {{sbPopoverContent}}
           </div>
         </div>
     </div>
@@ -52,7 +27,6 @@
 
 <ion-footer>
   <div class="sb-popover-footer">
-    <button ion-button class="sb-popover-action-btn popover-color"> Interested </button>
-    <button ion-button class="sb-btn sb-btn-normal sb-btn-info" >Download </button>
+    <button ion-button class="sb-popover-action-btn " [ngClass]="btn.btnClass" *ngFor="let btn of actionsButtons"> {{btn.btntext }}</button>
   </div>
 </ion-footer>
