@@ -3,6 +3,7 @@ import {
   PopoverController
 } from 'ionic-angular';
 import {SbPopupComponent} from '../sb-popup/sb-popup'
+import { SbRatingComponent } from '../sb-rating/sb-rating';
 
 /**
  * Generated class for the PopupsComponent component.
@@ -160,6 +161,33 @@ openNoBnadWidthPopup(){
     popover.onDidDismiss((canDownload: boolean = false) => {
      console.log('dismissed');
     });
+}
+
+openPopupRating(event)
+{
+  const popover = this.popoverCtrl.create(SbRatingComponent, {
+    // sbPopoverHeading:"Rate the content",
+    // actionsButtons:[
+    //   {
+    //     btntext: "Rate",
+    //     btnClass: 'popover-color'
+    //   },
+    // ],
+    // icon: {md:"md-sad",
+    // ios:"ios-sad",
+    // className:""},
+    // metaInfo:"You have rated 3 stars",
+   // sbPopoverContent:"Some content might not be playable offline."
+  }, {
+    cssClass: 'sb-popover info',
+    
+  });
+  popover.present({
+    ev: event
+  });
+  popover.onDidDismiss((canDownload: boolean = false) => {
+   console.log('dismissed');
+  });
 }
 
 }

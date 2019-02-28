@@ -27,7 +27,7 @@
         }
         .sb-card-scroll-container{
           overflow-x: auto;
-          padding: 0 0 8px 0;
+          @include padding(0,0,$base-block-space,0);
         }
     }
 }

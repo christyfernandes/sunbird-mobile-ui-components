@@ -66,20 +66,12 @@ export class HomePage {
       "pageName": ContentInfoComponent
     },
     {
-      "name":"Details Card",
-      "pageName": DetailCardComponent
-    },
-    {
       "name":"Popups",
       "pageName": PopupsComponent
     },
     {
       "name":"Buttons",
       "pageName": ButtonsComponent
-    },
-    {
-      "name":"BreadCrumb Card",
-      "pageName": BreadcrumbsComponent
     },
     {
       "name":"Search Card",
