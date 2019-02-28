@@ -24,6 +24,7 @@ import { OfflineComponent } from './offline/offline';
 import { SideMenuComponent } from './side-menu/side-menu';
 import { Ionic2RatingModule } from 'ionic2-rating';
 import { SbRatingComponent } from './sb-rating/sb-rating';
+import { SbDownloadPopupComponent } from './sb-download-popup/sb-download-popup';
 
 @NgModule({
 	declarations: [GradeFilterComponent,
@@ -49,6 +50,8 @@ import { SbRatingComponent } from './sb-rating/sb-rating';
 		OfflineComponent,
 	SideMenuComponent,
     SbRatingComponent,
+    SideMenuComponent,
+    SbDownloadPopupComponent
 	],
 	imports: [
 		IonicPageModule,
@@ -78,7 +81,8 @@ import { SbRatingComponent } from './sb-rating/sb-rating';
 		SearchComponent,
 		OfflineComponent,
     SideMenuComponent,
-    SbRatingComponent
+    SbRatingComponent,
+    SbDownloadPopupComponent
 	],
 	entryComponents: [
 		GradeFilterComponent,
@@ -100,7 +104,8 @@ import { SbRatingComponent } from './sb-rating/sb-rating';
 		SearchComponent,
 		OfflineComponent,
 		SideMenuComponent,
-		SbRatingComponent
+		SbRatingComponent,
+		SbDownloadPopupComponent
 
 	]
 })
