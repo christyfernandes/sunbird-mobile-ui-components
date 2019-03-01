@@ -18,12 +18,13 @@
               </div>
             </div>
           </div>
-          <ion-input *ngIf="showCommentBox" [(ngModel)]="comment" placeholder="Feedback"></ion-input>
+          <ion-input *ngIf="showCommentBox" [(ngModel)]="comment" placeholder="Feedback (Optional)" style="border-bottom : 2px;"></ion-input>
+          <div *ngIf="showCommentBox" class="sb-line"></div>
       </div>
   </ion-content>
 
   <ion-footer>
       <div class="sb-popover-footer">
-        <button ion-button class="sb-popover-action-btn popover-color"> Rate</button>
+        <button ion-button class="sb-popover-action-btn popover-color"> Submit</button>
       </div>
     </ion-footer>
