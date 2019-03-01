@@ -1,6 +1,6 @@
-webpackJsonp([0],{
+webpackJsonp([1],{
 
-/***/ 108:
+/***/ 109:
 /***/ (function(module, exports) {
 
 function webpackEmptyAsyncContext(req) {
@@ -13,51 +13,60 @@ function webpackEmptyAsyncContext(req) {
 webpackEmptyAsyncContext.keys = function() { return []; };
 webpackEmptyAsyncContext.resolve = webpackEmptyAsyncContext;
 module.exports = webpackEmptyAsyncContext;
-webpackEmptyAsyncContext.id = 108;
+webpackEmptyAsyncContext.id = 109;
 
 /***/ }),
 
-/***/ 149:
-/***/ (function(module, exports) {
+/***/ 150:
+/***/ (function(module, exports, __webpack_require__) {
 
-function webpackEmptyAsyncContext(req) {
-	// Here Promise.resolve().then() is used instead of new Promise() to prevent
-	// uncatched exception popping up in devtools
-	return Promise.resolve().then(function() {
-		throw new Error("Cannot find module '" + req + "'.");
+var map = {
+	"../pages/library/library.module": [
+		292,
+		0
+	]
+};
+function webpackAsyncContext(req) {
+	var ids = map[req];
+	if(!ids)
+		return Promise.reject(new Error("Cannot find module '" + req + "'."));
+	return __webpack_require__.e(ids[1]).then(function() {
+		return __webpack_require__(ids[0]);
 	});
-}
-webpackEmptyAsyncContext.keys = function() { return []; };
-webpackEmptyAsyncContext.resolve = webpackEmptyAsyncContext;
-module.exports = webpackEmptyAsyncContext;
-webpackEmptyAsyncContext.id = 149;
+};
+webpackAsyncContext.keys = function webpackAsyncContextKeys() {
+	return Object.keys(map);
+};
+webpackAsyncContext.id = 150;
+module.exports = webpackAsyncContext;
 
 /***/ }),
 
-/***/ 193:
+/***/ 194:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return HomePage; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(20);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__components_library_filter_library_filter__ = __webpack_require__(194);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__components_grade_filter_grade_filter__ = __webpack_require__(195);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__components_app_header_app_header__ = __webpack_require__(196);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__components_recently_viewed_recently_viewed__ = __webpack_require__(197);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__components_app_footer_app_footer__ = __webpack_require__(198);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__components_collection_page_collection_page__ = __webpack_require__(200);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_8__components_offline_toast_offline_toast__ = __webpack_require__(201);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_9__components_content_info_content_info__ = __webpack_require__(202);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_10__components_detail_card_detail_card__ = __webpack_require__(203);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_11__components_textbook_card_textbook_card__ = __webpack_require__(204);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_12__components_recently_viewed_view_all_recently_viewed_view_all__ = __webpack_require__(205);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_13__components_popups_popups__ = __webpack_require__(206);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_14__components_buttons_buttons__ = __webpack_require__(209);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_15__components_breadcrumbs_breadcrumbs__ = __webpack_require__(210);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_16__components_search_search__ = __webpack_require__(211);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_17__components_offline_offline__ = __webpack_require__(212);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_18__components_side_menu_side_menu__ = __webpack_require__(213);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(18);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__components_library_filter_library_filter__ = __webpack_require__(195);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__components_grade_filter_grade_filter__ = __webpack_require__(196);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__components_app_header_app_header__ = __webpack_require__(197);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__components_recently_viewed_recently_viewed__ = __webpack_require__(198);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__components_app_footer_app_footer__ = __webpack_require__(199);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__components_collection_page_collection_page__ = __webpack_require__(201);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_8__components_offline_toast_offline_toast__ = __webpack_require__(202);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_9__components_content_info_content_info__ = __webpack_require__(203);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_10__components_detail_card_detail_card__ = __webpack_require__(204);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_11__components_textbook_card_textbook_card__ = __webpack_require__(205);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_12__components_recently_viewed_view_all_recently_viewed_view_all__ = __webpack_require__(206);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_13__components_popups_popups__ = __webpack_require__(207);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_14__components_buttons_buttons__ = __webpack_require__(210);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_15__components_breadcrumbs_breadcrumbs__ = __webpack_require__(211);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_16__components_search_search__ = __webpack_require__(212);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_17__components_offline_offline__ = __webpack_require__(213);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_18__components_side_menu_side_menu__ = __webpack_require__(214);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_19__library_library__ = __webpack_require__(99);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -85,6 +94,8 @@ var __metadata = (this && this.__metadata) || function (k, v) {
 
 
 
+
+//pages
 
 var HomePage = /** @class */ (function () {
     function HomePage(navCtrl) {
@@ -164,9 +175,12 @@ var HomePage = /** @class */ (function () {
         console.log(this.components[i].pageName);
         this.navCtrl.push(this.components[i].pageName);
     };
+    HomePage.prototype.gotToLlibrary = function () {
+        this.navCtrl.push(__WEBPACK_IMPORTED_MODULE_19__library_library__["a" /* LibraryPage */]);
+    };
     HomePage = __decorate([
         Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["m" /* Component */])({
-            selector: 'page-home',template:/*ion-inline-start:"E:\projects\sunbird-workspace\sunbird-mobile-ui-components\src\pages\home\home.html"*/'<ion-header class="sb-header">\n<!-- Generated template for the AppHeaderComponent component -->\n<!-- <ion-header> -->\n<ion-navbar class="sb-header-toolbar">\n        <ion-title>Mobile UI Components</ion-title>\n      </ion-navbar>\n  <!-- </ion-header> -->\n</ion-header>\n<ion-content no-padding>\n  <ion-item-group>\n    <ion-item-divider color="light">List of UI Components</ion-item-divider>\n\n    <ion-item *ngFor="let c of components; let i = index;" (click)="onWhenItemClick(i)">{{c.name}}</ion-item>\n\n  </ion-item-group>\n</ion-content>\n'/*ion-inline-end:"E:\projects\sunbird-workspace\sunbird-mobile-ui-components\src\pages\home\home.html"*/
+            selector: 'page-home',template:/*ion-inline-start:"E:\projects\sunbird-workspace\sunbird-mobile-ui-components\src\pages\home\home.html"*/'<ion-header class="sb-header">\n<!-- Generated template for the AppHeaderComponent component -->\n<!-- <ion-header> -->\n<ion-navbar class="sb-header-toolbar">\n        <ion-title>Mobile UI Components</ion-title>\n      </ion-navbar>\n  <!-- </ion-header> -->\n</ion-header>\n<ion-content no-padding>\n  <!-- <ion-item-group>\n    <ion-item-divider color="light">Pages</ion-item-divider>\n\n    <ion-item (click)="gotToLlibrary()">Library</ion-item>\n\n  </ion-item-group> -->\n  <ion-item-group>\n    <ion-item-divider color="light">List of UI Components</ion-item-divider>\n\n    <ion-item *ngFor="let c of components; let i = index;" (click)="onWhenItemClick(i)">{{c.name}}</ion-item>\n\n  </ion-item-group>\n</ion-content>\n'/*ion-inline-end:"E:\projects\sunbird-workspace\sunbird-mobile-ui-components\src\pages\home\home.html"*/
         }),
         __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["e" /* NavController */]])
     ], HomePage);
@@ -177,13 +191,13 @@ var HomePage = /** @class */ (function () {
 
 /***/ }),
 
-/***/ 194:
+/***/ 195:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return LibraryFilterPage; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(20);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(18);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -223,7 +237,7 @@ var LibraryFilterPage = /** @class */ (function () {
 
 /***/ }),
 
-/***/ 195:
+/***/ 196:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -263,7 +277,7 @@ var GradeFilterComponent = /** @class */ (function () {
 
 /***/ }),
 
-/***/ 196:
+/***/ 197:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -295,7 +309,7 @@ var AppHeaderComponent = /** @class */ (function () {
     ], AppHeaderComponent.prototype, "pageName", void 0);
     AppHeaderComponent = __decorate([
         Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["m" /* Component */])({
-            selector: 'app-header',template:/*ion-inline-start:"E:\projects\sunbird-workspace\sunbird-mobile-ui-components\src\components\app-header\app-header.html"*/'<ion-header class="sb-header">\n  <!-- Generated template for the AppHeaderComponent component -->\n  <!-- <ion-header> -->\n  <ion-navbar class="sb-header-toolbar">\n    <ion-title>Header</ion-title>\n  </ion-navbar>\n</ion-header>\n\n\n<ion-content no-padding>\n\n  <!-- component ui start -->\n  <ion-header class="sb-header">\n    <ion-navbar class="sb-header-navbar">\n      <ion-toolbar class="sb-header-toolbar">\n        <ion-buttons class="sb-hamburger" start>\n          <button class="sb-hamburger-menu sb-hamburger-icon" ion-button icon-only>\n            <ion-icon name="menu"></ion-icon>\n          </button>\n        </ion-buttons>\n        <ion-title></ion-title>\n        <ion-buttons class="sb-header-btn-group" end>\n          <button ion-button icon-only>\n            <ion-icon name="person"></ion-icon>\n          </button>\n          <button ion-button icon-only>\n            <ion-icon name="notifications-outline"></ion-icon>\n          </button>\n          <button ion-button icon-only>\n            <ion-icon name="search"></ion-icon>\n          </button>\n        </ion-buttons>\n      </ion-toolbar>\n    </ion-navbar>\n  </ion-header>\n  <!-- component ui start -->\n\n\n  <div class="code-block" style="margin-top:90px;">\n    <pre>\n            {{code}}\n          </pre>\n  </div>\n\n</ion-content>\n<!-- </ion-header> -->'/*ion-inline-end:"E:\projects\sunbird-workspace\sunbird-mobile-ui-components\src\components\app-header\app-header.html"*/
+            selector: 'app-header',template:/*ion-inline-start:"E:\projects\sunbird-workspace\sunbird-mobile-ui-components\src\components\app-header\app-header.html"*/'\n\n\n<ion-content no-padding>\n\n  <!-- component ui start -->\n  <ion-header class="sb-header">\n    <ion-navbar class="sb-header-navbar">\n      <ion-toolbar class="sb-header-toolbar">\n        <ion-buttons class="sb-hamburger" start>\n          <button class="sb-hamburger-menu sb-hamburger-icon" ion-button icon-only>\n            <ion-icon name="menu"></ion-icon>\n          </button>\n        </ion-buttons>\n        <ion-title></ion-title>\n        <ion-buttons class="sb-header-btn-group" end>\n          <button ion-button icon-only>\n            <ion-icon name="person"></ion-icon>\n          </button>\n          <button ion-button icon-only>\n            <ion-icon name="notifications-outline"></ion-icon>\n          </button>\n          <button ion-button icon-only>\n            <ion-icon name="search"></ion-icon>\n          </button>\n        </ion-buttons>\n      </ion-toolbar>\n    </ion-navbar>\n  </ion-header>\n  <!-- component ui start -->\n\n\n  <div class="code-block" style="margin-top:90px;">\n    <pre>\n            {{code}}\n          </pre>\n  </div>\n\n</ion-content>\n<!-- </ion-header> -->'/*ion-inline-end:"E:\projects\sunbird-workspace\sunbird-mobile-ui-components\src\components\app-header\app-header.html"*/
         }),
         __metadata("design:paramtypes", [])
     ], AppHeaderComponent);
@@ -306,7 +320,7 @@ var AppHeaderComponent = /** @class */ (function () {
 
 /***/ }),
 
-/***/ 197:
+/***/ 198:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -335,7 +349,7 @@ var RecentlyViewedComponent = /** @class */ (function () {
     }
     RecentlyViewedComponent = __decorate([
         Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["m" /* Component */])({
-            selector: 'recently-viewed',template:/*ion-inline-start:"E:\projects\sunbird-workspace\sunbird-mobile-ui-components\src\components\recently-viewed\recently-viewed.html"*/'<!-- Generated template for the RecentlyViewedComponent component -->\n<ion-header class="sb-header">\n  <!-- Generated template for the AppHeaderComponent component -->\n  <!-- <ion-header> -->\n  <ion-navbar class="sb-header-toolbar">\n    <ion-title>Recently Viewed</ion-title>\n  </ion-navbar>\n</ion-header>\n\n<ion-content no-padding>\n\n<div class="sb-recently-viewed-container">\n\n  <div class="sb-recently-viewed-items">\n    <div class="sb-recenlty-viewed-title">Recently Viewed <button ion-button class="sb-btn sb-btn-sm sb-btn-outline-info" float-end> View all</button></div>\n\n    <div class="sb-card-scroll-container">\n\n      <!-- Card style -->\n      <div class="sb-card-container sb-card-recently-container">\n          <div class="sb-card full reverse">\n              <div class="img-container"></div>\n              <div class="sb-card-details">\n                <div class="title">Great thinkers and their new religions</div>\n                <div class="info"><span class=" class">Class6</span><span class="separator-dot"></span><span class=" subject">Social Science</span></div>\n              </div>\n           </div>\n\n           <div class="sb-card">\n              <div class="img-container"></div>\n              <div class="sb-card-details">\n                <div class="title">Great thinkers and their new religions</div>\n                <div><span class="info class">Class6</span><span class="separator-dot"></span><span class="info subject">Social Science</span></div>\n              </div>\n           </div>\n           \n           <div class="sb-card offline full">\n              <div class="img-container">\n                  <ion-icon ios="ios-notifications-off" md="md-notifications-off" class="white offline-icon"></ion-icon>\n              </div>\n              <div class="sb-card-details">\n                <div class="title">Great thinkers and their new religions</div>\n                <div><span class="info class">Class6</span><span class="separator-dot"></span><span class="info subject">Social Science</span></div>\n              </div>\n           </div>\n      </div>\n     \n    \n\n    </div>\n    \n\n  </div>\n\n</div>\n  \n\n\n    <!-- <div class="section-floating P15 PT10">\n      <div class="heading">Recently Viewed\n        <button ion-button class="btn rounded" float-end> View all</button>\n      </div>\n      <div class="card-container">\n        <div class="card grid">\n          <div class="left">\n            <div class="img-container">\n              <img src="">\n            </div>\n          </div>\n          <div class="right">\n            <div>\n              <div class="title"> Great thinkers and their new religions\n              </div>\n            </div>\n            <div>\n              <span class="info">Class6</span>\n              <span class="separator-dot"></span>\n              <span class="info">Social Science</span>\n            </div>\n\n          </div>\n        </div>\n        <div class="card grid offline">\n            <div class="left">\n              <div class="img-container ">\n                <ion-icon ios="ios-notifications-off" md="md-notifications-off" class="white"></ion-icon>\n              </div>\n            </div>\n            <div class="right">\n              <div>\n                <div class="title"> Great thinkers and their new religions\n                </div>\n              </div>\n              <div>\n                <span class="info">Class6</span>\n                <span class="separator-dot"></span>\n                <span class="info">Social Science</span>\n              </div>\n    \n            </div>\n          </div>\n        <div class="card">\n          <div class="left">\n            <div class="img-container">\n              <img src="">\n            </div>\n          </div>\n          <div class="right">\n            <div>\n              <div class="title"> Great thinkers and their new religions</div>\n            </div>\n            <div>\n              <span class="info">Class6</span>\n              <span class="separator-dot"></span>\n              <span class="info">Social Science</span>\n            </div>\n\n          </div>\n        </div>\n      </div>\n    </div>\n\n\n  <div class="section-floating P15 PT10" style="margin-top: 200px">\n    <div class="heading">Recently Viewed\n      <button ion-button class="btn rounded" float-end> View all</button>\n    </div>\n    <div class="card-container">\n      <div class="card grid offline">\n        <div class="left">\n          <div class="img-container ">\n            <ion-icon ios="ios-notifications-off" md="md-notifications-off" class="white"></ion-icon>\n          </div>\n        </div>\n        <div class="right">\n          <div>\n            <div class="title"> Testing some really really long text Great thinkers and their new religions Great thinkers and their new religions\n            </div>\n          </div>\n          <div>\n            <span class="info">Class6</span>\n            <span class="separator-dot"></span>\n            <span class="info">Social Science</span>\n          </div>\n\n        </div>\n      </div>\n      <div class="card">\n        <div class="left">\n          <div class="img-container">\n            <img src="">\n          </div>\n        </div>\n        <div class="right">\n          <div>\n            <div class="title"> Great thinkers and their new religions </div>\n          </div>\n          <div>\n            <span class="info">Class6</span>\n            <span class="separator-dot"></span>\n            <span class="info">Social Science</span>\n          </div>\n\n        </div>\n      </div>\n    </div>\n  </div> -->\n</ion-content>'/*ion-inline-end:"E:\projects\sunbird-workspace\sunbird-mobile-ui-components\src\components\recently-viewed\recently-viewed.html"*/
+            selector: 'recently-viewed',template:/*ion-inline-start:"E:\projects\sunbird-workspace\sunbird-mobile-ui-components\src\components\recently-viewed\recently-viewed.html"*/'<!-- Generated template for the RecentlyViewedComponent component -->\n<ion-header class="sb-header">\n  <!-- Generated template for the AppHeaderComponent component -->\n  <!-- <ion-header> -->\n  <ion-navbar class="sb-header-toolbar">\n    <ion-title>Recently Viewed</ion-title>\n  </ion-navbar>\n</ion-header>\n\n<ion-content no-padding>\n\n<div class="sb-recently-viewed-container">\n\n  <div class="sb-recently-viewed-items">\n    <div class="sb-recenlty-viewed-title">Recently Viewed <button ion-button class="sb-btn sb-btn-sm sb-btn-outline-info" float-end> View all</button></div>\n\n    <div class="sb-card-scroll-container">\n\n      <!-- Card style -->\n      <div class="sb-card-container sb-card-recently-container">\n          <div class="sb-card full ">\n              <div class="img-container"></div>\n              <div class="sb-card-details">\n                <div class="title">Great thinkers and their new religions</div>\n                <div class="info"><span class=" class">Class6</span><span class="separator-dot"></span><span class=" subject">Social Science</span></div>\n              </div>\n           </div>\n\n           <div class="sb-card full">\n              <div class="img-container"></div>\n              <div class="sb-card-details">\n                <div class="title">Great thinkers and their new religions</div>\n                <div><span class="info class">Class6</span><span class="separator-dot"></span><span class="info subject">Social Science</span></div>\n              </div>\n           </div>\n           \n           <div class="sb-card offline full">\n              <div class="img-container">\n                  <ion-icon ios="ios-notifications-off" md="md-notifications-off" class="white offline-icon"></ion-icon>\n              </div>\n              <div class="sb-card-details">\n                <div class="title">Great thinkers and their new religions</div>\n                <div><span class="info class">Class6</span><span class="separator-dot"></span><span class="info subject">Social Science</span></div>\n              </div>\n           </div>\n      </div>\n     \n    \n\n    </div>\n    \n\n  </div>\n\n</div>\n  \n\n\n    <!-- <div class="section-floating P15 PT10">\n      <div class="heading">Recently Viewed\n        <button ion-button class="btn rounded" float-end> View all</button>\n      </div>\n      <div class="card-container">\n        <div class="card grid">\n          <div class="left">\n            <div class="img-container">\n              <img src="">\n            </div>\n          </div>\n          <div class="right">\n            <div>\n              <div class="title"> Great thinkers and their new religions\n              </div>\n            </div>\n            <div>\n              <span class="info">Class6</span>\n              <span class="separator-dot"></span>\n              <span class="info">Social Science</span>\n            </div>\n\n          </div>\n        </div>\n        <div class="card grid offline">\n            <div class="left">\n              <div class="img-container ">\n                <ion-icon ios="ios-notifications-off" md="md-notifications-off" class="white"></ion-icon>\n              </div>\n            </div>\n            <div class="right">\n              <div>\n                <div class="title"> Great thinkers and their new religions\n                </div>\n              </div>\n              <div>\n                <span class="info">Class6</span>\n                <span class="separator-dot"></span>\n                <span class="info">Social Science</span>\n              </div>\n    \n            </div>\n          </div>\n        <div class="card">\n          <div class="left">\n            <div class="img-container">\n              <img src="">\n            </div>\n          </div>\n          <div class="right">\n            <div>\n              <div class="title"> Great thinkers and their new religions</div>\n            </div>\n            <div>\n              <span class="info">Class6</span>\n              <span class="separator-dot"></span>\n              <span class="info">Social Science</span>\n            </div>\n\n          </div>\n        </div>\n      </div>\n    </div>\n\n\n  <div class="section-floating P15 PT10" style="margin-top: 200px">\n    <div class="heading">Recently Viewed\n      <button ion-button class="btn rounded" float-end> View all</button>\n    </div>\n    <div class="card-container">\n      <div class="card grid offline">\n        <div class="left">\n          <div class="img-container ">\n            <ion-icon ios="ios-notifications-off" md="md-notifications-off" class="white"></ion-icon>\n          </div>\n        </div>\n        <div class="right">\n          <div>\n            <div class="title"> Testing some really really long text Great thinkers and their new religions Great thinkers and their new religions\n            </div>\n          </div>\n          <div>\n            <span class="info">Class6</span>\n            <span class="separator-dot"></span>\n            <span class="info">Social Science</span>\n          </div>\n\n        </div>\n      </div>\n      <div class="card">\n        <div class="left">\n          <div class="img-container">\n            <img src="">\n          </div>\n        </div>\n        <div class="right">\n          <div>\n            <div class="title"> Great thinkers and their new religions </div>\n          </div>\n          <div>\n            <span class="info">Class6</span>\n            <span class="separator-dot"></span>\n            <span class="info">Social Science</span>\n          </div>\n\n        </div>\n      </div>\n    </div>\n  </div> -->\n</ion-content>'/*ion-inline-end:"E:\projects\sunbird-workspace\sunbird-mobile-ui-components\src\components\recently-viewed\recently-viewed.html"*/
         }),
         __metadata("design:paramtypes", [])
     ], RecentlyViewedComponent);
@@ -346,13 +360,13 @@ var RecentlyViewedComponent = /** @class */ (function () {
 
 /***/ }),
 
-/***/ 198:
+/***/ 199:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return AppFooterComponent; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__library_library__ = __webpack_require__(199);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__library_library__ = __webpack_require__(200);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -388,7 +402,7 @@ var AppFooterComponent = /** @class */ (function () {
 
 /***/ }),
 
-/***/ 199:
+/***/ 200:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -427,7 +441,7 @@ var LibraryComponent = /** @class */ (function () {
 
 /***/ }),
 
-/***/ 200:
+/***/ 201:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -482,13 +496,13 @@ var CollectionPageComponent = /** @class */ (function () {
 
 /***/ }),
 
-/***/ 201:
+/***/ 202:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return OfflineToastComponent; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(20);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(18);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -599,7 +613,7 @@ var OfflineToastComponent = /** @class */ (function () {
 
 /***/ }),
 
-/***/ 202:
+/***/ 203:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -639,7 +653,7 @@ var ContentInfoComponent = /** @class */ (function () {
 
 /***/ }),
 
-/***/ 203:
+/***/ 204:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -679,7 +693,7 @@ var DetailCardComponent = /** @class */ (function () {
 
 /***/ }),
 
-/***/ 204:
+/***/ 205:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -719,7 +733,7 @@ var TextbookCardComponent = /** @class */ (function () {
 
 /***/ }),
 
-/***/ 205:
+/***/ 206:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -759,15 +773,15 @@ var RecentlyViewedViewAllComponent = /** @class */ (function () {
 
 /***/ }),
 
-/***/ 206:
+/***/ 207:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return PopupsComponent; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(20);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__sb_popup_sb_popup__ = __webpack_require__(207);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__sb_download_popup_sb_download_popup__ = __webpack_require__(208);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(18);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__sb_popup_sb_popup__ = __webpack_require__(208);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__sb_download_popup_sb_download_popup__ = __webpack_require__(209);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -949,14 +963,14 @@ var PopupsComponent = /** @class */ (function () {
 
 /***/ }),
 
-/***/ 207:
+/***/ 208:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return SbPopupComponent; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular_navigation_view_controller__ = __webpack_require__(5);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_ionic_angular__ = __webpack_require__(20);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_ionic_angular__ = __webpack_require__(18);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -1004,7 +1018,7 @@ var SbPopupComponent = /** @class */ (function () {
 
 /***/ }),
 
-/***/ 208:
+/***/ 209:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -1044,7 +1058,7 @@ var SbDownloadPopupComponent = /** @class */ (function () {
 
 /***/ }),
 
-/***/ 209:
+/***/ 210:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -1084,7 +1098,7 @@ var ButtonsComponent = /** @class */ (function () {
 
 /***/ }),
 
-/***/ 210:
+/***/ 211:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -1124,7 +1138,7 @@ var BreadcrumbsComponent = /** @class */ (function () {
 
 /***/ }),
 
-/***/ 211:
+/***/ 212:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -1164,7 +1178,7 @@ var SearchComponent = /** @class */ (function () {
 
 /***/ }),
 
-/***/ 212:
+/***/ 213:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -1216,7 +1230,7 @@ var OfflineComponent = /** @class */ (function () {
 
 /***/ }),
 
-/***/ 213:
+/***/ 214:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -1256,13 +1270,13 @@ var SideMenuComponent = /** @class */ (function () {
 
 /***/ }),
 
-/***/ 214:
+/***/ 215:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_platform_browser_dynamic__ = __webpack_require__(215);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__app_module__ = __webpack_require__(237);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_platform_browser_dynamic__ = __webpack_require__(216);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__app_module__ = __webpack_require__(238);
 
 
 Object(__WEBPACK_IMPORTED_MODULE_0__angular_platform_browser_dynamic__["a" /* platformBrowserDynamic */])().bootstrapModule(__WEBPACK_IMPORTED_MODULE_1__app_module__["a" /* AppModule */]);
@@ -1270,25 +1284,27 @@ Object(__WEBPACK_IMPORTED_MODULE_0__angular_platform_browser_dynamic__["a" /* pl
 
 /***/ }),
 
-/***/ 237:
+/***/ 238:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return AppModule; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_platform_browser__ = __webpack_require__(26);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_core__ = __webpack_require__(0);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_ionic_angular__ = __webpack_require__(20);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__ionic_native_splash_screen__ = __webpack_require__(189);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__ionic_native_status_bar__ = __webpack_require__(192);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__app_component__ = __webpack_require__(287);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__pages_home_home__ = __webpack_require__(193);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__components_components_module__ = __webpack_require__(288);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_ionic_angular__ = __webpack_require__(18);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__ionic_native_splash_screen__ = __webpack_require__(190);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__ionic_native_status_bar__ = __webpack_require__(193);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__app_component__ = __webpack_require__(288);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__pages_home_home__ = __webpack_require__(194);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__pages_library_library__ = __webpack_require__(99);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_8__components_components_module__ = __webpack_require__(289);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
     else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
     return c > 3 && r && Object.defineProperty(target, key, r), r;
 };
+
 
 
 
@@ -1305,18 +1321,22 @@ var AppModule = /** @class */ (function () {
             declarations: [
                 __WEBPACK_IMPORTED_MODULE_5__app_component__["a" /* MyApp */],
                 __WEBPACK_IMPORTED_MODULE_6__pages_home_home__["a" /* HomePage */],
+                __WEBPACK_IMPORTED_MODULE_7__pages_library_library__["a" /* LibraryPage */]
             ],
             imports: [
                 __WEBPACK_IMPORTED_MODULE_0__angular_platform_browser__["a" /* BrowserModule */],
                 __WEBPACK_IMPORTED_MODULE_2_ionic_angular__["c" /* IonicModule */].forRoot(__WEBPACK_IMPORTED_MODULE_5__app_component__["a" /* MyApp */], {}, {
-                    links: []
+                    links: [
+                        { loadChildren: '../pages/library/library.module#LibraryPageModule', name: 'LibraryPage', segment: 'library', priority: 'low', defaultHistory: [] }
+                    ]
                 }),
-                __WEBPACK_IMPORTED_MODULE_7__components_components_module__["a" /* ComponentsModule */]
+                __WEBPACK_IMPORTED_MODULE_8__components_components_module__["a" /* ComponentsModule */]
             ],
             bootstrap: [__WEBPACK_IMPORTED_MODULE_2_ionic_angular__["a" /* IonicApp */]],
             entryComponents: [
                 __WEBPACK_IMPORTED_MODULE_5__app_component__["a" /* MyApp */],
                 __WEBPACK_IMPORTED_MODULE_6__pages_home_home__["a" /* HomePage */],
+                __WEBPACK_IMPORTED_MODULE_7__pages_library_library__["a" /* LibraryPage */]
             ],
             providers: [
                 __WEBPACK_IMPORTED_MODULE_4__ionic_native_status_bar__["a" /* StatusBar */],
@@ -1332,16 +1352,16 @@ var AppModule = /** @class */ (function () {
 
 /***/ }),
 
-/***/ 287:
+/***/ 288:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return MyApp; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(20);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__ionic_native_status_bar__ = __webpack_require__(192);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__ionic_native_splash_screen__ = __webpack_require__(189);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__pages_home_home__ = __webpack_require__(193);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(18);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__ionic_native_status_bar__ = __webpack_require__(193);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__ionic_native_splash_screen__ = __webpack_require__(190);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__pages_home_home__ = __webpack_require__(194);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -1378,36 +1398,36 @@ var MyApp = /** @class */ (function () {
 
 /***/ }),
 
-/***/ 288:
+/***/ 289:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return ComponentsModule; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_platform_browser__ = __webpack_require__(26);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_ionic_angular__ = __webpack_require__(20);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__grade_filter_grade_filter__ = __webpack_require__(195);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__library_filter_library_filter__ = __webpack_require__(194);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__app_header_app_header__ = __webpack_require__(196);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__recently_viewed_recently_viewed__ = __webpack_require__(197);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__app_footer_app_footer__ = __webpack_require__(198);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_8__library_library__ = __webpack_require__(199);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_9__collection_page_collection_page__ = __webpack_require__(200);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_10__offline_toast_offline_toast__ = __webpack_require__(201);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_11__content_info_content_info__ = __webpack_require__(202);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_12__detail_card_detail_card__ = __webpack_require__(203);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_13__components_textbook_card_textbook_card__ = __webpack_require__(204);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_14__recently_viewed_view_all_recently_viewed_view_all__ = __webpack_require__(205);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_15__popups_popups__ = __webpack_require__(206);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_16__sb_popup_sb_popup__ = __webpack_require__(207);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_17__buttons_buttons__ = __webpack_require__(209);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_18__breadcrumbs_breadcrumbs__ = __webpack_require__(210);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_19__info_info__ = __webpack_require__(289);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_20__content_player_content_player__ = __webpack_require__(290);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_21__search_search__ = __webpack_require__(211);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_22__offline_offline__ = __webpack_require__(212);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_23__side_menu_side_menu__ = __webpack_require__(213);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_24__sb_download_popup_sb_download_popup__ = __webpack_require__(208);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_ionic_angular__ = __webpack_require__(18);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__grade_filter_grade_filter__ = __webpack_require__(196);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__library_filter_library_filter__ = __webpack_require__(195);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__app_header_app_header__ = __webpack_require__(197);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__recently_viewed_recently_viewed__ = __webpack_require__(198);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__app_footer_app_footer__ = __webpack_require__(199);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_8__library_library__ = __webpack_require__(200);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_9__collection_page_collection_page__ = __webpack_require__(201);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_10__offline_toast_offline_toast__ = __webpack_require__(202);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_11__content_info_content_info__ = __webpack_require__(203);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_12__detail_card_detail_card__ = __webpack_require__(204);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_13__components_textbook_card_textbook_card__ = __webpack_require__(205);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_14__recently_viewed_view_all_recently_viewed_view_all__ = __webpack_require__(206);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_15__popups_popups__ = __webpack_require__(207);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_16__sb_popup_sb_popup__ = __webpack_require__(208);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_17__buttons_buttons__ = __webpack_require__(210);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_18__breadcrumbs_breadcrumbs__ = __webpack_require__(211);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_19__info_info__ = __webpack_require__(290);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_20__content_player_content_player__ = __webpack_require__(291);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_21__search_search__ = __webpack_require__(212);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_22__offline_offline__ = __webpack_require__(213);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_23__side_menu_side_menu__ = __webpack_require__(214);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_24__sb_download_popup_sb_download_popup__ = __webpack_require__(209);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -1528,7 +1548,7 @@ var ComponentsModule = /** @class */ (function () {
 
 /***/ }),
 
-/***/ 289:
+/***/ 290:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -1568,7 +1588,7 @@ var InfoComponent = /** @class */ (function () {
 
 /***/ }),
 
-/***/ 290:
+/***/ 291:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -1606,7 +1626,52 @@ var ContentPlayerComponent = /** @class */ (function () {
 
 //# sourceMappingURL=content-player.js.map
 
+/***/ }),
+
+/***/ 99:
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return LibraryPage; });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(18);
+var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+var __metadata = (this && this.__metadata) || function (k, v) {
+    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
+};
+
+
+/**
+ * Generated class for the LibraryPage page.
+ *
+ * See https://ionicframework.com/docs/components/#navigation for more info on
+ * Ionic pages and navigation.
+ */
+var LibraryPage = /** @class */ (function () {
+    function LibraryPage(navCtrl, navParams) {
+        this.navCtrl = navCtrl;
+        this.navParams = navParams;
+    }
+    LibraryPage.prototype.ionViewDidLoad = function () {
+        console.log('ionViewDidLoad LibraryPage');
+    };
+    LibraryPage = __decorate([
+        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["m" /* Component */])({
+            selector: 'page-library',template:/*ion-inline-start:"E:\projects\sunbird-workspace\sunbird-mobile-ui-components\src\pages\library\library.html"*/'<!--\n  Generated template for the LibraryPage page.\n\n  See http://ionicframework.com/docs/components/#navigation for more info on\n  Ionic pages and navigation.\n-->\n<ion-header>\n\n  <ion-navbar>\n    <ion-title>library</ion-title>\n  </ion-navbar>\n\n</ion-header>\n\n\n<ion-content padding>\n    <app-header></app-header>\n</ion-content>\n'/*ion-inline-end:"E:\projects\sunbird-workspace\sunbird-mobile-ui-components\src\pages\library\library.html"*/,
+        }),
+        __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["e" /* NavController */], __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["f" /* NavParams */]])
+    ], LibraryPage);
+    return LibraryPage;
+}());
+
+//# sourceMappingURL=library.js.map
+
 /***/ })
 
-},[214]);
+},[215]);
 //# sourceMappingURL=main.js.map
