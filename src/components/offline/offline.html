@@ -1,18 +1,26 @@
 <!-- Generated template for the OfflineComponent component -->
-
-<ion-row #someVar class="sb-offline-msg" id="#sb-offline-msg">
-    <ion-col col-1 class="offline-icon">
+<ion-header class="sb-header">
+  <!-- Generated template for the AppHeaderComponent component -->
+  <!-- <ion-header> -->
+  <ion-navbar class="sb-header-toolbar">
+    <ion-title>Offline</ion-title>
+  </ion-navbar>
+</ion-header>
+<ion-content>
+<ion-row #someVar class="sb-offline-msg" id="#sb-offline-msg" *ngIf="!closeClicked">
+    <ion-col col-2 class="offline-icon">
           <ion-icon item-right name="notifications-off"></ion-icon>
     </ion-col>
-    <ion-col col-9>
+    <ion-col col-8>
       <div class="sb-offline-text">
         You are Offline 
       </div>
     </ion-col>
     <ion-col col-2>
-        <button class="close-button" ion-button icon-only clear (click)="removeComponent()">
+        <button class="close-button" ion-button icon-only clear (click)="closeComp()">
           <ion-icon item-right name="close"></ion-icon>
         </button>
     </ion-col>
   </ion-row>
-  
+  <ion-row *ngIf="closeClicked"></ion-row>
+</ion-content>
