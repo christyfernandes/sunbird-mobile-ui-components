@@ -1,0 +1,30 @@
+<!-- Generated template for the SbRatingComponent component -->
+<ion-header class="sb-popover-header">
+    <ion-toolbar class="sb-popover-toolbar">
+      <ion-title class="sb-popover-title">Rate the Content
+          <ion-icon name="close" class="sb-modal-close" (click)="closePopover()"></ion-icon> </ion-title>
+    </ion-toolbar>
+  </ion-header>
+  <ion-content no-padding class="sb-popover-container">
+      <div class="sb-popover-items">
+          <div class="icon-container">
+            <ion-icon ios="{{icon?.ios}}" md="{{icon?.md}}"></ion-icon>
+          </div>
+          <rating [(ngModel)]="userRating" (ngModelChange)="rateContent($event)"></rating>
+          <div class="sb-popover-content-details" *ngIf="this.userRating">
+            <div class="main-title">
+              <div class="meta-info">
+                You have rated {{userRating}}
+              </div>
+            </div>
+          </div>
+          <ion-input *ngIf="showCommentBox" [(ngModel)]="comment" placeholder="Feedback (Optional)" style="border-bottom : 2px;"></ion-input>
+          <div *ngIf="showCommentBox" class="sb-line"></div>
+      </div>
+  </ion-content>
+
+  <ion-footer>
+      <div class="sb-popover-footer">
+        <button ion-button class="sb-popover-action-btn popover-color"> Submit</button>
+      </div>
+    </ion-footer>

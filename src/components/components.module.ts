@@ -22,6 +22,8 @@ import { ContentPlayerComponent } from './content-player/content-player';
 import { SearchComponent } from './search/search';
 import { OfflineComponent } from './offline/offline';
 import { SideMenuComponent } from './side-menu/side-menu';
+import { Ionic2RatingModule } from 'ionic2-rating';
+import { SbRatingComponent } from './sb-rating/sb-rating';
 import { SbDownloadPopupComponent } from './sb-download-popup/sb-download-popup';
 
 @NgModule({
@@ -46,13 +48,16 @@ import { SbDownloadPopupComponent } from './sb-download-popup/sb-download-popup'
 		ContentPlayerComponent,
 		SearchComponent,
 		OfflineComponent,
+	SideMenuComponent,
+    SbRatingComponent,
     SideMenuComponent,
     SbDownloadPopupComponent
 	],
 	imports: [
 		IonicPageModule,
 		IonicModule,
-		BrowserModule
+		BrowserModule,
+		Ionic2RatingModule
 	],
 	exports: [GradeFilterComponent,
 		LibraryFilterPage,
@@ -76,6 +81,7 @@ import { SbDownloadPopupComponent } from './sb-download-popup/sb-download-popup'
 		SearchComponent,
 		OfflineComponent,
     SideMenuComponent,
+    SbRatingComponent,
     SbDownloadPopupComponent
 	],
 	entryComponents: [
@@ -98,6 +104,7 @@ import { SbDownloadPopupComponent } from './sb-download-popup/sb-download-popup'
 		SearchComponent,
 		OfflineComponent,
 		SideMenuComponent,
+		SbRatingComponent,
 		SbDownloadPopupComponent
 
 	]

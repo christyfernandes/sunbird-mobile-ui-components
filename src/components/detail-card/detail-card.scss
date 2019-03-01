@@ -10,7 +10,7 @@ detail-card {
       display: grid;
       grid-gap: ($base-block-space * 1);
       grid-template-columns:  auto ($base-block-space * 9);
-      padding: 16px;
+      @include padding($base-block-space);
       .right {
         .img-container {
           background-color: grey;
@@ -82,7 +82,7 @@ detail-card {
           height:16px;
           font-size: 10px;
           text-transform: initial;
-          padding: 8px;
+          @include padding($base-block-space);
         }
       }  
     }

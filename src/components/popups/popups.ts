@@ -2,6 +2,7 @@ import { Component } from '@angular/core';
 import {
   PopoverController
 } from 'ionic-angular';
+import { SbRatingComponent } from '../sb-rating/sb-rating';
 import {SbPopupComponent} from '../sb-popup/sb-popup';
 import { SbDownloadPopupComponent } from '../sb-download-popup/sb-download-popup';
 
@@ -163,6 +164,32 @@ openNoBnadWidthPopup(){
     });
 }
 
+openPopupRating(event)
+{
+  const popover = this.popoverCtrl.create(SbRatingComponent, {
+    // sbPopoverHeading:"Rate the content",
+    // actionsButtons:[
+    //   {
+    //     btntext: "Rate",
+    //     btnClass: 'popover-color'
+    //   },
+    // ],
+    // icon: {md:"md-sad",
+    // ios:"ios-sad",
+    // className:""},
+    // metaInfo:"You have rated 3 stars",
+   // sbPopoverContent:"Some content might not be playable offline."
+  }, {
+    cssClass: 'sb-popover info',
+    
+  });
+  popover.present({
+    ev: event
+  });
+  popover.onDidDismiss((canDownload: boolean = false) => {
+   console.log('dismissed');
+  });
+}
 openDownloadPopup() {
     const popover = this.popoverCtrl.create(SbDownloadPopupComponent, {}, {
       cssClass: 'sb-popover sb-popover-download  info',
