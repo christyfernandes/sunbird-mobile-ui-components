@@ -18,6 +18,10 @@ import { SearchComponent } from '../../components/search/search';
 import { OfflineComponent } from '../../components/offline/offline';
 import { SideMenuComponent } from '../../components/side-menu/side-menu';
 
+
+//pages
+import {LibraryPage} from '../library/library';
+
 @Component({
   selector: 'page-home',
   templateUrl: 'home.html'
@@ -102,5 +106,10 @@ export class HomePage {
     console.log(this.components[i].pageName);
     this.navCtrl.push(this.components[i].pageName);
   }
+
+  gotToLlibrary(){
+    this.navCtrl.push(LibraryPage);
+  }
+
 
 }
