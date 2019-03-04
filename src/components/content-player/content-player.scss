@@ -7,6 +7,7 @@ content-player {
     height: ($base-block-space * 25);
     overflow:hidden;
     position: relative;
+    text-align: center;
     .sb-arrow-back
     {
       @include padding($base-block-space * 0.5);
@@ -19,14 +20,14 @@ content-player {
       left: 16px;
       height:($base-block-space * 3);
       width:24px;
-      background-color: #fff;
+      background-color: $white;
       border-radius: 50%
     }
     .sb-common-player-group{
       position: absolute;
       left: 0;
       right: 0;
-      top: 30%;
+      top: 40%;
       text-align: center;
       .sb-play-title-group{
         top: 50%;
@@ -34,18 +35,18 @@ content-player {
       .sb-common-title{
         .sb-common-white-icon{
           font-size: (($font-size-base * 3) - 2) ;
-          color: #ffffff;
+          color: $white;
         } 
       }
       .sb-offline-title {
        @include padding ($base-block-space);
         .sb-offline-white-icon{
           font-size :  (($font-size-base * 2) - 4);
-          color: #ffffff;
+          color: $white;
         } 
       }  
       .sb-common-footer-text {
-        color : #ffffff;
+        color : $white;
         font-weight: 500;
         font-size: ($font-size-base  - 2);
         text-align: center;
@@ -57,12 +58,24 @@ content-player {
     }
     .sb-online-message
     {
-      top: 90%;
-      position: relative;
-      background-color: #00BA75;
+      top: 0%;
+      position: absolute;
+      background-color: $secondary-100;
       height: ($base-block-space * 3);
-      color: white;
+      color: $white;
       text-align: center;
-      font-size: ($font-size-base  - 2);   
+      font-size: ($font-size-base  - 2); 
+      width: 100%;  
+    }
+    .sb-overlay-container{
+      top:0;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      max-width: 100%;
+      height: 200px;
+      position: absolute;
+      background: rgba(0,0,0,0.4);
+     
     }
   }

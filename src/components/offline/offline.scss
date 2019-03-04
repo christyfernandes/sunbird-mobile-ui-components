@@ -3,12 +3,12 @@ offline {
 }
 .sb-offline-msg
 {
-    background-color: #E55A28;
-    color: white;
+    background-color: $orange;
+    color: $white;
 
     ion-icon
     {
-        color: white;
+        color: $white;
     }
     .offline-icon{
     @include padding(($base-block-space),0,0,($base-block-space * 4));

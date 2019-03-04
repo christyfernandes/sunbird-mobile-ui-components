@@ -118,18 +118,24 @@
         &.reverse{
           padding: 8px 16px;
           grid-auto-flow: dense;
-          grid-template-columns:auto ($base-block-space * 9)  ;
+          grid-template-columns:auto ($base-block-space * 7)  ;
+          border-bottom: 0.5px solid rgba(151, 151, 151, 0.5);
           &.full{
-            grid-template-columns: auto ($base-block-space * 11) ;
+            grid-template-columns: auto ($base-block-space * 7) ;
           }
           
           .img-container {
             grid-column: 2;
+            width:($base-block-space * 7);
+            height: ($base-block-space * 7);
           }
           .sb-card-details{
             grid-column: 1;
+            .title{
+              font-weight: normal;
+            }
           }
-        }
+        }        
     }
 
 }

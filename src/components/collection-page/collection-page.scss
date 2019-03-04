@@ -5,7 +5,7 @@ collection-page {
     .sb-separator-line {
       height: 1px;
       opacity: 0.36;
-      background-color: #979797;
+      background-color: $gray-300;
       @include margin(0,$base-block-space);
      }
      
@@ -80,49 +80,49 @@ collection-page {
     }
     .sb-accordian-grey-icon
     {
-      color : #979797;
+      color : $gray-300;
       font-size : (($font-size-base * 2) + 2);
     }
     .sb-play-icon
     {
-        color : #00ba75;
+        color : $secondary-100;
         font-size: (($font-size-base * 2) + 2);
     }
     .sb-topic-text{
-      color:#024f9d;
+      color:$primary-color;
       font-size:$font-size-base;
       @include padding(0,($base-block-space * 1));
       line-height: 20px;
      }
       .sb-accordian-arrow
       {
-          color : #024f9d;
+          color : $primary-color;
           font-size: (($font-size-base * 2) + 2);
           line-height: 20px;
       }
       .sb-play-selected
       {
         @include padding(($base-block-space * 0.5),($base-block-space * 0.5),($base-block-space * 0.5),($base-block-space * 1));
-        color : #024f9d;
+        color : $primary-color;
         font-weight: bolder;
        font-size:$font-size-base;
       }
       .sb-play-unselected
       {
         @include padding(($base-block-space * 0.5),($base-block-space * 0.5),($base-block-space * 0.5),($base-block-space * 1));
-        color : #0a5cad;
+        color : $primary-color;
         font-size: $font-size-base;
       }
       .sb-checkmark-icon
       {
-        color : #00ba75;
+        color : $secondary-200;
         font-size: ($font-size-base + 4);
         @include margin(null,null,null,($base-block-space * .5));
       }
       .sb-accordian-grey-text
       {
           @include padding(($base-block-space * 0.5),($base-block-space * 0.5),($base-block-space * 0.5),($base-block-space * 1));
-          color : #979797;
+          color : $gray-300;
       }
 
  

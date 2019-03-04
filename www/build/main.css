@@ -26293,7 +26293,7 @@ $red-400: $red; // icon color, lable, notification bg
 
 /* Padding in top direction */
 .pt-0 {
-  padding: 0;
+  padding-top: 0 !important;
 }
 
 .pt-5 {
@@ -26654,6 +26654,10 @@ a:hover {
 }
 
 /* breadcrumb css */
+.breadcrumb-container {
+  padding: 0 8px;
+}
+
 .step-indicator {
   margin: 0;
   padding: 0;
@@ -26669,7 +26673,6 @@ a:hover {
   -ms-flex-align: center;
   align-items: center;
   height: 64px;
-  padding: 16px 8px;
 }
 
 .step {
@@ -27199,19 +27202,26 @@ a:hover {
 .sb-card-container .sb-card.reverse {
   padding: 8px 16px;
   grid-auto-flow: dense;
-  grid-template-columns: auto 72px;
+  grid-template-columns: auto 56px;
+  border-bottom: 0.5px solid rgba(151, 151, 151, 0.5);
 }
 
 .sb-card-container .sb-card.reverse.full {
-  grid-template-columns: auto 88px;
+  grid-template-columns: auto 56px;
 }
 
 .sb-card-container .sb-card.reverse .img-container {
   grid-column: 2;
+  width: 56px;
+  height: 56px;
 }
 
 .sb-card-container .sb-card.reverse .sb-card-details {
   grid-column: 1;
+}
+
+.sb-card-container .sb-card.reverse .sb-card-details .title {
+  font-weight: normal;
 }
 
 .sb-card-recently-container {
@@ -27739,7 +27749,7 @@ buttons .d-flex.flex-w-wrap button {
 .sb-separator-line {
   height: 1px;
   opacity: 0.36;
-  background-color: #979797;
+  background-color: #969696;
   margin: 0 8px;
 }
 
@@ -27839,12 +27849,12 @@ buttons .d-flex.flex-w-wrap button {
 }
 
 .sb-accordian-grey-icon {
-  color: #979797;
+  color: #969696;
   font-size: 30px;
 }
 
 .sb-play-icon {
-  color: #00ba75;
+  color: #00C786;
   font-size: 30px;
 }
 
@@ -27870,19 +27880,19 @@ buttons .d-flex.flex-w-wrap button {
 
 .sb-play-unselected {
   padding: 4px 4px 4px 8px;
-  color: #0a5cad;
+  color: #024f9d;
   font-size: 14px;
 }
 
 .sb-checkmark-icon {
-  color: #00ba75;
+  color: #07BC81;
   font-size: 18px;
   margin-left: 4px;
 }
 
 .sb-accordian-grey-text {
   padding: 4px 4px 4px 8px;
-  color: #979797;
+  color: #969696;
 }
 
 /* card styles starts here */
@@ -27896,6 +27906,7 @@ buttons .d-flex.flex-w-wrap button {
   height: 200px;
   overflow: hidden;
   position: relative;
+  text-align: center;
 }
 
 .sb-player-container .sb-arrow-back {
@@ -27917,7 +27928,7 @@ buttons .d-flex.flex-w-wrap button {
   position: absolute;
   left: 0;
   right: 0;
-  top: 30%;
+  top: 40%;
   text-align: center;
 }
 
@@ -27927,7 +27938,7 @@ buttons .d-flex.flex-w-wrap button {
 
 .sb-player-container .sb-common-player-group .sb-common-title .sb-common-white-icon {
   font-size: 40px;
-  color: #ffffff;
+  color: #fff;
 }
 
 .sb-player-container .sb-common-player-group .sb-offline-title {
@@ -27936,11 +27947,11 @@ buttons .d-flex.flex-w-wrap button {
 
 .sb-player-container .sb-common-player-group .sb-offline-title .sb-offline-white-icon {
   font-size: 24px;
-  color: #ffffff;
+  color: #fff;
 }
 
 .sb-player-container .sb-common-player-group .sb-common-footer-text {
-  color: #ffffff;
+  color: #fff;
   font-weight: 500;
   font-size: 12px;
   text-align: center;
@@ -27952,13 +27963,25 @@ buttons .d-flex.flex-w-wrap button {
 }
 
 .sb-player-container .sb-online-message {
-  top: 90%;
-  position: relative;
-  background-color: #00BA75;
+  top: 0%;
+  position: absolute;
+  background-color: #00C786;
   height: 24px;
-  color: white;
+  color: #fff;
   text-align: center;
   font-size: 12px;
+  width: 100%;
+}
+
+.sb-player-container .sb-overlay-container {
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  max-width: 100%;
+  height: 200px;
+  position: absolute;
+  background: rgba(0, 0, 0, 0.4);
 }
 
 .sb-dt-card {
@@ -27968,33 +27991,39 @@ buttons .d-flex.flex-w-wrap button {
   margin: 0 0 16px;
 }
 
-.sb-dt-card .sb-dt-content {
-  display: grid;
-  grid-gap: 8px;
-  grid-template-columns: auto 72px;
-  padding: 8px;
+.sb-dt-card .sb-rating-view {
+  text-align: center;
 }
 
-.sb-dt-card .sb-dt-content .right .img-container {
-  background-color: grey;
-  max-width: 72px;
-  height: 72px;
-  overflow: hidden;
-}
-
-.sb-dt-card .sb-dt-content .right .sb-rating-view {
-  margin: 0 0 0 8px;
-  padding: 8px;
-}
-
-.sb-dt-card .sb-dt-content .right .sb-rating-view .sb-rating-value {
+.sb-dt-card .sb-rating-view .sb-rating-value {
   font-weight: bold;
   font-size: 14px;
   margin: 0 4px 0 0;
 }
 
-.sb-dt-card .sb-dt-content .right .sb-rating-view .sb-rating-star {
-  color: #f8e71c;
+.sb-dt-card .sb-rating-view .sb-rating-star {
+  color: #ffc107;
+}
+
+.sb-dt-card .sb-practice .button-small-md {
+  height: 16px;
+  font-size: 10px;
+  text-transform: initial;
+  padding: 8px;
+}
+
+.sb-dt-card .sb-dt-content {
+  display: grid;
+  grid-gap: 8px;
+  grid-template-columns: auto 56px;
+  padding: 16px 16px 8px;
+}
+
+.sb-dt-card .sb-dt-content .right .img-container {
+  background-color: transparent;
+  max-width: 56px;
+  height: 56px;
+  overflow: hidden;
 }
 
 .sb-dt-card .sb-dt-content .left {
@@ -28016,7 +28045,6 @@ buttons .d-flex.flex-w-wrap button {
   display: -webkit-box;
   -webkit-line-clamp: 2;
   -webkit-box-orient: vertical;
-  margin: 4px 0;
   font-weight: bold;
   font-size: 16px;
   color: #333333;
@@ -28028,32 +28056,21 @@ buttons .d-flex.flex-w-wrap button {
 
 .sb-dt-card .sb-dt-content .left .sb-dt-source .sb-user {
   font-size: 12px;
-  color: #979797;
-}
-
-.sb-dt-card .sb-dt-content .left .sb-dt-class-info {
-  margin: 8px 0;
+  color: #969696;
 }
 
 .sb-dt-card .sb-dt-content .left .sb-dt-class-info .sb-dt-label {
   font-size: 12px;
-  color: #979797;
+  color: #969696;
 }
 
 .sb-dt-card .sb-dt-content .left .sb-dt-class-info .sb-separator-dot {
   width: 4px;
   height: 4px;
-  background-color: #d8d8d8;
+  background-color: #969696;
   border-radius: 50%;
   display: inline-block;
   vertical-align: middle;
-}
-
-.sb-dt-card .sb-dt-content .left .button-small-md {
-  height: 16px;
-  font-size: 10px;
-  text-transform: initial;
-  padding: 8px;
 }
 
 .sb-dt-card .sb-dt-card-actions {
@@ -28095,7 +28112,7 @@ buttons .d-flex.flex-w-wrap button {
 }
 
 .sb-dt-card .sb-dt-card-actions .sb-btn-tile-group .sb-btn-tile .sb-btn-footer-text {
-  color: #979797;
+  color: #969696;
   font-weight: 100;
   font-size: 12px;
   text-align: center;
@@ -28116,7 +28133,7 @@ buttons .d-flex.flex-w-wrap button {
 
 .sb-content-info-container .sb-content-info-items .sb-content-info-title {
   font-size: 16px;
-  color: #ffffff;
+  color: #fff;
   font-family: "Noto Sans";
   line-height: 22px;
   overflow: auto;
@@ -28161,7 +28178,7 @@ buttons .d-flex.flex-w-wrap button {
 }
 
 .sb-content-info-card .sb-content-title-data {
-  color: #000000;
+  color: #333333;
   font-size: 14px;
   line-height: 17px;
 }
@@ -28185,12 +28202,12 @@ buttons .d-flex.flex-w-wrap button {
 }
 
 .sb-offline-msg {
-  background-color: #E55A28;
-  color: white;
+  background-color: #e55a28;
+  color: #fff;
 }
 
 .sb-offline-msg ion-icon {
-  color: white;
+  color: #fff;
 }
 
 .sb-offline-msg .offline-icon {
@@ -28230,7 +28247,7 @@ buttons .d-flex.flex-w-wrap button {
   font-stretch: normal;
   line-height: normal;
   letter-spacing: -0.4px;
-  color: #ffffff;
+  color: #fff;
 }
 
 .toastAfterHeader .toast-message:before {
@@ -28242,7 +28259,7 @@ buttons .d-flex.flex-w-wrap button {
   content: "\f1d1";
   margin-left: -35px;
   font-weight: 500;
-  color: #ffffff;
+  color: #fff;
 }
 
 .toastAfterHeader .toast-button:before {
@@ -28257,54 +28274,6 @@ buttons .d-flex.flex-w-wrap button {
 
 .toastAfterHeader .toast-button span {
   color: #e55a28;
-}
-
-.sb-slider-pills-container {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  overflow-x: auto;
-}
-
-.sb-grade-pills-container {
-  padding: 16px 8px;
-  min-height: 46px;
-  background-color: #F0F0F0;
-}
-
-.sb-grade-pills-container .pill {
-  border-radius: 15px;
-  background-color: #ffffff;
-  -webkit-appearance: none;
-  white-space: nowrap;
-  padding: 8px 16px;
-  margin-right: 8px;
-  -webkit-box-shadow: 0 3px 4px 0 rgba(0, 0, 0, 0.19);
-  box-shadow: 0 3px 4px 0 rgba(0, 0, 0, 0.19);
-  color: #024f9d;
-  font-size: 14px;
-  letter-spacing: -0.47px;
-  line-height: 17px;
-  text-align: center;
-  font-weight: normal;
-  font-style: normal;
-  font-stretch: normal;
-  text-transform: capitalize;
-  -webkit-box-sizing: border-box;
-  box-sizing: border-box;
-}
-
-.sb-grade-pills-container .pill:hover {
-  background-color: #024F9D;
-  color: #ffffff;
-}
-
-.sb-grade-pills-container .pill.active {
-  -webkit-box-shadow: 0 3px 4px 0 rgba(0, 0, 0, 0.19);
-  box-shadow: 0 3px 4px 0 rgba(0, 0, 0, 0.19);
-  background-color: #024F9D;
-  color: #ffffff;
 }
 
 popups .d-flex.flex-w-wrap button {
@@ -28385,11 +28354,11 @@ popups .d-flex.flex-w-wrap button {
 }
 
 sb-rating ul {
-  padding: 10px;
+  padding: 8px;
 }
 
 sb-rating ul.rating li {
-  padding: 5px 10px !important;
+  padding: 8px;
   background: none;
   color: #024f9d;
 }
@@ -28405,30 +28374,45 @@ sb-rating .sb-line {
   border: 0.5px solid #7AB4EE;
 }
 
+.search-header .bar-button-md {
+  height: 24px;
+  width: 24px;
+  color: #024f9d;
+  font-size: 18px;
+}
+
+.bar-button-md {
+  color: #024f9d;
+}
+
+.search-bar-icons {
+  font-size: 18px;
+  color: #024f9d;
+}
+
 .sb-card-container .sb-search-card .sb-card {
   padding: 8px 16px;
 }
 
 .sb-view-all-items.sb-search-items {
   padding: 0;
+  height: 72px;
   background-color: transparent;
-  border-bottom: 0.5px solid rgba(94, 94, 94, 0.75);
+  border-bottom: 0.5px solid rgba(151, 151, 151, 0.5);
 }
 
 .sb-view-all-items.sb-search-items .sb-card-result.sb-card-details {
   padding: 16px;
+  color: #969696;
 }
 
 .sb-view-all-items.sb-search-items .sb-card-result.sb-card-details .sb-card-res-count {
-  color: #979797;
   font-size: 12px;
   line-height: 15px;
 }
 
 .sb-view-all-items.sb-search-items .sb-card-result.sb-card-details .sb-card-result-content {
-  color: #979797;
   font-size: 16px;
-  font-weight: 500;
   line-height: 22px;
 }
 
@@ -28469,14 +28453,18 @@ sb-rating .sb-line {
 .sb-side-menu .img-container {
   height: 32px;
   width: 32px;
-  background-color: grey;
+  background-color: #f2f2f2;
   vertical-align: bottom;
 }
 
 .sb-side-menu .toolbar {
   -webkit-box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.12);
   box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.12);
-  background-color: #ffffff;
+  background-color: #fff;
+}
+
+.sb-side-menu .toolbar .toolbar-background-md {
+  background-color: #fff;
 }
 
 .sb-side-menu .toolbar-md {
@@ -28518,14 +28506,14 @@ sb-rating .sb-line {
 
 .sb-side-menu .side-menu-footer {
   padding: 16px;
-  background-color: #f6f5f5;
+  background-color: #f2f2f2;
   width: 100%;
   font-size: 14px;
   font-weight: normal;
   font-style: normal;
   font-stretch: normal;
   line-height: normal;
-  color: #ADADAD;
+  color: #999999;
   height: 56px;
   -webkit-box-align: center;
   -webkit-align-items: center;

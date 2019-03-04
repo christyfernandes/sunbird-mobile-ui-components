@@ -5,14 +5,14 @@ info {
 .sb-content-info-container {
 
     .sb-content-info-items{
-      background-color: #024f9d;
-      height: 88px;
+      background-color: $primary-color;
+      height: ($base-block-space * 11);
       width: 100%;
       position: relative;
       @include padding(($base-block-space * 2),0,($base-block-space * 2),0);
       .sb-content-info-title {
-        font-size: 16px;
-        color: #ffffff;
+        font-size: ($font-size-base) + 2;
+        color: $white;
         font-family: "Noto Sans";	
         line-height: 22px;
         overflow: auto;
@@ -48,7 +48,7 @@ info {
         line-height: 17px;
     }
     .sb-content-title-data{
-        color: #000000;
+        color: $gray-800;
         font-size: ($font-size-base);
         line-height: 17px;
      }
