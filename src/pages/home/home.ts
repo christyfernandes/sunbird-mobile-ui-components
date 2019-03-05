@@ -97,27 +97,23 @@ export class HomePage {
 
   pages =[
     {
-      "name":"Library page",
-      "pageName": LibraryPage
-    },
-    {
-      "name":"Library page with tabs",
+      "name":"Library",
       "pageName": FooterPage
     },
     {
-      "name":"View all page",
+      "name":"Recently Viewed All",
       "pageName": ViewAllPage
     },
     {
-      "name":"Search Results page",
+      "name":"Search Results",
       "pageName": SearchResultsPage
     },
     {
-      "name":"TOC page",
+      "name":"Table of Content",
       "pageName": TocPage
     },
     {
-      "name":"Player page",
+      "name":"Content Details",
       "pageName": PlayerPage
     }
   ];
