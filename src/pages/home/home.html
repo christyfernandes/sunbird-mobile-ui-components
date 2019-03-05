@@ -7,14 +7,14 @@
   <!-- </ion-header> -->
 </ion-header>
 <ion-content no-padding>
-  <!-- <ion-item-group>
-    <ion-item-divider color="light">Pages</ion-item-divider>
-
-    <ion-item (click)="gotToLlibrary()">Library</ion-item>
-
-  </ion-item-group> -->
   <ion-item-group>
-    <ion-item-divider color="light">List of UI Components</ion-item-divider>
+    <ion-item-divider color="dark" class="text-center ">Pages</ion-item-divider>
+
+    <ion-item *ngFor="let p of pages; let i = index;" (click)="gotToPages(i)">{{p.name}}</ion-item>
+
+  </ion-item-group>
+  <ion-item-group>
+    <ion-item-divider color="dark" class="text-center my-16">List of UI Components</ion-item-divider>
 
     <ion-item *ngFor="let c of components; let i = index;" (click)="onWhenItemClick(i)">{{c.name}}</ion-item>
 

@@ -19,6 +19,7 @@ import { SbDownloadPopupComponent } from '../sb-download-popup/sb-download-popup
 export class PopupsComponent {
 
   text: string;
+  showDownload = false;
 
   constructor(private popoverCtrl: PopoverController,) {
     console.log('Hello PopupsComponent Component');
@@ -191,16 +192,17 @@ openPopupRating(event)
   });
 }
 openDownloadPopup() {
-    const popover = this.popoverCtrl.create(SbDownloadPopupComponent, {}, {
-      cssClass: 'sb-popover sb-popover-download  info',
+    // const popover = this.popoverCtrl.create(SbDownloadPopupComponent, {}, {
+    //   cssClass: 'sb-popover sb-popover-download  info',
       
-    });
-    popover.present({
-      ev: event
-    });
-    popover.onDidDismiss((canDownload: boolean = false) => {
-    console.log('dismissed');
-    });
+    // });
+    // popover.present({
+    //   ev: event
+    // });
+    // popover.onDidDismiss((canDownload: boolean = false) => {
+    // console.log('dismissed');
+    // });
+    this.showDownload = true;
 }
 
 }

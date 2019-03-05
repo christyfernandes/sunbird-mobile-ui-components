@@ -1,4 +1,4 @@
-<ion-header class="sb-header">
+<ion-header class="sb-header hide-in-page">
     <!-- Generated template for the AppHeaderComponent component -->
     <!-- <ion-header> -->
     <ion-navbar class="sb-header-toolbar">
@@ -7,7 +7,8 @@
   </ion-header>
   
 
-<ion-content no-padding>
+  <div style="margin-top:56px;" class="hide-in-page"></div>
+
 <div class="sb-slider-pills-container">
   <div class="sb-pills-container sb-medium-pills-container">
       <div class="pill active">English medium</div>
@@ -21,10 +22,9 @@
   </div>
 </div>
 
-  <div class="code-block">
+  <div class="code-block hide-in-page">
   <br><br>
     <pre >
       {{this.code}}
     </pre>
   </div>
-</ion-content>

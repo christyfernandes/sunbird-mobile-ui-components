@@ -7,7 +7,7 @@ import { Component } from '@angular/core';
  * Components.
  */
 @Component({
-  selector: 'textbook-card',
+  selector: 'sb-textbook-card',
   templateUrl: 'textbook-card.html'
 })
 export class TextbookCardComponent {

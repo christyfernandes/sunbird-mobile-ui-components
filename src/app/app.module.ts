@@ -7,6 +7,11 @@ import { StatusBar } from '@ionic-native/status-bar';
 import { MyApp } from './app.component';
 import { HomePage } from '../pages/home/home';
 import { LibraryPage } from '../pages/library/library';
+import {ViewAllPage} from '../pages/view-all/view-all';
+import {SearchResultsPage} from '../pages/search-results/search-results';
+import {TocPage} from '../pages/toc/toc';
+import {PlayerPage} from '../pages/player/player';
+import {FooterPage} from '../pages/footer/footer';
 import {ComponentsModule} from '../components/components.module';
 
 
@@ -14,7 +19,12 @@ import {ComponentsModule} from '../components/components.module';
   declarations: [
     MyApp,
     HomePage,
-    LibraryPage
+    LibraryPage,
+    ViewAllPage,
+    SearchResultsPage,
+    TocPage,
+    PlayerPage,
+    FooterPage
   ],
   imports: [
     BrowserModule,
@@ -25,7 +35,12 @@ import {ComponentsModule} from '../components/components.module';
   entryComponents: [
     MyApp,
     HomePage,
-    LibraryPage
+    LibraryPage,
+    ViewAllPage,
+    SearchResultsPage,
+    TocPage,
+    PlayerPage,
+    FooterPage
   ],
   providers: [
     StatusBar,

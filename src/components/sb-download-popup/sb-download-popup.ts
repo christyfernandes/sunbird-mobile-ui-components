@@ -13,10 +13,15 @@ import { Component } from '@angular/core';
 export class SbDownloadPopupComponent {
 
   text: string;
+  showPopover = true;
 
   constructor() {
     console.log('Hello SbDownloadPopupComponent Component');
     this.text = 'Hello World';
+  }
+
+  togglePopover(){
+    
   }
 
 }

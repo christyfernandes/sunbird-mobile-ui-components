@@ -7,7 +7,7 @@ import { Component } from '@angular/core';
  * Components.
  */
 @Component({
-  selector: 'recently-viewed',
+  selector: 'sb-recently-viewed',
   templateUrl: 'recently-viewed.html'
 })
 export class RecentlyViewedComponent {

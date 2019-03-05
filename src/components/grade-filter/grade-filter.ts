@@ -7,7 +7,7 @@ import { Component } from '@angular/core';
  * Components.
  */
 @Component({
-  selector: 'grade-filter',
+  selector: 'sb-grade-filter',
   templateUrl: 'grade-filter.html'
 })
 export class GradeFilterComponent {

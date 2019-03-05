@@ -1,38 +1,90 @@
-<ion-header class="sb-popover-header">
-    <ion-toolbar class="sb-popover-toolbar">
-      <ion-title class="sb-popover-title">Downloading
-        <button ion-button clear class="sb-modal-close" (click)="closePopover()">Hide</button>
-      </ion-title>
-    </ion-toolbar>
-    <div style="height: 4px;
+<!-- <ion-header class="sb-popover-header">
+  <ion-toolbar class="sb-popover-toolbar">
+    <ion-title class="sb-popover-title">Downloading
+      <button ion-button clear class="sb-modal-close" (click)="closePopover()">Hide</button>
+    </ion-title>
+  </ion-toolbar>
+  <div style="height: 4px;
   background-color:#000;
   position: relative;">
-  <div style="position:absolute; background:#D8D8D8; left:20%; right:0; top:0; bottom:0">
+    <div style="position:absolute; background:#D8D8D8; left:20%; right:0; top:0; bottom:0">
 
-  </div>
-  </div>
-  </ion-header>
-
-  
-  
-  <ion-content no-padding class="sb-popover-container">
-      <div class="sb-popover-items">  
-          <div class="sb-popover-content-details">
-            <div class="main-title">
-                Great Thinkers and their new religions
-              <div class="meta-info">
-                  15 MB / 20 MB
-              </div>
-            </div>
-            <!-- <div class="sb-popover-content">
-              {{sbPopoverContent}}
-            </div> -->
-          </div>
-      </div>
-  </ion-content>
-  
-  <ion-footer>
-    <div class="sb-popover-footer">
-      <button ion-button class="sb-popover-action-btn sb-btn sb-btn-normal sb-btn-info" >Cancel</button>
     </div>
-  </ion-footer>
+  </div>
+</ion-header>
+
+
+
+<ion-content no-padding class="sb-popover-container">
+  <div class="sb-popover-items">
+    <div class="sb-popover-content-details">
+      <div class="main-title">
+        Great Thinkers and their new religions
+        <div class="meta-info">
+          15 MB / 20 MB
+        </div>
+      </div>
+    </div>
+  </div>
+</ion-content>
+
+<ion-footer>
+  <div class="sb-popover-footer">
+    <button ion-button class="sb-popover-action-btn sb-btn sb-btn-normal sb-btn-info">Cancel</button>
+  </div>
+</ion-footer> -->
+<div class="sb-popover sb-popover-download  " *ngIf="this.showPopover">
+  <div class="backdrop"></div>
+  <div class="popover-content">
+    <ion-header class="sb-popover-header">
+      <ion-toolbar class="sb-popover-toolbar">
+        <ion-title class="sb-popover-title">Downloading
+          <button ion-button clear class="sb-modal-close"
+            (click)="togglePopover(); this.showPopover = !this.showPopover">Hide</button>
+        </ion-title>
+      </ion-toolbar>
+      <div class="popover-progress-container">
+        <div class="progress-highlight">
+        </div>
+      </div>
+    </ion-header>
+
+    <div no-padding class="scroll-content sb-popover-container">
+      <div class="sb-popover-items">
+        <div class="sb-popover-content-details">
+          <div class="main-title">
+            Great Thinkers and their new religions
+            <div class="meta-info">
+              15 MB / 20 MB
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <ion-footer>
+      <div class="sb-popover-footer">
+        <button ion-button class="sb-popover-action-btn sb-btn sb-btn-normal sb-btn-info">Cancel</button>
+      </div>
+    </ion-footer>
+  </div>
+</div>
+
+<div class="sb-popover sb-popover-download collapsed" *ngIf="!this.showPopover">
+  <div class="collpase">
+    <ion-header class="sb-popover-header">
+      <ion-toolbar class="sb-popover-toolbar">
+        <ion-title class="sb-popover-title">Downloading
+          <span class="meta-info">15 MB / 20 MB</span>
+          <button ion-button clear class="sb-modal-close"
+            (click)="togglePopover(); this.showPopover = !this.showPopover">Show</button>
+        </ion-title>
+      </ion-toolbar>
+      <div class="popover-progress-container">
+        <div class="progress-highlight">
+        </div>
+      </div>
+    </ion-header>
+  </div>
+
+</div>

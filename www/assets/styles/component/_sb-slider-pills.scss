@@ -14,7 +14,6 @@
         text-overflow: ellipsis;
         min-height: ($base-block-space * 4);
         @include margin(null,($base-block-space * 1),null,null);
-        letter-spacing: -0.5px;
         @include padding(($base-block-space * 0.5) ($base-block-space * 1));
         border-radius: 2px;
         text: {

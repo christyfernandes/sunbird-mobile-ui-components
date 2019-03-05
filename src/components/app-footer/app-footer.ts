@@ -1,5 +1,7 @@
 import { Component } from '@angular/core';
 import { LibraryComponent } from '../library/library';
+import { LibraryPage } from '../../pages/library/library';
+import {ViewAllPage} from '../../pages/view-all/view-all';
 
 /**
  * Generated class for the AppFooterComponent component.
@@ -8,7 +10,7 @@ import { LibraryComponent } from '../library/library';
  * Components.
  */
 @Component({
-  selector: 'app-footer',
+  selector: 'sb-app-footer',
   templateUrl: 'app-footer.html'
 })
 export class AppFooterComponent {
@@ -18,7 +20,7 @@ export class AppFooterComponent {
   tab2: any;
 
   constructor() {
-    this.tab1 = LibraryComponent;
+    this.tab1 = LibraryPage;
     this.tab2 = '';
   }
 

@@ -7,7 +7,7 @@ import { Component } from '@angular/core';
  * Components.
  */
 @Component({
-  selector: 'search',
+  selector: 'sb-search',
   templateUrl: 'search.html'
 })
 export class SearchComponent {

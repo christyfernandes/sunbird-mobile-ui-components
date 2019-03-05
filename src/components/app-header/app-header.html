@@ -1,14 +1,19 @@
 
-
-
-<ion-content no-padding>
+<ion-header class="sb-header hide-in-page">
+  <!-- Generated template for the AppHeaderComponent component -->
+  <!-- <ion-header> -->
+  <ion-navbar class="sb-header-toolbar">
+    <ion-title>Header Bar</ion-title>
+  </ion-navbar>
+</ion-header>
 
   <!-- component ui start -->
-  <ion-header class="sb-header">
+  <ion-header class="sb-header" >
+      <div style="margin-top:56px;" class="hide-in-page"></div>
     <ion-navbar class="sb-header-navbar">
       <ion-toolbar class="sb-header-toolbar">
         <ion-buttons class="sb-hamburger" start>
-          <button class="sb-hamburger-menu sb-hamburger-icon" ion-button icon-only>
+          <button class="sb-hamburger-menu sb-hamburger-icon" ion-button icon-only menuToggle>
             <ion-icon name="menu"></ion-icon>
           </button>
         </ion-buttons>
@@ -29,12 +34,10 @@
   </ion-header>
   <!-- component ui start -->
 
-
-  <div class="code-block" style="margin-top:90px;">
+  <div class="code-block hide-in-page" style="margin-top:90px;">
     <pre>
             {{code}}
           </pre>
   </div>
 
-</ion-content>
 <!-- </ion-header> -->

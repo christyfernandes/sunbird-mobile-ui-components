@@ -10,7 +10,7 @@ import { IonicPage, NavController, NavParams } from 'ionic-angular';
 
 
 @Component({
-  selector: 'page-library-filter',
+  selector: 'sb-medium-filter',
   templateUrl: 'library-filter.html',
 })
 export class LibraryFilterPage {

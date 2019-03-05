@@ -7,7 +7,7 @@ import { Component, Input } from '@angular/core';
  * Components.
  */
 @Component({
-  selector: 'app-header',
+  selector: 'sb-app-header',
   templateUrl: 'app-header.html'
 })
 export class AppHeaderComponent {
