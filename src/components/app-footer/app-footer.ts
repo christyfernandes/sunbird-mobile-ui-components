@@ -22,7 +22,7 @@ export class AppFooterComponent {
 
   constructor() {
     this.tab1 = LibraryPage;
-    this.tab2 = HomePage;
+    this.tab2 = '';
   }
 
 }
