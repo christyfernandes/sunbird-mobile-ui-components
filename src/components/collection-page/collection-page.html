@@ -37,36 +37,36 @@
     
         <div class="sb-hidden-content" *ngIf="isGroupShown(100)">
           <div class="sb-separator-line"></div>
-          <div class="sb-topic-1title">Aryans and their home in India</div>
-
-          <!-- <div class="row sb-topic-item">
-            <ion-icon ios="ios-alert" md="md-alert" class="sb-accordian-grey-icon"></ion-icon>
-            <div class="sb-accordian-grey-text">Vedic Period</div>
-          </div> -->
-          <div class="row sb-topic-item">
-              <div class="sb-accordian-grey-text">Vedic Period</div>
-              <ion-icon ios="ios-alert" md="md-alert" class="sb-accordian-grey-icon"></ion-icon>
+          <div class="sb-topics-container">
+            <div class="sb-topic-container sb-topics-1child">
+              <div class="sb-topic-title">Vedic Culture in North India</div>
+              <div class="row sb-topic-item sb-topic-disabled">
+                  <ion-icon ios="ios-arrow-dropright-circle" md="md-arrow-dropright-circle" class="sb-accordian-grey-icon"></ion-icon>
+                  <div class="sb-accordian-grey-text">Advent of Aryans</div>
+                </div>
+              <div class="row sb-topic-item">
+                <ion-icon ios="ios-arrow-dropright-circle" md="md-arrow-dropright-circle" class="sb-play-icon"></ion-icon>
+                <div [ngClass]="{'sb-play-selected':isSelected,'sb-play-unselected':!isSelected}">Vedic
+                  Period
+                  <span>
+                    <ion-icon class="sb-checkmark-icon" name="checkmark-circle-outline" *ngIf="isSelected"></ion-icon>
+                  </span>
+                </div>
+              </div>
             </div>
-        </div>
-
-        <div class="sb-topic-container sb-topics-3child">
-          <div class="sb-separator-line"></div>
-          <div class="sb-topic-1title">MEGHALITHIC IRON AGE IN TAMILNADU</div>
-          <div class="sb-topic-2title">Tamilnadu Excavation </div>
-          <!-- <div class="row sb-topic-item">
-            <ion-icon ios="ios-alert" md="md-alert" class="sb-accordian-grey-icon"></ion-icon>
-            <div class="sb-accordian-grey-text">Paleolithic Discoveries
-              <span>
-                <ion-icon class="sb-checkmark-icon" name="checkmark-circle-outline" *ngIf="isSelected"></ion-icon>
-              </span>
-            </div>
-          </div> -->
-          <div class="row sb-topic-item">
-            <ion-icon ios="ios-arrow-dropright-circle" md="md-arrow-dropright-circle" class="sb-play-icon"></ion-icon>
-            <div class='sb-play-selected'>Paleolithic Discoveries
-              <span>
-                <ion-icon class="sb-checkmark-icon" name="checkmark-circle-outline"></ion-icon>
-              </span>
+    
+            <div class="sb-topic-container sb-topics-2child">
+              <div class="sb-separator-line"></div>
+              <div class="sb-topic-1title">Aryans and their home in India</div>
+    
+              <!-- <div class="row sb-topic-item">
+                <ion-icon ios="ios-alert" md="md-alert" class="sb-accordian-grey-icon"></ion-icon>
+                <div class="sb-accordian-grey-text">Vedic Period</div>
+              </div> -->
+              <div class="row sb-topic-item">
+                  <div class="sb-accordian-grey-text">Vedic Period</div>
+                  <ion-icon ios="ios-alert" md="md-alert" class="sb-accordian-grey-icon"></ion-icon>
+                </div>
             </div>
     
             <div class="sb-topic-container sb-topics-3child">
