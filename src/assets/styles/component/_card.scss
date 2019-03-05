@@ -87,19 +87,20 @@
                 background-color: $gray-100;
                 width:($base-block-space * 11);
                 height: ($base-block-space * 11);
+                border-radius: 2px 0px 0px 2px;
             }
 
             .sb-card-details {
                 @include padding(($base-block-space * 1));
             }
         }
-
+        &.disabled {
+          opacity: 0.4;
+        }
         &.offline{
             .img-container {
-              opacity: 0.5;
               display: flex;
               align-items: center;
-            
                 background-color: $tertiary-color;	
                 box-shadow: 0 3px 5px 0 rgba(0,0,0,0.12);
             }
@@ -142,9 +143,13 @@
 
 .sb-card-recently-container{
     flex-direction: row;
+    .sb-card.full .sb-card-details{
+      @include padding(null, null, null, 0);
+    }
 }
 
-.sb-card-textbook-container{
+
+.sb-card-textbook-container, .sb-card-view-all-container{
     flex-direction: column;
     box-shadow: 0px 3px 5px 2px rgba(0, 0, 0, 0.10);
     width: 100%;
@@ -158,41 +163,25 @@
             @include margin(0); 
         }
         &:last-child{
-            //border-bottom: none; 
+            border-bottom: none; 
             @include margin(0); 
         }
     }
 }
 
 .sb-card-view-all-container{
-    flex-direction: column;
-    box-shadow: 0px 3px 5px 2px rgba(0, 0, 0, 0.10);
-    width: 100%;
     .sb-card{
-        @include margin(0); 
-        border-radius: 2px 2px 0 0;
-        border-bottom: 0.5px solid rgba(94, 94, 94, 0.75);
-        box-shadow: none;  
         display: grid;
         grid-template-columns: ($base-block-space * 10) auto;
-
         .img-container {
             background-color: $bg-gray-0;
             width:($base-block-space * 10);
             height: ($base-block-space * 10);
         }
-        
-        &:first-child{
-            @include margin(0); 
-        }
-        &:last-child{
-            //border-bottom: none; 
-            @include margin(0); 
-        }
 
         .sb-card-details{
           position: relative;
-          justify-content: flex-start;
+          justify-content: center;
           margin-bottom: -($base-block-space * 1);
 
           .info{
@@ -235,7 +224,7 @@
             }
 
             &.download{
-              background-color: $success-color;
+              background-color: $secondary-400;
             }
             &.delete{
               background-color: $danger-color;
@@ -315,7 +304,7 @@
 }
 
 .sb-recently-viewed-container {
-  min-height: 144px;
+  min-height: 152px;
   .sb-recently-viewed-items{
     background-color: #024f9d;
     height: ($base-block-space * 11);
@@ -323,12 +312,11 @@
     position: relative;
     @include padding(($base-block-space * 2), 0);
     .sb-recenlty-viewed-title {
-      font-size: 16px;
+      font-size: $font-size-md;
       color: #ffffff;
       font-family: "Noto Sans";	
-      line-height: 22px;
       overflow: auto;
-      margin-bottom: ($base-block-space * 1);
+      margin-bottom: ($base-block-space * 2);
     @include padding(0, ($base-block-space * 1));
 
     }

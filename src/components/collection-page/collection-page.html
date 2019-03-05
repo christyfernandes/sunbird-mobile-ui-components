@@ -7,116 +7,123 @@
     </ion-navbar>
   </ion-header> 
 
+  <div class="hide-in-page" style="margin-top:56px;"></div>
 <!-- <ion-content padding> -->
 
   <!-- Content Card End -->
-  <detail-card></detail-card>
+  <div style="padding:8px;overflow-y: auto;height: 100%;padding-bottom: 60px;">
+
+    <!-- reusable from here -->
+      <detail-card></detail-card>
+      <ion-card class="sb-accordian-card">
+        <ion-grid class="sb-accordian-header">
+          <ion-row (click)="toggleGroup(100)">
+            <ion-col col-11>
+              <div class="sb-topic-text"> UNIT 1.2</div>
+            </ion-col>
+            <ion-col col-1 *ngIf="!isGroupShown(100)">
+              <div>
+                <ion-icon ios="ios-arrow-dropdown" md="md-arrow-dropdown" class="sb-accordian-arrow"></ion-icon>
+              </div>
+            </ion-col>
+            <ion-col col-1 *ngIf="isGroupShown(100)">
+              <div>
+                <ion-icon ios="ios-arrow-dropup" md="md-arrow-dropup" class="sb-accordian-arrow"></ion-icon>
+              </div>
+            </ion-col>
+          </ion-row>
+        </ion-grid>
+    
+    
+        <div class="sb-hidden-content" *ngIf="isGroupShown(100)">
+          <div class="sb-separator-line"></div>
+          <div class="sb-topics-container">
+            <div class="sb-topic-container sb-topics-1child">
+              <div class="sb-topic-title">Vedic Culture in North India</div>
+              <div class="row sb-topic-item sb-topic-disabled">
+                  <ion-icon ios="ios-arrow-dropright-circle" md="md-arrow-dropright-circle" class="sb-accordian-grey-icon"></ion-icon>
+                  <div class="sb-accordian-grey-text">Advent of Aryans</div>
+                </div>
+              <div class="row sb-topic-item">
+                <ion-icon ios="ios-arrow-dropright-circle" md="md-arrow-dropright-circle" class="sb-play-icon"></ion-icon>
+                <div [ngClass]="{'sb-play-selected':isSelected,'sb-play-unselected':!isSelected}">Vedic
+                  Period
+                  <span>
+                    <ion-icon class="sb-checkmark-icon" name="checkmark-circle-outline" *ngIf="isSelected"></ion-icon>
+                  </span>
+                </div>
+              </div>
+            </div>
+    
+            <div class="sb-topic-container sb-topics-2child">
+              <div class="sb-separator-line"></div>
+              <div class="sb-topic-1title">Aryans and their home in India</div>
+    
+              <div class="row sb-topic-item">
+                <ion-icon ios="ios-alert" md="md-alert" class="sb-accordian-grey-icon"></ion-icon>
+                <div class="sb-accordian-grey-text">Vedic Period</div>
+              </div>
+              <div class="row sb-topic-item">
+                  <div class="sb-accordian-grey-text">Vedic Period</div>
+                  <ion-icon ios="ios-alert" md="md-alert" class="sb-accordian-grey-icon"></ion-icon>
+                </div>
+            </div>
+    
+            <div class="sb-topic-container sb-topics-3child">
+              <div class="sb-separator-line"></div>
+              <div class="sb-topic-1title">MEGHALITHIC IRON AGE IN TAMILNADU</div>
+              <div class="sb-topic-2title">Tamilnadu Excavation </div>
+              <div class="row sb-topic-item">
+                <ion-icon ios="ios-alert" md="md-alert" class="sb-accordian-grey-icon"></ion-icon>
+                <div class="sb-accordian-grey-text">Paleolithic Discoveries
+                  <span>
+                    <ion-icon class="sb-checkmark-icon" name="checkmark-circle-outline" *ngIf="isSelected"></ion-icon>
+                  </span>
+                </div>
+              </div>
+              <div class="row sb-topic-item">
+                <ion-icon ios="ios-arrow-dropright-circle" md="md-arrow-dropright-circle" class="sb-play-icon"></ion-icon>
+                <div class='sb-play-selected'>Paleolithic Discoveries
+                  <span>
+                    <ion-icon class="sb-checkmark-icon" name="checkmark-circle-outline"></ion-icon>
+                  </span>
+                </div>
+              </div>
+            </div>
+    
+            <div class="sb-topic-container sb-topics-1child">
+              <div class="sb-separator-line"></div>
+              <div class="sb-topic-title">Exercises</div>
+    
+              <div class="row sb-topic-item">
+                <ion-icon ios="ios-arrow-dropright-circle" md="md-arrow-dropright-circle" class="sb-play-icon"></ion-icon>
+                <div [ngClass]="{'sb-play-selected':isSelected,'sb-play-unselected':!isSelected}">Vedic
+                  Culture in North India and Megalithic Culture in South India Period
+                  <span>
+                    <ion-icon class="sb-checkmark-icon" name="checkmark-circle-outline" *ngIf="isSelected"></ion-icon>
+                  </span>
+                </div>
+              </div>
+              <div class="row sb-topic-item">
+                <ion-icon ios="ios-arrow-dropright-circle" md="md-arrow-dropright-circle" class="sb-accordian-grey-icon"></ion-icon>
+                <div class="sb-accordian-grey-text">Vedic Period</div>
+              </div>
+              <div class="row sb-topic-item">
+                <ion-icon ios="ios-arrow-dropright-circle" md="md-arrow-dropright-circle" class="sb-play-icon"></ion-icon>
+                <div class='sb-play-selected'>Vedic Period
+                  <span>
+                    <ion-icon class="sb-checkmark-icon" name="checkmark-circle-outline"></ion-icon>
+                  </span>
+                </div>
+              </div>
+              <div class="sb-separator-line"></div>
+            </div>
+    
+          </div>
+        </div>
+      </ion-card>
+<!-- reusable from here -->
+
+  </div>
  
-  <ion-card class="sb-accordian-card">
-    <ion-grid class="sb-accordian-header">
-      <ion-row (click)="toggleGroup(100)">
-        <ion-col col-11>
-          <div class="sb-topic-text"> UNIT 1.2</div>
-        </ion-col>
-        <ion-col col-1 *ngIf="!isGroupShown(100)">
-          <div>
-            <ion-icon ios="ios-arrow-dropdown" md="md-arrow-dropdown" class="sb-accordian-arrow"></ion-icon>
-          </div>
-        </ion-col>
-        <ion-col col-1 *ngIf="isGroupShown(100)">
-          <div>
-            <ion-icon ios="ios-arrow-dropup" md="md-arrow-dropup" class="sb-accordian-arrow"></ion-icon>
-          </div>
-        </ion-col>
-      </ion-row>
-    </ion-grid>
-
-
-    <div class="sb-hidden-content" *ngIf="isGroupShown(100)">
-      <div class="sb-separator-line"></div>
-      <div class="sb-topics-container">
-        <div class="sb-topic-container sb-topics-1child">
-          <div class="sb-topic-title">Vedic Culture in North India</div>
-          <div class="row sb-topic-item sb-topic-disabled">
-              <ion-icon ios="ios-arrow-dropright-circle" md="md-arrow-dropright-circle" class="sb-accordian-grey-icon"></ion-icon>
-              <div class="sb-accordian-grey-text">Advent of Aryans</div>
-            </div>
-          <div class="row sb-topic-item">
-            <ion-icon ios="ios-arrow-dropright-circle" md="md-arrow-dropright-circle" class="sb-play-icon"></ion-icon>
-            <div [ngClass]="{'sb-play-selected':isSelected,'sb-play-unselected':!isSelected}">Vedic
-              Period
-              <span>
-                <ion-icon class="sb-checkmark-icon" name="checkmark-circle-outline" *ngIf="isSelected"></ion-icon>
-              </span>
-            </div>
-          </div>
-        </div>
-
-        <div class="sb-topic-container sb-topics-2child">
-          <div class="sb-separator-line"></div>
-          <div class="sb-topic-1title">Aryans and their home in India</div>
-
-          <div class="row sb-topic-item">
-            <ion-icon ios="ios-alert" md="md-alert" class="sb-accordian-grey-icon"></ion-icon>
-            <div class="sb-accordian-grey-text">Vedic Period</div>
-          </div>
-          <div class="row sb-topic-item">
-              <div class="sb-accordian-grey-text">Vedic Period</div>
-              <ion-icon ios="ios-alert" md="md-alert" class="sb-accordian-grey-icon"></ion-icon>
-            </div>
-        </div>
-
-        <div class="sb-topic-container sb-topics-3child">
-          <div class="sb-separator-line"></div>
-          <div class="sb-topic-1title">MEGHALITHIC IRON AGE IN TAMILNADU</div>
-          <div class="sb-topic-2title">Tamilnadu Excavation </div>
-          <div class="row sb-topic-item">
-            <ion-icon ios="ios-alert" md="md-alert" class="sb-accordian-grey-icon"></ion-icon>
-            <div class="sb-accordian-grey-text">Paleolithic Discoveries
-              <span>
-                <ion-icon class="sb-checkmark-icon" name="checkmark-circle-outline" *ngIf="isSelected"></ion-icon>
-              </span>
-            </div>
-          </div>
-          <div class="row sb-topic-item">
-            <ion-icon ios="ios-arrow-dropright-circle" md="md-arrow-dropright-circle" class="sb-play-icon"></ion-icon>
-            <div class='sb-play-selected'>Paleolithic Discoveries
-              <span>
-                <ion-icon class="sb-checkmark-icon" name="checkmark-circle-outline"></ion-icon>
-              </span>
-            </div>
-          </div>
-        </div>
-
-        <div class="sb-topic-container sb-topics-1child">
-          <div class="sb-separator-line"></div>
-          <div class="sb-topic-title">Exercises</div>
-
-          <div class="row sb-topic-item">
-            <ion-icon ios="ios-arrow-dropright-circle" md="md-arrow-dropright-circle" class="sb-play-icon"></ion-icon>
-            <div [ngClass]="{'sb-play-selected':isSelected,'sb-play-unselected':!isSelected}">Vedic
-              Culture in North India and Megalithic Culture in South India Period
-              <span>
-                <ion-icon class="sb-checkmark-icon" name="checkmark-circle-outline" *ngIf="isSelected"></ion-icon>
-              </span>
-            </div>
-          </div>
-          <div class="row sb-topic-item">
-            <ion-icon ios="ios-arrow-dropright-circle" md="md-arrow-dropright-circle" class="sb-accordian-grey-icon"></ion-icon>
-            <div class="sb-accordian-grey-text">Vedic Period</div>
-          </div>
-          <div class="row sb-topic-item">
-            <ion-icon ios="ios-arrow-dropright-circle" md="md-arrow-dropright-circle" class="sb-play-icon"></ion-icon>
-            <div class='sb-play-selected'>Vedic Period
-              <span>
-                <ion-icon class="sb-checkmark-icon" name="checkmark-circle-outline"></ion-icon>
-              </span>
-            </div>
-          </div>
-          <div class="sb-separator-line"></div>
-        </div>
-
-      </div>
-    </div>
-  </ion-card>
 <!-- </ion-content> -->

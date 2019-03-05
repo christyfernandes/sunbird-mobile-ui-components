@@ -47,3 +47,21 @@
     color:#fff;
 }
 
+
+.tabs-md[tabsLayout=icon-top] .has-icon .tab-button-text{
+    font-size: 10px;	
+    text-align: center;
+    @include margin(0, null, null, null);
+    font-weight: bold;
+}
+
+.tabs-md .tab-button[aria-selected=true], .tabs-md .tab-button[aria-selected=false] 
+{
+    .tab-button-icon{
+        font-size: 20px;
+    }
+    .has-icon .tab-button-text{
+        font-size: 12px;
+    }
+}
+

@@ -5,7 +5,13 @@
     background-color: map-get($colors, white );
     @include margin(0,0,($base-block-space * 2),0);
       .sb-rating-view {
-        text-align: center;
+        @include ltr() {
+          text-align: right
+        }
+    
+        @include rtl() {
+          text-align:left;
+        }
         .sb-rating-value {
           font-weight: bold;
           font-size: $font-size-base;
@@ -89,16 +95,15 @@
     }
     // Details-Card 
     .sb-dt-card-actions {
-      @include padding(($base-block-space),($base-block-space * 2));
+      @include padding(null,($base-block-space * 1));
       .sb-btn-tile-group {
-        display: inline-grid;
-        grid-template-columns: auto auto auto auto;
-        grid-column-gap: ($base-block-space*1);
+        display: flex;
         &:last-child{
           @include margin(null, 0, null, null);
         }
         .button-md,.button-ios{
-          height: 4.6rem;
+          width:72px;
+          height:72px;
         }
         .sb-btn-tile {
           .button-inner {
