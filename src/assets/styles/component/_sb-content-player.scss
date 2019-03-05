@@ -1,7 +1,7 @@
 /* Sb-Player Component Styling */
 
 .sb-player-container {
-    background-color: black;
+    background-color: $gray-800;
     max-width:100%;
     height: ($base-block-space * 25);
     overflow:hidden;

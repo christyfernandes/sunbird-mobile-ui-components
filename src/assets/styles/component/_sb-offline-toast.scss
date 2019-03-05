@@ -36,3 +36,19 @@
           color: $orange;
       }
     }
+
+.sb-toast-online
+  {
+    top: 20%;
+    position: absolute;
+    background-color: $secondary-100;
+    height: ($base-block-space * 3);
+    color: $white;
+    text-align: center;
+    font-size: ($font-size-base  - 2); 
+    width: 100%;
+    .sb-online
+    {
+        @include margin($base-block-space/2,0,0,0);
+    }
+  }
