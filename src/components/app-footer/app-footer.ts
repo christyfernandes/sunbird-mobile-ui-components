@@ -2,6 +2,7 @@ import { Component } from '@angular/core';
 import { LibraryComponent } from '../library/library';
 import { LibraryPage } from '../../pages/library/library';
 import {ViewAllPage} from '../../pages/view-all/view-all';
+import { HomePage } from '../../pages/home/home';
 
 /**
  * Generated class for the AppFooterComponent component.
@@ -21,7 +22,7 @@ export class AppFooterComponent {
 
   constructor() {
     this.tab1 = LibraryPage;
-    this.tab2 = '';
+    this.tab2 = HomePage;
   }
 
 }
