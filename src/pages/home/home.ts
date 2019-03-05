@@ -65,7 +65,7 @@ export class HomePage {
       "pageName": CollectionPageComponent
     },
     {
-      "name":"Offline Comp",
+      "name":"Toast Messages",
       "pageName": OfflineToastComponent
     },
     {
