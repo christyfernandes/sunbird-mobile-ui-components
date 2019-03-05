@@ -4,7 +4,7 @@ webpackJsonp([6],{
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return FooterPage; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return LibraryPage; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(10);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
@@ -19,29 +19,28 @@ var __metadata = (this && this.__metadata) || function (k, v) {
 
 
 /**
- * Generated class for the FooterPage page.
+ * Generated class for the LibraryPage page.
  *
  * See https://ionicframework.com/docs/components/#navigation for more info on
  * Ionic pages and navigation.
  */
-var FooterPage = /** @class */ (function () {
-    function FooterPage(navCtrl, navParams) {
+var LibraryPage = /** @class */ (function () {
+    function LibraryPage(navCtrl, navParams) {
         this.navCtrl = navCtrl;
         this.navParams = navParams;
     }
-    FooterPage.prototype.ionViewDidLoad = function () {
-        ;
+    LibraryPage.prototype.ionViewDidLoad = function () {
     };
-    FooterPage = __decorate([
+    LibraryPage = __decorate([
         Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["n" /* Component */])({
-            selector: 'page-footer',template:/*ion-inline-start:"E:\projects\sunbird-workspace\sunbird-mobile-ui-components\src\pages\footer\footer.html"*/'<ion-header>\n\n\n\n        <ion-navbar>\n\n          <ion-title>library</ion-title>\n\n        </ion-navbar>\n\n      \n\n      </ion-header>\n\n<sb-app-footer></sb-app-footer>'/*ion-inline-end:"E:\projects\sunbird-workspace\sunbird-mobile-ui-components\src\pages\footer\footer.html"*/,
+            selector: 'page-library',template:/*ion-inline-start:"E:\projects\sunbird-workspace\sunbird-mobile-ui-components\src\pages\library\library.html"*/'\n<ion-header>\n\n  <ion-navbar>\n    <ion-title>library</ion-title>\n  </ion-navbar>\n\n</ion-header>\n\n\n<ion-content no-padding>\n    <ion-header class="sb-header" >\n        <ion-navbar class="sb-header-navbar">\n          <ion-toolbar class="sb-header-toolbar">\n            <ion-buttons class="sb-hamburger" start>\n              <button class="sb-hamburger-menu sb-hamburger-icon" ion-button icon-only menuToggle>\n                <ion-icon name="menu"></ion-icon>\n              </button>\n            </ion-buttons>\n            <ion-title></ion-title>\n            <ion-buttons class="sb-header-btn-group" end>\n              <button ion-button icon-only>\n                <ion-icon name="person"></ion-icon>\n              </button>\n              <button ion-button icon-only>\n                <ion-icon name="notifications-outline"></ion-icon>\n              </button>\n              <button ion-button icon-only>\n                <ion-icon name="search"></ion-icon>\n              </button>\n            </ion-buttons>\n          </ion-toolbar>\n        </ion-navbar>\n      </ion-header>\n    <div style="margin-top:65px;"></div>\n    <sb-medium-filter></sb-medium-filter>\n    <sb-grade-filter></sb-grade-filter>\n    <sb-recently-viewed></sb-recently-viewed>\n    <sb-textbook-card></sb-textbook-card>\n    <side-menu></side-menu>\n</ion-content>\n\n\n'/*ion-inline-end:"E:\projects\sunbird-workspace\sunbird-mobile-ui-components\src\pages\library\library.html"*/,
         }),
         __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["e" /* NavController */], __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["f" /* NavParams */]])
-    ], FooterPage);
-    return FooterPage;
+    ], LibraryPage);
+    return LibraryPage;
 }());
 
-//# sourceMappingURL=footer.js.map
+//# sourceMappingURL=library.js.map
 
 /***/ }),
 
@@ -308,12 +307,11 @@ module.exports = webpackAsyncContext;
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_13__components_buttons_buttons__ = __webpack_require__(213);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_14__components_search_search__ = __webpack_require__(214);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_15__components_side_menu_side_menu__ = __webpack_require__(215);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_16__library_library__ = __webpack_require__(50);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_17__view_all_view_all__ = __webpack_require__(104);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_18__search_results_search_results__ = __webpack_require__(102);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_19__toc_toc__ = __webpack_require__(103);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_20__player_player__ = __webpack_require__(101);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_21__footer_footer__ = __webpack_require__(100);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_16__view_all_view_all__ = __webpack_require__(104);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_17__search_results_search_results__ = __webpack_require__(102);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_18__toc_toc__ = __webpack_require__(103);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_19__player_player__ = __webpack_require__(101);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_20__footer_footer__ = __webpack_require__(99);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -338,8 +336,6 @@ var __metadata = (this && this.__metadata) || function (k, v) {
 
 
 
-
-//pages
 
 
 
@@ -413,28 +409,24 @@ var HomePage = /** @class */ (function () {
         ];
         this.pages = [
             {
-                "name": "Library page",
-                "pageName": __WEBPACK_IMPORTED_MODULE_16__library_library__["a" /* LibraryPage */]
+                "name": "Library",
+                "pageName": __WEBPACK_IMPORTED_MODULE_20__footer_footer__["a" /* FooterPage */]
             },
             {
-                "name": "Library page with tabs",
-                "pageName": __WEBPACK_IMPORTED_MODULE_21__footer_footer__["a" /* FooterPage */]
+                "name": "Recently Viewed All",
+                "pageName": __WEBPACK_IMPORTED_MODULE_16__view_all_view_all__["a" /* ViewAllPage */]
             },
             {
-                "name": "View all page",
-                "pageName": __WEBPACK_IMPORTED_MODULE_17__view_all_view_all__["a" /* ViewAllPage */]
+                "name": "Search Results",
+                "pageName": __WEBPACK_IMPORTED_MODULE_17__search_results_search_results__["a" /* SearchResultsPage */]
             },
             {
-                "name": "Search Results page",
-                "pageName": __WEBPACK_IMPORTED_MODULE_18__search_results_search_results__["a" /* SearchResultsPage */]
+                "name": "Table of Content",
+                "pageName": __WEBPACK_IMPORTED_MODULE_18__toc_toc__["a" /* TocPage */]
             },
             {
-                "name": "TOC page",
-                "pageName": __WEBPACK_IMPORTED_MODULE_19__toc_toc__["a" /* TocPage */]
-            },
-            {
-                "name": "Player page",
-                "pageName": __WEBPACK_IMPORTED_MODULE_20__player_player__["a" /* PlayerPage */]
+                "name": "Content Details",
+                "pageName": __WEBPACK_IMPORTED_MODULE_19__player_player__["a" /* PlayerPage */]
             }
         ];
     }
@@ -633,7 +625,7 @@ var RecentlyViewedComponent = /** @class */ (function () {
 "use strict";
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return AppFooterComponent; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__pages_library_library__ = __webpack_require__(50);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__pages_library_library__ = __webpack_require__(100);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -1422,12 +1414,12 @@ Object(__WEBPACK_IMPORTED_MODULE_0__angular_platform_browser_dynamic__["a" /* pl
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__ionic_native_status_bar__ = __webpack_require__(198);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__app_component__ = __webpack_require__(290);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__pages_home_home__ = __webpack_require__(199);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__pages_library_library__ = __webpack_require__(50);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__pages_library_library__ = __webpack_require__(100);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_8__pages_view_all_view_all__ = __webpack_require__(104);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_9__pages_search_results_search_results__ = __webpack_require__(102);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_10__pages_toc_toc__ = __webpack_require__(103);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_11__pages_player_player__ = __webpack_require__(101);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_12__pages_footer_footer__ = __webpack_require__(100);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_12__pages_footer_footer__ = __webpack_require__(99);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_13__components_components_module__ = __webpack_require__(291);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
@@ -2022,11 +2014,11 @@ var SbDownloadPopupComponent = /** @class */ (function () {
 
 /***/ }),
 
-/***/ 50:
+/***/ 99:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return LibraryPage; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return FooterPage; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(10);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
@@ -2041,28 +2033,29 @@ var __metadata = (this && this.__metadata) || function (k, v) {
 
 
 /**
- * Generated class for the LibraryPage page.
+ * Generated class for the FooterPage page.
  *
  * See https://ionicframework.com/docs/components/#navigation for more info on
  * Ionic pages and navigation.
  */
-var LibraryPage = /** @class */ (function () {
-    function LibraryPage(navCtrl, navParams) {
+var FooterPage = /** @class */ (function () {
+    function FooterPage(navCtrl, navParams) {
         this.navCtrl = navCtrl;
         this.navParams = navParams;
     }
-    LibraryPage.prototype.ionViewDidLoad = function () {
+    FooterPage.prototype.ionViewDidLoad = function () {
+        ;
     };
-    LibraryPage = __decorate([
+    FooterPage = __decorate([
         Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["n" /* Component */])({
-            selector: 'page-library',template:/*ion-inline-start:"E:\projects\sunbird-workspace\sunbird-mobile-ui-components\src\pages\library\library.html"*/'\n<ion-header>\n\n  <ion-navbar>\n    <ion-title>library</ion-title>\n  </ion-navbar>\n\n</ion-header>\n\n\n<ion-content no-padding>\n    <ion-header class="sb-header" >\n        <ion-navbar class="sb-header-navbar">\n          <ion-toolbar class="sb-header-toolbar">\n            <ion-buttons class="sb-hamburger" start>\n              <button class="sb-hamburger-menu sb-hamburger-icon" ion-button icon-only menuToggle>\n                <ion-icon name="menu"></ion-icon>\n              </button>\n            </ion-buttons>\n            <ion-title></ion-title>\n            <ion-buttons class="sb-header-btn-group" end>\n              <button ion-button icon-only>\n                <ion-icon name="person"></ion-icon>\n              </button>\n              <button ion-button icon-only>\n                <ion-icon name="notifications-outline"></ion-icon>\n              </button>\n              <button ion-button icon-only>\n                <ion-icon name="search"></ion-icon>\n              </button>\n            </ion-buttons>\n          </ion-toolbar>\n        </ion-navbar>\n      </ion-header>\n    <div style="margin-top:65px;"></div>\n    <sb-medium-filter></sb-medium-filter>\n    <sb-grade-filter></sb-grade-filter>\n    <sb-recently-viewed></sb-recently-viewed>\n    <sb-textbook-card></sb-textbook-card>\n    <side-menu></side-menu>\n</ion-content>\n\n\n'/*ion-inline-end:"E:\projects\sunbird-workspace\sunbird-mobile-ui-components\src\pages\library\library.html"*/,
+            selector: 'page-footer',template:/*ion-inline-start:"E:\projects\sunbird-workspace\sunbird-mobile-ui-components\src\pages\footer\footer.html"*/'<ion-header>\n\n\n\n        <ion-navbar>\n\n          <ion-title>library</ion-title>\n\n        </ion-navbar>\n\n      \n\n      </ion-header>\n\n<sb-app-footer></sb-app-footer>'/*ion-inline-end:"E:\projects\sunbird-workspace\sunbird-mobile-ui-components\src\pages\footer\footer.html"*/,
         }),
         __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["e" /* NavController */], __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["f" /* NavParams */]])
-    ], LibraryPage);
-    return LibraryPage;
+    ], FooterPage);
+    return FooterPage;
 }());
 
-//# sourceMappingURL=library.js.map
+//# sourceMappingURL=footer.js.map
 
 /***/ })
 
