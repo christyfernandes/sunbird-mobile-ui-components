@@ -7,9 +7,6 @@
   </ion-header>
   <ion-content no-padding class="sb-popover-container">
       <div class="sb-popover-items">
-          <div class="icon-container">
-            <ion-icon ios="{{icon?.ios}}" md="{{icon?.md}}"></ion-icon>
-          </div>
           <rating [(ngModel)]="userRating" (ngModelChange)="rateContent($event)"></rating>
           <div class="sb-popover-content-details" *ngIf="this.userRating">
             <div class="main-title">

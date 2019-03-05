@@ -20,7 +20,7 @@
 
 /* Padding in top direction */
 .pt-0 {
-  @include padding(0 null null null);
+  @include padding(0 !important, null, null, null);
 }
 .pt-4 {
   @include padding(4px null null null);
