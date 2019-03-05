@@ -1,14 +1,14 @@
 webpackJsonp([0],{
 
-/***/ 296:
+/***/ 306:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "LibraryPageModule", function() { return LibraryPageModule; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "ViewAllPageModule", function() { return ViewAllPageModule; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(16);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__library__ = __webpack_require__(99);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(10);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__view_all__ = __webpack_require__(104);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -18,23 +18,23 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
 
 
 
-var LibraryPageModule = /** @class */ (function () {
-    function LibraryPageModule() {
+var ViewAllPageModule = /** @class */ (function () {
+    function ViewAllPageModule() {
     }
-    LibraryPageModule = __decorate([
+    ViewAllPageModule = __decorate([
         Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["J" /* NgModule */])({
             declarations: [
-                __WEBPACK_IMPORTED_MODULE_2__library__["a" /* LibraryPage */],
+                __WEBPACK_IMPORTED_MODULE_2__view_all__["a" /* ViewAllPage */],
             ],
             imports: [
-                __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["d" /* IonicPageModule */].forChild(__WEBPACK_IMPORTED_MODULE_2__library__["a" /* LibraryPage */]),
+                __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["d" /* IonicPageModule */].forChild(__WEBPACK_IMPORTED_MODULE_2__view_all__["a" /* ViewAllPage */]),
             ],
         })
-    ], LibraryPageModule);
-    return LibraryPageModule;
+    ], ViewAllPageModule);
+    return ViewAllPageModule;
 }());
 
-//# sourceMappingURL=library.module.js.map
+//# sourceMappingURL=view-all.module.js.map
 
 /***/ })
 

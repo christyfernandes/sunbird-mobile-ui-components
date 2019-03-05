@@ -315,7 +315,7 @@
 }
 
 .sb-recently-viewed-container {
-
+  min-height: 144px;
   .sb-recently-viewed-items{
     background-color: #024f9d;
     height: ($base-block-space * 11);
