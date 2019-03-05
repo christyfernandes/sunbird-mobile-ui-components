@@ -1,6 +1,9 @@
  
   /* breadcrumb css */
-  
+  .breadcrumb-container
+  {
+    @include padding(0,($base-block-space));
+  }
   .step-indicator {
     margin: 0;
     padding: 0;
@@ -9,8 +12,7 @@
     width:100%;
     display: inline-flex;
     align-items: center;
-    height:($base-block-space * 8);
-    @include padding(($base-block-space * 2),($base-block-space));
+    height:($base-block-space * 8 );
   }
   
   .step {

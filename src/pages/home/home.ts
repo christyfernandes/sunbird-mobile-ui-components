@@ -81,10 +81,10 @@ export class HomePage {
       "name":"Search Card",
       "pageName": SearchComponent
     },
-    {
-      "name":"Offline Component",
-      "pageName": OfflineComponent
-    },
+    // {
+    //   "name":"Offline Component",
+    //   "pageName": OfflineComponent
+    // },
     {
       "name":"Side Menu Componet",
       "pageName": SideMenuComponent

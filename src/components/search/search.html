@@ -1,42 +1,46 @@
 <!-- Generated template for the SearchComponent component -->
-<ion-header class="sb-header">
-    <ion-navbar class="sb-header-toolbar">
-      <ion-title>Search Results</ion-title>
-    </ion-navbar>
-  </ion-header>
-  
-  <ion-content no-padding>
-    
-    <div class="sb-view-all-container">
-        <div class="sb-view-all-items sb-search-items">
-            <div class="sb-card-result sb-card-details">
-                <div class="sb-card-result-content"> Showing Results for "Social Science"</div>
-                <div class="sb-card-res-count">3 Results</div>
-            </div>
+<ion-header class="search-header">
+  <ion-navbar>
+    <ion-input type="search" #searchInput placeholder="Social Science" clearInput></ion-input>
+    <ion-buttons end>
+      <button ion-button>
+        <ion-icon name="close" float-end class="search-bar-icons"></ion-icon>
+      </button>
+      <button ion-button>
+        <ion-icon name="options" float-end class="search-bar-icons"></ion-icon>
+      </button>
+    </ion-buttons>
+  </ion-navbar>
+</ion-header>
+<ion-content no-padding>
+  <div class="sb-view-all-container">
+    <div class="sb-view-all-items sb-search-items">
+      <div class="sb-card-result sb-card-details">
+        <div class="sb-card-result-content"> Showing Results for "Social Science"</div>
+        <div class="sb-card-res-count">3 Results</div>
+      </div>
+    </div>
+    <div class="sb-card-container sb-card-view-all-container sb-search-card">
+      <div class="sb-card reverse">
+        <div class="img-container"></div>
+        <div class="sb-card-details">
+          <div class="title">Great thinkers and their new religions</div>
+          <div class="info"><span class=" class">Class6</span><span class="separator-dot"></span><span class=" subject">Social
+              Science</span>
           </div>
-      <div class="sb-card-container sb-card-view-all-container sb-search-card">
-        <div class="sb-card reverse"> 
-            <div class="img-container"></div>
-          <div class="sb-card-details">
-            <div class="title">Great thinkers and their new religions</div>
-            <div class="info"><span class=" class">Class6</span><span class="separator-dot"></span><span
-                class=" subject">Social
-                Science</span>
-            </div>
-          </div>  
         </div>
-  
-        <div class="sb-card reverse">
-            <div class="img-container"></div>
-            <div class="sb-card-details">
-              <div class="title">Great thinkers and their new religions</div>
-              <div class="info"><span class=" class">Class6</span><span class="separator-dot"></span><span
-                  class=" subject">Social
-                  Science</span>
-              </div>
-            </div> 
+      </div>
+
+      <div class="sb-card reverse">
+        <div class="img-container"></div>
+        <div class="sb-card-details">
+          <div class="title">Great thinkers and their new religions</div>
+          <div class="info"><span class=" class">Class6</span><span class="separator-dot"></span><span class=" subject">Social
+              Science</span>
+          </div>
         </div>
       </div>
     </div>
-    
-  </ion-content>
+  </div>
+
+</ion-content>

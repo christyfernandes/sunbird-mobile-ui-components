@@ -1,15 +1,1 @@
-sb-rating {
 
-    ul {
-        padding: 10px;
-        &.rating li {
-          padding: 5px 10px !important;
-          background: none;
-          color: $info-color;
-          ion-icon {
-            font-size: 40px;
-          }
-        }
-      }
-      .sb-line {	box-sizing: border-box;	height: 1px;	border: 0.5px solid #7AB4EE;}
-}
